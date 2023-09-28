@@ -1,11 +1,11 @@
-from typing import Optional
+from typing import Optional, Tuple
 import fitz
 import re
 
 HEADER_FOOTER_PATTERN = re.compile(r'^(UNIMARC\sManual\s+[\w\-]{3}|[\w\-]{3}\s+UNIMARC\sManual)\s+'
                                    r'(UNIMARC\sBibliographic,\s3rd\sedition\s+\d{4}'
                                         r'|\d{4}\s+UNIMARC\sBibliographic,\s3rd\sedition)\s+'
-                                   r'\d{2,3}')
+                                   r'\d{2,3}', re.I)
 
 
 class UnimarcField:
@@ -51,6 +51,27 @@ class Code:
         return f'{self.id} - {self.label}'
 
 
+class Position:
+    def __init__(self):
+        self.start = None
+        self.end = None
+        self.codes = None
+
+
+class Subfield:
+    def __init__(self):
+        self.label = None
+        self.name = None
+        self.repeatable = None
+        self.positions = None
+
+    def __str__(self):
+        return f'{self.label} - {self.name}'
+
+    def __repr__(self):
+        return f'{self.label} - {self.name}'
+
+
 def get_occurrence(text: str) -> (bool, bool):
     """
     Gets occurrence of the field
@@ -81,24 +102,44 @@ def check_blank_indicator(indicator: str) -> bool:
     :param indicator:
     :return:
     """
-    blank_pattern = re.compile(r'(blank|no\sindicator|no\sindicators|not\sapplicable|'
-                               r'not\sapplicable\sfor\sfield|not\sdefined|undefined)', re.I | re.M)
+    blank_pattern = re.compile(r'(blank|not\sdefined)', re.I | re.M)
     search_result = blank_pattern.search(indicator)
     return search_result is not None
 
 
+def reformat_indicator_code_content(indicator_code_content: str) -> str:
+    """
+    Reformat indicator code content to be able to parse it
+    :param indicator_code_content:
+    :return:
+    """
+    indicator_code_content = indicator_code_content.strip()
+    # if the content is in the form '1 \nSome text\n2 \nOther text\n3 \nThird text'
+    # we need to reformat it to '1 Some text\n2 Other text\n3 Third text'
+
+    # remove all newlines between numbers and text. hope this will work
+    indicator_code_content = re.sub(r'(\d|#)\s*\n\s*(\w)', r'\1 \2', indicator_code_content)
+
+    return indicator_code_content
+
+
 def get_indicator_codes(indicator_code_content: str) -> Optional[list]:
     """
-    Gets indicator codes from indicator
+    Gets indicator codes from indicator.
     :param indicator_code_content:
     :return:
     """
     indicator_code_content = indicator_code_content.strip()
     indicator_codes = []
 
+    indicator_code_content = reformat_indicator_code_content(indicator_code_content)
     code_content_lines = indicator_code_content.splitlines()
 
+    # simply try to get the codes by line and ignore everything else
     for line in code_content_lines:
+        line = line.strip()
+        if not line[0].isnumeric() and line[0] != '#':
+            continue
         code = Code()
         code.id = line[:1]
         code.label = line[1:].strip()
@@ -121,16 +162,17 @@ def get_indicator_data(indicator_content: str) -> Optional[Indicator]:
 
     indicator_pattern = re.compile(r'^(?P<description>[\s\S]+)\s+#[\s\S]+$', re.M)
     search_result = indicator_pattern.search(indicator_content)
-    if search_result is None:
-        indicator_pattern = re.compile(r'^(?P<description>[\s\S]+)\s+0[\s\S]+$', re.M)
-        search_result = indicator_pattern.search(indicator_content)
-        if search_result is None:
-            return None
+    if search_result is not None:
+        indicator_data.description = search_result.group('description')
 
-    indicator_data.description = search_result.group('description')
+    indicator_pattern = re.compile(r'^(?P<description>[\s\S]+)\s+0[\s\S]+$', re.M)
+    search_result = indicator_pattern.search(indicator_content)
+    if search_result is not None:
+        indicator_data.description = search_result.group('description')
 
-    indicator_code_content = indicator_content.replace(indicator_data.description, '', 1).strip()
-    indicator_data.codes = get_indicator_codes(indicator_code_content)
+    if indicator_data.description is not None:
+        indicator_content = indicator_content.replace(indicator_data.description, '', 1).strip()
+    indicator_data.codes = get_indicator_codes(indicator_content)
 
     return indicator_data
 
@@ -183,40 +225,97 @@ def get_indicators(text: str) -> Optional[list]:
     return indicator_list
 
 
+def get_subfields(text: str) -> Optional[list]:
+    subfields: [Subfield] = []
+
+    subfield_section_pattern = re.compile(r'^\s*Subfields\s+([\s\S]+)^\s*Notes?\s*on\s*(sub)?field\s*contents?', re.I | re.M)
+
+    search_result = subfield_section_pattern.search(text)
+    if search_result is None:
+        return None
+
+    subfields_content = search_result.group(1)
+
+    subfield_pattern = re.compile(r'^\s*(?P<label>\$\w)\s+(?P<name>[^\n]+)$', re.M)
+    search_results = subfield_pattern.findall(subfields_content)
+
+    for search_result in search_results:
+        subfield = Subfield()
+        subfield.label = search_result[0]
+        subfield.name = search_result[1]
+        subfields.append(subfield)
+
+    return subfields
+
+
+def form_field_name_pattern(field_name: str) -> str:
+    return (re.sub(r'\s+', ' ', field_name)
+            .replace(' ', '\\s*')
+            .replace('(', '\\(')
+            .replace(')', '\\)')
+            .replace('[', '\\[')
+            .replace(']', '\\]')
+            .replace('-', '[\\-\\–]'))
+
+
+def get_field_text(field_name: str,
+                   next_field_name: str,
+                   doc: fitz.Document,
+                   starting_page: int,
+                   max_pages: int = 580) -> Tuple[str, int]:
+
+    field_name = form_field_name_pattern(field_name)
+    next_field_name = form_field_name_pattern(next_field_name) if next_field_name is not None else None
+
+    field_text = ''
+
+    # print('Searching for', field_name)
+    i = starting_page
+
+    for i in range(starting_page, max_pages):
+        # first we have to find the field name in the document, and only then cn we start appending to the field text
+        page_text = doc[i].get_text()
+        first_rows = HEADER_FOOTER_PATTERN.search(page_text)
+        if first_rows is None or first_rows.group(0) is None:
+            raise Exception(f'Page {i} not supported')
+
+        page_text = page_text.replace(first_rows.group(0), '', 1)
+
+        # if the page contains field name, check this page
+        field_name_pattern = re.compile(rf'^\s*({field_name})', re.IGNORECASE)
+        search_result = field_name_pattern.search(page_text)
+        if search_result is None and field_text == '':
+            continue
+
+        if next_field_name is None:
+            field_text += page_text
+            continue
+
+        next_field_name_pattern = re.compile(rf'^\s+({next_field_name})', re.IGNORECASE)
+        search_result = next_field_name_pattern.search(page_text)
+        if search_result is not None:
+            break
+
+        field_text += page_text
+
+    # print('Found', field_name, 'ending on page', i)
+
+    return field_text, i
+
+
 def main(field_names: [str]):
     doc = fitz.open('unimarc-b.pdf')
     fields: [UnimarcField] = []
 
-    field = UnimarcField()
-    field_text = ''
-    for i in range(32, 600):
-        if len(field_names) == 0:
-            break
+    starting_page = 32
+    for i in range(len(field_names)):
 
-        page = doc[i].get_text()
-        first_rows = HEADER_FOOTER_PATTERN.search(page)
+        field = UnimarcField()
 
-        if first_rows is None or first_rows.group(0) is None:
-            raise Exception(f'Page {i} not supported')
+        next_field_name = field_names[i + 1] if i + 1 < len(field_names) else None
+        field_text, starting_page = get_field_text(field_names[i], next_field_name, doc, starting_page)
 
-        page = page.replace(first_rows.group(0), '', 1)
-        field_text += page
-
-        # if the page contains field name, check this page
-        field.name = field_names[0]
-        field_name = (re.sub(r'\s+', ' ', field.name)
-                      .replace(' ', '\\s+')
-                      .replace('(', '\\(')
-                      .replace(')', '\\)'))
-
-        field_name_pattern = re.compile(rf'^\s+({field_name})', re.IGNORECASE)
-
-        search_result = field_name_pattern.search(page)
-        if search_result is None:
-            continue
-
-        field_names.pop(0)
-
+        field.name = field_names[i]
         # FIELD DEFINITION PART
         field_definition_pattern = re.compile(r'^Field [Dd]efinition\s+([\s\S]+)Occurrence', re.M)
         search_result = field_definition_pattern.search(field_text)
@@ -244,15 +343,16 @@ def main(field_names: [str]):
         indicators = get_indicators(field_text)
         field.indicators = indicators
 
-        field_text = ''
-        field = UnimarcField()
+        # SUBFIELDS
+        subfields = get_subfields(field_text)
+        field.subfields = subfields
 
     for field in fields:
-        print(field.name, field.indicators)
+        print(field.name, field.subfields)
 
 
 if __name__ == '__main__':
-    names = [
+    fields_0xx = [
         '001 Record Identifier',
         '003 Persistent Record Identifier',
         '005 Version Identifier',
@@ -275,7 +375,32 @@ if __name__ == '__main__':
         '073 International Article Number (EAN)'
     ]
 
-    first_page = 33
-    last_page = 100
+    fields_1xx = [
+        '100 General Processing Data',
+        '101 Language of the Item',
+        '102 Country of Publication or Production',
+        '105 Coded Data Field: Textual language material, Monographic',
+        '106 Coded Data Field: Form of item',
+        '110 Coded Data Field: Continuing Resources',
+        '111 Coded Data Field - Serials: Physical Attributes - [Obsolete]',
+        '115 Coded Data Fields: Visual Projections, Videorecordings and Motion Pictures',
+        '116 Coded Data Field: Graphics',
+        '117 Coded Data Field: Three-dimensional artefacts and realia',
+        '120 Coded Data Field: Cartographic Materials - General',
+        '121 Coded Data Field: Cartographic Materials: Physical Attributes',
+        '122 Coded Data Field: Time Period of Item Content',
+        '123 Coded Data Field: Cartographic Materials - Scale and Co-ordinates',
+        '124 Coded Data Field: Cartographic Materials - Specific Material Designation Analysis',
+        '125 Coded Data Field: Sound Recordings and Music',
+        '126 Coded Data Field: Sound Recordings - Physical Attributes',
+        '127 Coded Data Field: Duration of Sound Recordings and Printed Music',
+        '128 Coded Data Field: Form of Musical Work and Key or Mode',
+        '130 Coded Data Field: Microforms - Physical attributes',
+        '131 Coded Data Field: Cartographic Materials: Geodetic, Grid and Vertical Measurement',
+        '135 Coded Data Field: Electronic resources',
+        '140 Coded Data Field: Antiquarian - General',
+        '141 Coded Data Field -- Copy Specific Attributes',
+        '145 Coded Data Field: Medium of Performance',
+    ]
 
-    main(names)
+    main(fields_1xx)
