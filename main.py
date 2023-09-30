@@ -4,7 +4,7 @@ import re
 
 HEADER_FOOTER_PATTERN = re.compile(r'^(UNIMARC\sManual\s+[\w\-]{3}|[\w\-]{3}\s+UNIMARC\sManual)\s+'
                                    r'(UNIMARC\sBibliographic,\s3rd\sedition\s+\d{4}'
-                                        r'|\d{4}\s+UNIMARC\sBibliographic,\s3rd\sedition)\s+'
+                                   r'|\d{4}\s+UNIMARC\sBibliographic,\s3rd\sedition)\s+'
                                    r'\d{2,3}', re.I)
 
 
@@ -27,6 +27,7 @@ class Indicator:
     """
     Represents indicator with all its options
     """
+
     def __init__(self):
         self.label = None
         self.description = None
@@ -62,6 +63,7 @@ class Subfield:
     def __init__(self):
         self.label = None
         self.name = None
+        self.description = None
         self.repeatable = None
         self.positions = None
 
@@ -69,7 +71,7 @@ class Subfield:
         return f'{self.label} - {self.name}'
 
     def __repr__(self):
-        return f'{self.label} - {self.name}'
+        return f'{self.label} - {self.name}: {self.description}'
 
 
 def get_occurrence(text: str) -> (bool, bool):
@@ -188,34 +190,35 @@ def get_indicators(text: str) -> Optional[list]:
 
     indicators = search_result.group(1)
 
-    no_indicator_pattern = re.compile(r'(no\sindicators?|not\shave\sindicators|doesn.?t\shave\sindicators)', re.I | re.M)
+    no_indicator_pattern = re.compile(r'(no\sindicators?|not\shave\sindicators|doesn.?t\shave\sindicators)',
+                                      re.I | re.M)
     search_result = no_indicator_pattern.search(indicators)
     if search_result is not None:
         return None
 
     # look for Indicator 1
-    indicator_1_pattern = re.compile(r'Indicator\s([1lIi]):(?P<indicator1>[\s\S]+)Indicator\s(2|II|Z|z):', re.M)
+    indicator_1_pattern = re.compile(r'Indicator\s([1lIi]):(?P<indicator0>[\s\S]+)Indicator\s(2|II|Z|z):', re.M)
     search_result = indicator_1_pattern.search(indicators)
 
     if search_result is None:
         # this shouldn't happen now
         return None
 
-    indicator_content_1 = search_result.group('indicator1')
+    indicator_content_1 = search_result.group('indicator0')
     if check_blank_indicator(indicator_content_1):
         indicator_list.append(None)
     else:
         indicator_1 = get_indicator_data(indicator_content_1)
         indicator_list.append(indicator_1)
 
-    indicator_2_pattern = re.compile(r'Indicator\s(2|II|Z|z):(?P<indicator2>[\s\S]+)$', re.M)
+    indicator_2_pattern = re.compile(r'Indicator\s(2|II|Z|z):(?P<indicator1>[\s\S]+)$', re.M)
     search_result = indicator_2_pattern.search(indicators)
 
     if search_result is None:
         # this shouldn't happen now
         return None
 
-    indicator_content_2 = search_result.group('indicator2')
+    indicator_content_2 = search_result.group('indicator1')
     if check_blank_indicator(indicator_content_2):
         indicator_list.append(None)
     else:
@@ -228,7 +231,8 @@ def get_indicators(text: str) -> Optional[list]:
 def get_subfields(text: str) -> Optional[list]:
     subfields: [Subfield] = []
 
-    subfield_section_pattern = re.compile(r'^\s*Subfields\s+([\s\S]+)^\s*Notes?\s*on\s*(sub)?field\s*contents?', re.I | re.M)
+    subfield_section_pattern = re.compile(r'^\s*Subfields\s+([\s\S]+)^\s*Notes?\s*on\s*(sub)?field\s*contents?',
+                                          re.I | re.M)
 
     search_result = subfield_section_pattern.search(text)
     if search_result is None:
@@ -241,21 +245,44 @@ def get_subfields(text: str) -> Optional[list]:
 
     for search_result in search_results:
         subfield = Subfield()
-        subfield.label = search_result[0]
-        subfield.name = search_result[1]
+        subfield.label = search_result[0].strip()
+        subfield.name = search_result[1].strip()
+        # subfield.description = search_result[2].strip()
         subfields.append(subfield)
 
+    # now get the description for each subfield which is inbetween the subfield name and the next subfield name
+    # this is to make sure that we don't miss the entire description in case some subfield $x is mentioned in the
+    # description
+
+    for i in range(len(subfields)):
+        subfield = subfields[i]
+        if i + 1 < len(subfields):
+            next_subfield = subfields[i + 1]
+        else:
+            next_subfield = None
+
+        subfield_mention_1 = form_regex_pattern(f'{subfield.label} {subfield.name}')
+        subfield_mention_2 = None
+
+        if next_subfield is not None:
+            subfield_mention_2 = form_regex_pattern(f'{next_subfield.label} {next_subfield.name}')
+
+        subfield_description_pattern = re.compile(rf'\s*({subfield_mention_1})\s+(?P<description>[\s\S]+?)\s*({subfield_mention_2 if next_subfield is not None else "$"})')
+        search_result = subfield_description_pattern.search(subfields_content)
+        if search_result is not None:
+            subfield.description = search_result.group('description').strip()
     return subfields
 
 
-def form_field_name_pattern(field_name: str) -> str:
+def form_regex_pattern(field_name: str) -> str:
     return (re.sub(r'\s+', ' ', field_name)
             .replace(' ', '\\s*')
             .replace('(', '\\(')
             .replace(')', '\\)')
             .replace('[', '\\[')
             .replace(']', '\\]')
-            .replace('-', '[\\-\\–]'))
+            .replace('-', '[\\-\\–]')
+            .replace('$', '\\$'))
 
 
 def get_field_text(field_name: str,
@@ -263,9 +290,8 @@ def get_field_text(field_name: str,
                    doc: fitz.Document,
                    starting_page: int,
                    max_pages: int = 580) -> Tuple[str, int]:
-
-    field_name = form_field_name_pattern(field_name)
-    next_field_name = form_field_name_pattern(next_field_name) if next_field_name is not None else None
+    field_name = form_regex_pattern(field_name)
+    next_field_name = form_regex_pattern(next_field_name) if next_field_name is not None else None
 
     field_text = ''
 
@@ -308,12 +334,13 @@ def main(field_names: [str]):
     fields: [UnimarcField] = []
 
     starting_page = 32
+    max_pages = 82
     for i in range(len(field_names)):
 
         field = UnimarcField()
 
         next_field_name = field_names[i + 1] if i + 1 < len(field_names) else None
-        field_text, starting_page = get_field_text(field_names[i], next_field_name, doc, starting_page)
+        field_text, starting_page = get_field_text(field_names[i], next_field_name, doc, starting_page, max_pages=max_pages)
 
         field.name = field_names[i]
         # FIELD DEFINITION PART
@@ -403,4 +430,4 @@ if __name__ == '__main__':
         '145 Coded Data Field: Medium of Performance',
     ]
 
-    main(fields_1xx)
+    main(fields_0xx)

@@ -1,0 +1,2516 @@
+{
+    "@context": "http://iflastandards.info/ns/unimarc/unimarcb/elements/Contexts/elements_langmap.jsonld",
+    "@graph": [
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/",
+            "@type": "ElementSet",
+            "title": {
+                "en": "UNIMARC/B elements 0XX"
+            },
+            "description": {
+                "en": ""
+            },
+            "prefix": "",
+            "token": "ub0xx",
+            "status": {
+                "@id": "http://metadataregistry.org/uri/RegStatus/1001",
+                "label": "Published"
+            },
+            "omr_api": "http://api.metadataregistry.org/elementsets/126",
+            "omr_home": "http://metadataregistry.org/elementsets/126",
+            "count": 207,
+            "languages": [
+                {
+                    "code": "en",
+                    "lang": "English",
+                    "version": "Release 1"
+                }
+            ],
+            "dateOfPublication": "April 15, 2020"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U010__6",
+            "description": {
+                "en": [
+                    "Information allowing the field to be linked for processing purposes to other fields in the record, and a code indicating the reason for the link."
+                ]
+            },
+            "label": {
+                "en": "Interfield linking data in International Standard Book Number"
+            },
+            "name": "hasInterfieldLinkingDataInInternationalStandardBookNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U010__a",
+            "description": {
+                "en": [
+                    "A correctly applied ISBN."
+                ]
+            },
+            "label": {
+                "en": "Number (ISBN) in International Standard Book Number"
+            },
+            "name": "hasNumberIsbnInInternationalStandardBookNumber",
+            "note": {
+                "en": [
+                    "Includes hyphens."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U010__b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the ISBN, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of an ISBN to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International Standard Book Number"
+            },
+            "name": "hasQualificationInInternationalStandardBookNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U010__d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in International Standard Book Number"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInInternationalStandardBookNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U010__z",
+            "description": {
+                "en": [
+                    "An ISBN that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous ISBN in International Standard Book Number"
+            },
+            "name": "hasErroneousIsbnInInternationalStandardBookNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__a",
+            "description": {
+                "en": [
+                    "A correctly applied ISSN."
+                ]
+            },
+            "label": {
+                "en": "Number (ISSN) in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasNumberIssnInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__b",
+            "description": {
+                "en": [
+                    "Information to distinguish between ISSNs."
+                ]
+            },
+            "label": {
+                "en": "Qualification in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasQualificationInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__f",
+            "description": {
+                "en": [
+                    "An ISSN designated by the ISSN network to link together various medium versions of a continuing resource."
+                ]
+            },
+            "label": {
+                "en": "ISSN-l or linking ISSN in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasIssnLOrLinkingIssnInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__g",
+            "description": {
+                "en": [
+                    "An ISSN-L incorrectly designated to a continuing resource."
+                ]
+            },
+            "label": {
+                "en": "Cancelled ISSN-l in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasCancelledIssnLInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__y",
+            "description": {
+                "en": [
+                    "Any ISSN that was formerly valid but which has been cancelled by an ISSN centre."
+                ]
+            },
+            "label": {
+                "en": "Cancelled ISSN in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasCancelledIssnInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U011__z",
+            "description": {
+                "en": [
+                    "Any incorrect ISSN or ISSN-L."
+                ]
+            },
+            "label": {
+                "en": "Erroneous ISSN or ISSN-l in ISSN (Level not specified / not applicable)"
+            },
+            "name": "hasErroneousIssnOrIssnLInIssnLevelNotSpecifiedNotApplicable"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_a",
+            "description": {
+                "en": [
+                    "A correctly applied ISSN."
+                ]
+            },
+            "label": {
+                "en": "Number (ISSN) in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasNumberIssnInIssnContinuingResourceOfInternationalOrNationalInterest",
+            "note": {
+                "en": [
+                    "Includes the hyphen between the fourth and fifth digits."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_b",
+            "description": {
+                "en": [
+                    "Information to distinguish between ISSNs."
+                ]
+            },
+            "label": {
+                "en": "Qualification in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasQualificationInIssnContinuingResourceOfInternationalOrNationalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInIssnContinuingResourceOfInternationalOrNationalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_f",
+            "description": {
+                "en": [
+                    "An ISSN designated by the ISSN network to link together various medium versions of a continuing resource."
+                ]
+            },
+            "label": {
+                "en": "ISSN-l or linking ISSN in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasIssnLOrLinkingIssnInIssnContinuingResourceOfInternationalOrNationalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_g",
+            "description": {
+                "en": [
+                    "An ISSN-L incorrectly designated to a continuing resource."
+                ]
+            },
+            "label": {
+                "en": "Cancelled ISSN-l in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasCancelledIssnLInIssnContinuingResourceOfInternationalOrNationalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_y",
+            "description": {
+                "en": [
+                    "Any ISSN that was formerly valid but which has been cancelled by an ISSN centre."
+                ]
+            },
+            "label": {
+                "en": "Cancelled ISSN in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasCancelledIssnInIssnContinuingResourceOfInternationalOrNationalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0110_z",
+            "description": {
+                "en": [
+                    "Any incorrect ISSN or ISSN-L."
+                ]
+            },
+            "label": {
+                "en": "Erroneous ISSN or ISSN-l in ISSN (Continuing resource of international or national interest)"
+            },
+            "name": "hasErroneousIssnOrIssnLInIssnContinuingResourceOfInternationalOrNationalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_a",
+            "description": {
+                "en": [
+                    "A correctly applied ISSN."
+                ]
+            },
+            "label": {
+                "en": "Number (ISSN) in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasNumberIssnInIssnContinuingResourceOfLocalInterest",
+            "note": {
+                "en": [
+                    "Includes the hyphen between the fourth and fifth digits."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_b",
+            "description": {
+                "en": [
+                    "Information to distinguish between ISSNs."
+                ]
+            },
+            "label": {
+                "en": "Qualification in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasQualificationInIssnContinuingResourceOfLocalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInIssnContinuingResourceOfLocalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_f",
+            "description": {
+                "en": [
+                    "An ISSN designated by the ISSN network to link together various medium versions of a continuing resource."
+                ]
+            },
+            "label": {
+                "en": "ISSN-l or linking ISSN in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasIssnLOrLinkingIssnInIssnContinuingResourceOfLocalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_g",
+            "description": {
+                "en": [
+                    "An ISSN-L incorrectly designated to a continuing resource."
+                ]
+            },
+            "label": {
+                "en": "Cancelled ISSN-l in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasCancelledIssnLInIssnContinuingResourceOfLocalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_y",
+            "description": {
+                "en": [
+                    "Any ISSN that was formerly valid but which has been cancelled by an ISSN centre."
+                ]
+            },
+            "label": {
+                "en": "Cancelled ISSN in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasCancelledIssnInIssnContinuingResourceOfLocalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U0111_z",
+            "description": {
+                "en": [
+                    "Any incorrect ISSN or ISSN-L."
+                ]
+            },
+            "label": {
+                "en": "Erroneous ISSN or ISSN-l in ISSN (Continuing resource of local interest)"
+            },
+            "name": "hasErroneousIssnOrIssnLInIssnContinuingResourceOfLocalInterest"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U012__2",
+            "description": {
+                "en": [
+                    "An identification of the system from which fingerprint identifier is derived."
+                ]
+            },
+            "label": {
+                "en": "Fingerprint system code in Fingerprint identifier"
+            },
+            "name": "hasFingerprintSystemCodeInFingerprintIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U012__5",
+            "description": {
+                "en": [
+                    "Name of institution."
+                ]
+            },
+            "label": {
+                "en": "Institution to which the field applies in Fingerprint identifier"
+            },
+            "name": "hasInstitutionToWhichTheFieldAppliesInFingerprintIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U012__a",
+            "description": {
+                "en": [
+                    "Calculated Fingerprint Identifier."
+                ]
+            },
+            "label": {
+                "en": "Fingerprint in Fingerprint identifier"
+            },
+            "name": "hasFingerprintInFingerprintIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U013__6",
+            "description": {
+                "en": [
+                    "Information allowing the field to be linked for processing purposes to other fields in the record, and a code indicating the reason for the link."
+                ]
+            },
+            "label": {
+                "en": "Interfield linking data in International Standard Music Number (ISMN)"
+            },
+            "name": "hasInterfieldLinkingDataInInternationalStandardMusicNumberIsmn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U013__a",
+            "description": {
+                "en": [
+                    "A correctly applied ISMN."
+                ]
+            },
+            "label": {
+                "en": "Number (ISMN) in International Standard Music Number (ISMN)"
+            },
+            "name": "hasNumberIsmnInInternationalStandardMusicNumberIsmn",
+            "note": {
+                "en": [
+                    "Includes hyphens."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U013__b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the ISMN, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of an ISMN to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International Standard Music Number (ISMN)"
+            },
+            "name": "hasQualificationInInternationalStandardMusicNumberIsmn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U013__d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in International Standard Music Number (ISMN)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInInternationalStandardMusicNumberIsmn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U013__z",
+            "description": {
+                "en": [
+                    "An ISMN that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous ISMN in International Standard Music Number (ISMN)"
+            },
+            "name": "hasErroneousIsmnInInternationalStandardMusicNumberIsmn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U014__2",
+            "description": {
+                "en": [
+                    "Identification of the system under which the identifier was constructed."
+                ]
+            },
+            "label": {
+                "en": "System code in Article identifier"
+            },
+            "name": "hasSystemCodeInArticleIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U014__a",
+            "label": {
+                "en": "Article identifier in Article identifier"
+            },
+            "name": "hasArticleIdentifierInArticleIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U014__z",
+            "label": {
+                "en": "Erroneous article identifier in Article identifier"
+            },
+            "name": "hasErroneousArticleIdentifierInArticleIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U015__a",
+            "description": {
+                "en": [
+                    "A correctly applied ISRN."
+                ]
+            },
+            "label": {
+                "en": "Number (ISRN) in International Standard Technical Report Number (ISRN)"
+            },
+            "name": "hasNumberIsrnInInternationalStandardTechnicalReportNumberIsrn",
+            "note": {
+                "en": [
+                    "Includes hyphens."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U015__b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the ISRN, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of an ISRN to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International Standard Technical Report Number (ISRN)"
+            },
+            "name": "hasQualificationInInternationalStandardTechnicalReportNumberIsrn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U015__d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in International Standard Technical Report Number (ISRN)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInInternationalStandardTechnicalReportNumberIsrn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U015__z",
+            "description": {
+                "en": [
+                    "An ISRN that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Cancelled/invalid/erroneous ISRN in International Standard Technical Report Number (ISRN)"
+            },
+            "name": "hasCancelledInvalidErroneousIsrnInInternationalStandardTechnicalReportNumberIsrn"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U016__a",
+            "description": {
+                "en": [
+                    "A correctly applied ISRC."
+                ]
+            },
+            "label": {
+                "en": "Number (ISRC) in International Standard Recording Code (ISRC)"
+            },
+            "name": "hasNumberIsrcInInternationalStandardRecordingCodeIsrc",
+            "note": {
+                "en": [
+                    "Includes hyphens."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U016__b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the ISRC, usually an indication of the relationship of an ISRC to a particular expression."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International Standard Recording Code (ISRC)"
+            },
+            "name": "hasQualificationInInternationalStandardRecordingCodeIsrc"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U016__d",
+            "label": {
+                "en": "Terms of availability and/or price [obsolete] in International Standard Recording Code (ISRC)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceObsoleteInInternationalStandardRecordingCodeIsrc",
+            "note": {
+                "en": [
+                    "The ISRC does not identify a manifestation."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U016__z",
+            "description": {
+                "en": [
+                    "An ISRC that has been identified as being erroneously applied to a recording or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous ISRC in International Standard Recording Code (ISRC)"
+            },
+            "name": "hasErroneousIsrcInInternationalStandardRecordingCodeIsrc"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U017702",
+            "description": {
+                "en": [
+                    "Type of code."
+                ]
+            },
+            "label": {
+                "en": "Source of code in Other standard identifier (Source specified in subfield $6) (No information provided)"
+            },
+            "name": "hasSourceOfCodeInOtherStandardIdentifierSourceSpecifiedInSubfield$6NoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01770a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Other standard identifier (Source specified in subfield $2) (No information provided)"
+            },
+            "name": "hasStandardNumberInOtherStandardIdentifierSourceSpecifiedInSubfield$2NoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01770b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Other standard identifier (Source specified in subfield $3) (No information provided)"
+            },
+            "name": "hasQualificationInOtherStandardIdentifierSourceSpecifiedInSubfield$3NoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01770d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Other standard identifier (Source specified in subfield $4) (No information provided)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInOtherStandardIdentifierSourceSpecifiedInSubfield$4NoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01770z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Other standard identifier (Source specified in subfield $5) (No information provided)"
+            },
+            "name": "hasErroneousNumberOrCodeInOtherStandardIdentifierSourceSpecifiedInSubfield$5NoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U017712",
+            "description": {
+                "en": [
+                    "Type of code."
+                ]
+            },
+            "label": {
+                "en": "Source of code in Other standard identifier (Source specified in subfield $6) (No difference)"
+            },
+            "name": "hasSourceOfCodeInOtherStandardIdentifierSourceSpecifiedInSubfield$6NoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01771a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Other standard identifier (Source specified in subfield $2) (No difference)"
+            },
+            "name": "hasStandardNumberInOtherStandardIdentifierSourceSpecifiedInSubfield$2NoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01771b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Other standard identifier (Source specified in subfield $3) (No difference)"
+            },
+            "name": "hasQualificationInOtherStandardIdentifierSourceSpecifiedInSubfield$3NoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01771d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Other standard identifier (Source specified in subfield $4) (No difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInOtherStandardIdentifierSourceSpecifiedInSubfield$4NoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01771z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Other standard identifier (Source specified in subfield $5) (No difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInOtherStandardIdentifierSourceSpecifiedInSubfield$5NoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U017722",
+            "description": {
+                "en": [
+                    "Type of code."
+                ]
+            },
+            "label": {
+                "en": "Source of code in Other standard identifier (Source specified in subfield $6) (Difference)"
+            },
+            "name": "hasSourceOfCodeInOtherStandardIdentifierSourceSpecifiedInSubfield$6Difference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01772a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Other standard identifier (Source specified in subfield $2) (Difference)"
+            },
+            "name": "hasStandardNumberInOtherStandardIdentifierSourceSpecifiedInSubfield$2Difference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01772b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Other standard identifier (Source specified in subfield $3) (Difference)"
+            },
+            "name": "hasQualificationInOtherStandardIdentifierSourceSpecifiedInSubfield$3Difference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01772d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Other standard identifier (Source specified in subfield $4) (Difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInOtherStandardIdentifierSourceSpecifiedInSubfield$4Difference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01772z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Other standard identifier (Source specified in subfield $5) (Difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInOtherStandardIdentifierSourceSpecifiedInSubfield$5Difference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U017802",
+            "description": {
+                "en": [
+                    "Type of code."
+                ]
+            },
+            "label": {
+                "en": "Source of code in Other standard identifier (Unspecified type of standard number) (No information provided)"
+            },
+            "name": "hasSourceOfCodeInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01780a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Other standard identifier (Unspecified type of standard number) (No information provided)"
+            },
+            "name": "hasStandardNumberInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01780b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Other standard identifier (Unspecified type of standard number) (No information provided)"
+            },
+            "name": "hasQualificationInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01780d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Other standard identifier (Unspecified type of standard number) (No information provided)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01780z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Other standard identifier (Unspecified type of standard number) (No information provided)"
+            },
+            "name": "hasErroneousNumberOrCodeInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U017812",
+            "description": {
+                "en": [
+                    "Type of code."
+                ]
+            },
+            "label": {
+                "en": "Source of code in Other standard identifier (Unspecified type of standard number) (No difference)"
+            },
+            "name": "hasSourceOfCodeInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01781a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Other standard identifier (Unspecified type of standard number) (No difference)"
+            },
+            "name": "hasStandardNumberInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01781b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Other standard identifier (Unspecified type of standard number) (No difference)"
+            },
+            "name": "hasQualificationInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01781d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Other standard identifier (Unspecified type of standard number) (No difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01781z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Other standard identifier (Unspecified type of standard number) (No difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U017822",
+            "description": {
+                "en": [
+                    "Type of code."
+                ]
+            },
+            "label": {
+                "en": "Source of code in Other standard identifier (Unspecified type of standard number) (Difference)"
+            },
+            "name": "hasSourceOfCodeInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01782a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Other standard identifier (Unspecified type of standard number) (Difference)"
+            },
+            "name": "hasStandardNumberInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01782b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Other standard identifier (Unspecified type of standard number) (Difference)"
+            },
+            "name": "hasQualificationInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01782d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Other standard identifier (Unspecified type of standard number) (Difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U01782z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Other standard identifier (Unspecified type of standard number) (Difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInOtherStandardIdentifierUnspecifiedTypeOfStandardNumberDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U020__a",
+            "description": {
+                "en": [
+                    "An identification of the country of the national bibliography."
+                ]
+            },
+            "label": {
+                "en": "Country code in National bibliography number"
+            },
+            "name": "hasCountryCodeInNationalBibliographyNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U020__b",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Number in National bibliography number"
+            },
+            "name": "hasNumberInNationalBibliographyNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U020__z",
+            "description": {
+                "en": [
+                    "A number erroneously assigned."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number in National bibliography number"
+            },
+            "name": "hasErroneousNumberInNationalBibliographyNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U021__a",
+            "description": {
+                "en": [
+                    "An identification of the country of the legal deposit agency assigning the number."
+                ]
+            },
+            "label": {
+                "en": "Country code in Legal deposit number"
+            },
+            "name": "hasCountryCodeInLegalDepositNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U021__b",
+            "description": {
+                "en": [
+                    "Number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Number in Legal deposit number"
+            },
+            "name": "hasNumberInLegalDepositNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U021__z",
+            "description": {
+                "en": [
+                    "A number erroneously assigned to an item."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number in Legal deposit number"
+            },
+            "name": "hasErroneousNumberInLegalDepositNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U022__a",
+            "description": {
+                "en": [
+                    "An identification of the country in which the item is published."
+                ]
+            },
+            "label": {
+                "en": "Country code in Government publication number"
+            },
+            "name": "hasCountryCodeInGovernmentPublicationNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U022__b",
+            "description": {
+                "en": [
+                    "The number as assigned by the government body."
+                ]
+            },
+            "label": {
+                "en": "Number in Government publication number"
+            },
+            "name": "hasNumberInGovernmentPublicationNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U022__z",
+            "description": {
+                "en": [
+                    "A number erroneously assigned to a government publication."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number in Government publication number"
+            },
+            "name": "hasErroneousNumberInGovernmentPublicationNumber"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U033__a",
+            "label": {
+                "en": "Persistent record identifier in Other system persistent record identifier"
+            },
+            "name": "hasPersistentRecordIdentifierInOtherSystemPersistentRecordIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U033__z",
+            "label": {
+                "en": "Cancelled or invalid persistent record identifier in Other system persistent record identifier"
+            },
+            "name": "hasCancelledOrInvalidPersistentRecordIdentifierInOtherSystemPersistentRecordIdentifier"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U035__a",
+            "description": {
+                "en": [
+                    "The organisation in parentheses followed by the system control number for the record in that organisation’s database."
+                ]
+            },
+            "label": {
+                "en": "System control number in Other system control numbers"
+            },
+            "name": "hasSystemControlNumberInOtherSystemControlNumbers"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U035__z",
+            "label": {
+                "en": "Cancelled or invalid control number in Other system control numbers"
+            },
+            "name": "hasCancelledOrInvalidControlNumberInOtherSystemControlNumbers"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__2",
+            "description": {
+                "en": [
+                    "A code that specifies the system used to code the musical notation."
+                ]
+            },
+            "label": {
+                "en": "System code for musical notation in Music incipit"
+            },
+            "name": "hasSystemCodeForMusicalNotationInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__a",
+            "description": {
+                "en": [
+                    "A code indicating the work to which the incipit refers, if a set of compositions (e.g. six sonatas) is entirely described in a single record, without the use of piece-analytic level records."
+                ]
+            },
+            "label": {
+                "en": "Number of work in Music incipit"
+            },
+            "name": "hasNumberOfWorkInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__b",
+            "description": {
+                "en": [
+                    "A code indicating the movement within a work to which the incipit refers."
+                ]
+            },
+            "label": {
+                "en": "Number of movement in Music incipit"
+            },
+            "name": "hasNumberOfMovementInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__c",
+            "description": {
+                "en": [
+                    "A code distinguishing different incipits referring to the same movement."
+                ]
+            },
+            "label": {
+                "en": "Number of incipit in Music incipit"
+            },
+            "name": "hasNumberOfIncipitInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__d",
+            "description": {
+                "en": [
+                    "The voice or instrument."
+                ]
+            },
+            "label": {
+                "en": "Voice/instrument in Music incipit"
+            },
+            "name": "hasVoiceInstrumentInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__e",
+            "description": {
+                "en": [
+                    "The name of the character singing the incipit."
+                ]
+            },
+            "label": {
+                "en": "Role in Music incipit"
+            },
+            "name": "hasRoleInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__f",
+            "description": {
+                "en": [
+                    "Caption or heading of the movement, as it appears on the source."
+                ]
+            },
+            "label": {
+                "en": "Movement caption/heading in Music incipit"
+            },
+            "name": "hasMovementCaptionHeadingInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__g",
+            "description": {
+                "en": [
+                    "The key or mode of the movement."
+                ]
+            },
+            "label": {
+                "en": "Key or mode in Music incipit"
+            },
+            "name": "hasKeyOrModeInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__m",
+            "description": {
+                "en": [
+                    "A code indicating the clef."
+                ]
+            },
+            "label": {
+                "en": "Clef in Music incipit"
+            },
+            "name": "hasClefInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__n",
+            "label": {
+                "en": "Key signature in Music incipit"
+            },
+            "name": "hasKeySignatureInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__o",
+            "description": {
+                "en": [
+                    "The time value or mensuration sign reported on the staff."
+                ]
+            },
+            "label": {
+                "en": "Time signature in Music incipit"
+            },
+            "name": "hasTimeSignatureInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__p",
+            "label": {
+                "en": "Musical notation in Music incipit"
+            },
+            "name": "hasMusicalNotationInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__q",
+            "description": {
+                "en": [
+                    "Free-text note."
+                ]
+            },
+            "label": {
+                "en": "Comments (free text) in Music incipit"
+            },
+            "name": "hasCommentsFreeTextInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__r",
+            "description": {
+                "en": [
+                    "A code indicating a comment note."
+                ]
+            },
+            "label": {
+                "en": "Codified note in Music incipit"
+            },
+            "name": "hasCodifiedNoteInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__t",
+            "description": {
+                "en": [
+                    "The literary text (if present) as it appears on the source."
+                ]
+            },
+            "label": {
+                "en": "Text incipit in Music incipit"
+            },
+            "name": "hasTextIncipitInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__u",
+            "description": {
+                "en": [
+                    "The Uniform Resource Identifier (URI) which provides electronic access data to an incipit in digital format."
+                ]
+            },
+            "label": {
+                "en": "Uniform Resource Identifier in Music incipit"
+            },
+            "name": "hasUniformResourceIdentifierInMusicIncipit",
+            "note": {
+                "en": [
+                    "Includes a URL or URN."
+                ]
+            }
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U036__z",
+            "description": {
+                "en": [
+                    "Coded identification of the language of the incipit."
+                ]
+            },
+            "label": {
+                "en": "Language of text in Music incipit"
+            },
+            "name": "hasLanguageOfTextInMusicIncipit"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U040__a",
+            "description": {
+                "en": [
+                    "The six character code of which the last character is an alphanumeric digit."
+                ]
+            },
+            "label": {
+                "en": "CODEN in CODEN (serials)"
+            },
+            "name": "hasCodenInCodenSerials"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U040__z",
+            "description": {
+                "en": [
+                    "A CODEN that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous CODEN in CODEN (serials)"
+            },
+            "name": "hasErroneousCodenInCodenSerials"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07100a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Sound recording: issue number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberSoundRecordingIssueNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07100b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Sound recording: issue number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberSoundRecordingIssueNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07100c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Sound recording: issue number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberSoundRecordingIssueNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07100d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Sound recording: issue number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberSoundRecordingIssueNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07100z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Sound recording: issue number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberSoundRecordingIssueNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07101a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Sound recording: issue number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberSoundRecordingIssueNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07101b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Sound recording: issue number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberSoundRecordingIssueNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07101c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Sound recording: issue number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberSoundRecordingIssueNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07101d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Sound recording: issue number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberSoundRecordingIssueNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07101z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Sound recording: issue number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberSoundRecordingIssueNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07110a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Sound recording: matrix number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberSoundRecordingMatrixNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07110b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Sound recording: matrix number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberSoundRecordingMatrixNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07110c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Sound recording: matrix number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberSoundRecordingMatrixNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07110d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Sound recording: matrix number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberSoundRecordingMatrixNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07110z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Sound recording: matrix number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberSoundRecordingMatrixNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07111a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Sound recording: matrix number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberSoundRecordingMatrixNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07111b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Sound recording: matrix number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberSoundRecordingMatrixNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07111c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Sound recording: matrix number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberSoundRecordingMatrixNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07111d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Sound recording: matrix number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberSoundRecordingMatrixNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07111z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Sound recording: matrix number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberSoundRecordingMatrixNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07120a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Printed music: plate number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberPrintedMusicPlateNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07120b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Printed music: plate number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberPrintedMusicPlateNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07120c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Printed music: plate number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberPrintedMusicPlateNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07120d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Printed music: plate number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberPrintedMusicPlateNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07120z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Printed music: plate number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberPrintedMusicPlateNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07121a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Printed music: plate number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberPrintedMusicPlateNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07121b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Printed music: plate number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberPrintedMusicPlateNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07121c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Printed music: plate number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberPrintedMusicPlateNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07121d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Printed music: plate number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberPrintedMusicPlateNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07121z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Printed music: plate number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberPrintedMusicPlateNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07130a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Printed music: other publisher's number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberPrintedMusicOtherPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07130b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Printed music: other publisher's number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberPrintedMusicOtherPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07130c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Printed music: other publisher's number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberPrintedMusicOtherPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07130d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Printed music: other publisher's number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberPrintedMusicOtherPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07130z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Printed music: other publisher's number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberPrintedMusicOtherPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07131a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Printed music: other publisher's number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberPrintedMusicOtherPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07131b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Printed music: other publisher's number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberPrintedMusicOtherPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07131c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Printed music: other publisher's number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberPrintedMusicOtherPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07131d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Printed music: other publisher's number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberPrintedMusicOtherPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07131z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Printed music: other publisher's number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberPrintedMusicOtherPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07140a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Video recording number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberVideoRecordingNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07140b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Video recording number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberVideoRecordingNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07140c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Video recording number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberVideoRecordingNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07140d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Video recording number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberVideoRecordingNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07140z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Video recording number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberVideoRecordingNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07141a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Video recording number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberVideoRecordingNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07141b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Video recording number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberVideoRecordingNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07141c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Video recording number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberVideoRecordingNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07141d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Video recording number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberVideoRecordingNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07141z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Video recording number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberVideoRecordingNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07150a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Other type of publisher's number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberOtherTypeOfPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07150b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Other type of publisher's number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberOtherTypeOfPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07150c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Other type of publisher's number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberOtherTypeOfPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07150d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Other type of publisher's number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberOtherTypeOfPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07150z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Other type of publisher's number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberOtherTypeOfPublishersNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07151a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Other type of publisher's number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberOtherTypeOfPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07151b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Other type of publisher's number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberOtherTypeOfPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07151c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Other type of publisher's number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberOtherTypeOfPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07151d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Other type of publisher's number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberOtherTypeOfPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07151z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Other type of publisher's number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberOtherTypeOfPublishersNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07160a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Electronic resource number) (Do not make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberElectronicResourceNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07160b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Electronic resource number) (Do not make a note)"
+            },
+            "name": "hasSourceInPublishersNumberElectronicResourceNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07160c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Electronic resource number) (Do not make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberElectronicResourceNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07160d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Electronic resource number) (Do not make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberElectronicResourceNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07160z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Electronic resource number) (Do not make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberElectronicResourceNumberDoNotMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07161a",
+            "description": {
+                "en": [
+                    "The number as assigned by the agency."
+                ]
+            },
+            "label": {
+                "en": "Publisher's number in Publisher's number (Electronic resource number) (Make a note)"
+            },
+            "name": "hasPublishersNumberInPublishersNumberElectronicResourceNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07161b",
+            "description": {
+                "en": [
+                    "The agency which assigned the number."
+                ]
+            },
+            "label": {
+                "en": "Source in Publisher's number (Electronic resource number) (Make a note)"
+            },
+            "name": "hasSourceInPublishersNumberElectronicResourceNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07161c",
+            "description": {
+                "en": [
+                    "Information to distinguish between numbers if a record contains more than one publisher number."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Publisher's number (Electronic resource number) (Make a note)"
+            },
+            "name": "hasQualificationInPublishersNumberElectronicResourceNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07161d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Publisher's number (Electronic resource number) (Make a note)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInPublishersNumberElectronicResourceNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U07161z",
+            "description": {
+                "en": [
+                    "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous publisher's number in Publisher's number (Electronic resource number) (Make a note)"
+            },
+            "name": "hasErroneousPublishersNumberInPublishersNumberElectronicResourceNumberMakeANote"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_0a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Universal product code (UPC) (No information provided)"
+            },
+            "name": "hasStandardNumberInUniversalProductCodeUpcNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_0b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Universal product code (UPC) (No information provided)"
+            },
+            "name": "hasQualificationInUniversalProductCodeUpcNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_0c",
+            "description": {
+                "en": [
+                    "Any coded suffix to the identifier."
+                ]
+            },
+            "label": {
+                "en": "Additional codes following standard number or codes in Universal product code (UPC) (No information provided)"
+            },
+            "name": "hasAdditionalCodesFollowingStandardNumberOrCodesInUniversalProductCodeUpcNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_0d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Universal product code (UPC) (No information provided)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInUniversalProductCodeUpcNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_0z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Universal product code (UPC) (No information provided)"
+            },
+            "name": "hasErroneousNumberOrCodeInUniversalProductCodeUpcNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_1a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Universal product code (UPC) (No difference)"
+            },
+            "name": "hasStandardNumberInUniversalProductCodeUpcNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_1b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Universal product code (UPC) (No difference)"
+            },
+            "name": "hasQualificationInUniversalProductCodeUpcNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_1c",
+            "description": {
+                "en": [
+                    "Any coded suffix to the identifier."
+                ]
+            },
+            "label": {
+                "en": "Additional codes following standard number or codes in Universal product code (UPC) (No difference)"
+            },
+            "name": "hasAdditionalCodesFollowingStandardNumberOrCodesInUniversalProductCodeUpcNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_1d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Universal product code (UPC) (No difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInUniversalProductCodeUpcNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_1z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Universal product code (UPC) (No difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInUniversalProductCodeUpcNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_2a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in Universal product code (UPC) (Difference)"
+            },
+            "name": "hasStandardNumberInUniversalProductCodeUpcDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_2b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in Universal product code (UPC) (Difference)"
+            },
+            "name": "hasQualificationInUniversalProductCodeUpcDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_2c",
+            "description": {
+                "en": [
+                    "Any coded suffix to the identifier."
+                ]
+            },
+            "label": {
+                "en": "Additional codes following standard number or codes in Universal product code (UPC) (Difference)"
+            },
+            "name": "hasAdditionalCodesFollowingStandardNumberOrCodesInUniversalProductCodeUpcDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_2d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in Universal product code (UPC) (Difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInUniversalProductCodeUpcDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U072_2z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in Universal product code (UPC) (Difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInUniversalProductCodeUpcDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_0a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in International article number (EAN) (No information provided)"
+            },
+            "name": "hasStandardNumberInInternationalArticleNumberEanNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_0b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International article number (EAN) (No information provided)"
+            },
+            "name": "hasQualificationInInternationalArticleNumberEanNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_0c",
+            "description": {
+                "en": [
+                    "Any coded suffix to the identifier."
+                ]
+            },
+            "label": {
+                "en": "Additional codes following standard number or codes in International article number (EAN) (No information provided)"
+            },
+            "name": "hasAdditionalCodesFollowingStandardNumberOrCodesInInternationalArticleNumberEanNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_0d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in International article number (EAN) (No information provided)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInInternationalArticleNumberEanNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_0z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in International article number (EAN) (No information provided)"
+            },
+            "name": "hasErroneousNumberOrCodeInInternationalArticleNumberEanNoInformationProvided"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_1a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in International article number (EAN) (No difference)"
+            },
+            "name": "hasStandardNumberInInternationalArticleNumberEanNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_1b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International article number (EAN) (No difference)"
+            },
+            "name": "hasQualificationInInternationalArticleNumberEanNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_1c",
+            "description": {
+                "en": [
+                    "Any coded suffix to the identifier."
+                ]
+            },
+            "label": {
+                "en": "Additional codes following standard number or codes in International article number (EAN) (No difference)"
+            },
+            "name": "hasAdditionalCodesFollowingStandardNumberOrCodesInInternationalArticleNumberEanNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_1d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in International article number (EAN) (No difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInInternationalArticleNumberEanNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_1z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in International article number (EAN) (No difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInInternationalArticleNumberEanNoDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_2a",
+            "description": {
+                "en": [
+                    "A correctly formatted standard number or code."
+                ]
+            },
+            "label": {
+                "en": "Standard number in International article number (EAN) (Difference)"
+            },
+            "name": "hasStandardNumberInInternationalArticleNumberEanDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_2b",
+            "description": {
+                "en": [
+                    "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+                ]
+            },
+            "label": {
+                "en": "Qualification in International article number (EAN) (Difference)"
+            },
+            "name": "hasQualificationInInternationalArticleNumberEanDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_2c",
+            "description": {
+                "en": [
+                    "Any coded suffix to the identifier."
+                ]
+            },
+            "label": {
+                "en": "Additional codes following standard number or codes in International article number (EAN) (Difference)"
+            },
+            "name": "hasAdditionalCodesFollowingStandardNumberOrCodesInInternationalArticleNumberEanDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_2d",
+            "description": {
+                "en": [
+                    "The price of the item and any comment on its availability."
+                ]
+            },
+            "label": {
+                "en": "Terms of availability and/or price in International article number (EAN) (Difference)"
+            },
+            "name": "hasTermsOfAvailabilityAndOrPriceInInternationalArticleNumberEanDifference"
+        },
+        {
+            "@id": "http://iflastandards.info/ns/unimarc/unimarcb/elements/0XX/U073_2z",
+            "description": {
+                "en": [
+                    "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+                ]
+            },
+            "label": {
+                "en": "Erroneous number or code in International article number (EAN) (Difference)"
+            },
+            "name": "hasErroneousNumberOrCodeInInternationalArticleNumberEanDifference"
+        }
+    ]
+}
