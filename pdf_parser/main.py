@@ -1,11 +1,18 @@
-from typing import Optional, Tuple
+from typing import Optional, Tuple, Union, List
 import fitz
 import re
+import json
 
 HEADER_FOOTER_PATTERN = re.compile(r'^(UNIMARC\sManual\s+[\w\-]{3}|[\w\-]{3}\s+UNIMARC\sManual)\s+'
                                    r'(UNIMARC\sBibliographic,\s3rd\sedition\s+\d{4}'
                                    r'|\d{4}\s+UNIMARC\sBibliographic,\s3rd\sedition)\s+'
                                    r'\d{2,3}', re.I)
+
+
+# this function saves a list of UnimarcField objects to a json file
+def save_to_json_file(file_name, data):
+    with open(file_name, 'w') as outfile:
+        json.dump(data, outfile, indent=4)
 
 
 class UnimarcField:
@@ -15,12 +22,29 @@ class UnimarcField:
         self.optional = None
         self.repeatable = None
         self.indicators = None
+        self.subfields = None
 
     def __str__(self):
         return f'{self.name}\n{self.definition}\n{self.optional}\n{self.repeatable}'
 
     def __repr__(self):
         return f'\n{self.name}:\n{self.definition}\n{"Optional" if self.optional else "Mandatory"}\n{"Repeatable" if self.repeatable else "Not repeatable"}'
+
+    def to_json(self):
+        return {
+            'tag': self.name[:3],
+            'label': self.name[4:],
+            'definition': self.definition,
+            'optional': self.optional,
+            'repeatable': self.repeatable,
+            'indicator1': self.indicators[0].to_json() if self.indicators is not None
+                                                          and self.indicators[0] is not None else None,
+            'indicator2': self.indicators[1].to_json() if self.indicators is not None
+                                                          and self.indicators[1] is not None else None,
+            'subfields': {
+                s.id: s.to_json() for s in filter(lambda x: x is not None, self.subfields)
+            } if self.subfields is not None else None
+        }
 
 
 class Indicator:
@@ -38,6 +62,13 @@ class Indicator:
 
     def __repr__(self):
         return f'\n{self.label}: {self.description}\n{self.codes}'
+
+    def to_json(self):
+        return {
+            'label': self.label,
+            'description': self.description,
+            'codes': {c.id: c.label for c in self.codes}
+        }
 
 
 class Code:
@@ -58,20 +89,41 @@ class Position:
         self.end = None
         self.codes = None
 
+    def __str__(self):
+        return f'{self.start} - {self.end}'
+
+    def __repr__(self):
+        return f'{self.start} - {self.end}: {self.codes}'
+
+    def to_json(self):
+        return {
+            'start': self.start,
+            'end': self.end,
+            'codes': [c.to_json() for c in self.codes]
+        }
+
 
 class Subfield:
     def __init__(self):
+        self.id = None
         self.label = None
-        self.name = None
         self.description = None
         self.repeatable = None
         self.positions = None
 
     def __str__(self):
-        return f'{self.label} - {self.name}'
+        return f'{self.id} - {self.label}'
 
     def __repr__(self):
-        return f'{self.label} - {self.name}: {self.description}'
+        return f'{self.id} - {self.label}: {self.description}'
+
+    def to_json(self):
+        return {
+            'label': self.label,
+            'description': self.description,
+            'repeatable': self.repeatable,
+            'positions': [p.to_json() for p in self.positions] if self.positions is not None else None
+        }
 
 
 def get_occurrence(text: str) -> (bool, bool):
@@ -166,11 +218,11 @@ def get_indicator_data(indicator_content: str) -> Optional[Indicator]:
     search_result = indicator_pattern.search(indicator_content)
     if search_result is not None:
         indicator_data.description = search_result.group('description')
-
-    indicator_pattern = re.compile(r'^(?P<description>[\s\S]+)\s+0[\s\S]+$', re.M)
-    search_result = indicator_pattern.search(indicator_content)
-    if search_result is not None:
-        indicator_data.description = search_result.group('description')
+    else:
+        indicator_pattern = re.compile(r'^(?P<description>[\s\S]+)\s+0[\s\S]+$', re.M)
+        search_result = indicator_pattern.search(indicator_content)
+        if search_result is not None:
+            indicator_data.description = search_result.group('description')
 
     if indicator_data.description is not None:
         indicator_content = indicator_content.replace(indicator_data.description, '', 1).strip()
@@ -179,14 +231,14 @@ def get_indicator_data(indicator_content: str) -> Optional[Indicator]:
     return indicator_data
 
 
-def get_indicators(text: str) -> Optional[list]:
+def get_indicators(text: str) -> Tuple[Optional[Indicator], Optional[Indicator]]:
     indicator_list: [Indicator] = []
 
     indicators_pattern = re.compile(r'^Indicators\s+([\s\S]+)Subfields', re.M)
     search_result = indicators_pattern.search(text)
     if search_result is None:
         # in this case, there's probably something wrong with parsing
-        return None
+        return None, None
 
     indicators = search_result.group(1)
 
@@ -202,7 +254,7 @@ def get_indicators(text: str) -> Optional[list]:
 
     if search_result is None:
         # this shouldn't happen now
-        return None
+        return None, None
 
     indicator_content_1 = search_result.group('indicator0')
     if check_blank_indicator(indicator_content_1):
@@ -216,7 +268,7 @@ def get_indicators(text: str) -> Optional[list]:
 
     if search_result is None:
         # this shouldn't happen now
-        return None
+        return None, None
 
     indicator_content_2 = search_result.group('indicator1')
     if check_blank_indicator(indicator_content_2):
@@ -245,8 +297,8 @@ def get_subfields(text: str) -> Optional[list]:
 
     for search_result in search_results:
         subfield = Subfield()
-        subfield.label = search_result[0].strip()
-        subfield.name = search_result[1].strip()
+        subfield.id = search_result[0].strip()
+        subfield.label = search_result[1].strip()
         # subfield.description = search_result[2].strip()
         subfields.append(subfield)
 
@@ -261,13 +313,14 @@ def get_subfields(text: str) -> Optional[list]:
         else:
             next_subfield = None
 
-        subfield_mention_1 = form_regex_pattern(f'{subfield.label} {subfield.name}')
+        subfield_mention_1 = form_regex_pattern(f'{subfield.id} {subfield.label}')
         subfield_mention_2 = None
 
         if next_subfield is not None:
-            subfield_mention_2 = form_regex_pattern(f'{next_subfield.label} {next_subfield.name}')
+            subfield_mention_2 = form_regex_pattern(f'{next_subfield.id} {next_subfield.label}')
 
-        subfield_description_pattern = re.compile(rf'\s*({subfield_mention_1})\s+(?P<description>[\s\S]+?)\s*({subfield_mention_2 if next_subfield is not None else "$"})')
+        subfield_description_pattern = re.compile(
+            rf'\s*({subfield_mention_1})\s+(?P<description>[\s\S]+?)\s*({subfield_mention_2 if next_subfield is not None else "$"})')
         search_result = subfield_description_pattern.search(subfields_content)
         if search_result is not None:
             subfield.description = search_result.group('description').strip()
@@ -329,8 +382,8 @@ def get_field_text(field_name: str,
     return field_text, i
 
 
-def main(field_names: [str]):
-    doc = fitz.open('unimarc-b.pdf')
+def parse(field_names: [str]):
+    doc = fitz.open('pdf_parser/unimarc-b.pdf')
     fields: [UnimarcField] = []
 
     starting_page = 32
@@ -340,7 +393,8 @@ def main(field_names: [str]):
         field = UnimarcField()
 
         next_field_name = field_names[i + 1] if i + 1 < len(field_names) else None
-        field_text, starting_page = get_field_text(field_names[i], next_field_name, doc, starting_page, max_pages=max_pages)
+        field_text, starting_page = get_field_text(field_names[i], next_field_name, doc, starting_page,
+                                                   max_pages=max_pages)
 
         field.name = field_names[i]
         # FIELD DEFINITION PART
@@ -374,8 +428,7 @@ def main(field_names: [str]):
         subfields = get_subfields(field_text)
         field.subfields = subfields
 
-    for field in fields:
-        print(field.name, field.subfields)
+    return fields
 
 
 if __name__ == '__main__':
@@ -430,4 +483,6 @@ if __name__ == '__main__':
         '145 Coded Data Field: Medium of Performance',
     ]
 
-    main(fields_0xx)
+    fields = parse(fields_0xx)
+    field_list = [f.to_json() for f in fields]
+    save_to_json_file('pdf_parser/fields.json', field_list)

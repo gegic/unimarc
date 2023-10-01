@@ -1,0 +1,499 @@
+{
+    "010": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "6": {
+                "label": "Interfield linking data in International Standard Book Number",
+                "description": "Information allowing the field to be linked for processing purposes to other fields in the record, and a code indicating the reason for the link."
+            },
+            "a": {
+                "label": "Number (ISBN) in International Standard Book Number",
+                "description": "A correctly applied ISBN."
+            },
+            "b": {
+                "label": "Qualification in International Standard Book Number",
+                "description": "An indication of the scope of the ISBN, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of an ISBN to a set or to a particular volume."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in International Standard Book Number",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Erroneous ISBN in International Standard Book Number",
+                "description": "An ISBN that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    },
+    "011": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": "Level not specified / not applicable",
+                "0": "Continuing resource of international or national interest",
+                "1": "Continuing resource of local interest"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISSN) in ISSN (Continuing resource of local interest)",
+                "description": "A correctly applied ISSN."
+            },
+            "b": {
+                "label": "Qualification in ISSN (Continuing resource of local interest)",
+                "description": "Information to distinguish between ISSNs."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in ISSN (Continuing resource of local interest)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "f": {
+                "label": "ISSN-l or linking ISSN in ISSN (Continuing resource of local interest)",
+                "description": "An ISSN designated by the ISSN network to link together various medium versions of a continuing resource."
+            },
+            "g": {
+                "label": "Cancelled ISSN-l in ISSN (Continuing resource of local interest)",
+                "description": "An ISSN-L incorrectly designated to a continuing resource."
+            },
+            "y": {
+                "label": "Cancelled ISSN in ISSN (Continuing resource of local interest)",
+                "description": "Any ISSN that was formerly valid but which has been cancelled by an ISSN centre."
+            },
+            "z": {
+                "label": "Erroneous ISSN or ISSN-l in ISSN (Continuing resource of local interest)",
+                "description": "Any incorrect ISSN or ISSN-L."
+            }
+        }
+    },
+    "012": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "Fingerprint system code in Fingerprint identifier",
+                "description": "An identification of the system from which fingerprint identifier is derived."
+            },
+            "5": {
+                "label": "Institution to which the field applies in Fingerprint identifier",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "Fingerprint in Fingerprint identifier",
+                "description": "Calculated Fingerprint Identifier."
+            }
+        }
+    },
+    "013": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "6": {
+                "label": "Interfield linking data in International Standard Music Number (ISMN)",
+                "description": "Information allowing the field to be linked for processing purposes to other fields in the record, and a code indicating the reason for the link."
+            },
+            "a": {
+                "label": "Number (ISMN) in International Standard Music Number (ISMN)",
+                "description": "A correctly applied ISMN."
+            },
+            "b": {
+                "label": "Qualification in International Standard Music Number (ISMN)",
+                "description": "An indication of the scope of the ISMN, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of an ISMN to a set or to a particular volume."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in International Standard Music Number (ISMN)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Erroneous ISMN in International Standard Music Number (ISMN)",
+                "description": "An ISMN that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    },
+    "014": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "System code in Article identifier",
+                "description": "Identification of the system under which the identifier was constructed."
+            },
+            "a": {
+                "label": "Article identifier in Article identifier",
+                "description": ""
+            },
+            "z": {
+                "label": "Erroneous article identifier in Article identifier",
+                "description": ""
+            }
+        }
+    },
+    "015": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISRN) in International Standard Technical Report Number (ISRN)",
+                "description": "A correctly applied ISRN."
+            },
+            "b": {
+                "label": "Qualification in International Standard Technical Report Number (ISRN)",
+                "description": "An indication of the scope of the ISRN, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of an ISRN to a set or to a particular volume."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in International Standard Technical Report Number (ISRN)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Cancelled/invalid/erroneous ISRN in International Standard Technical Report Number (ISRN)",
+                "description": "An ISRN that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    },
+    "016": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISRC) in International Standard Recording Code (ISRC)",
+                "description": "A correctly applied ISRC."
+            },
+            "b": {
+                "label": "Qualification in International Standard Recording Code (ISRC)",
+                "description": "An indication of the scope of the ISRC, usually an indication of the relationship of an ISRC to a particular expression."
+            },
+            "d": {
+                "label": "Terms of availability and/or price [obsolete] in International Standard Recording Code (ISRC)",
+                "description": ""
+            },
+            "z": {
+                "label": "Erroneous ISRC in International Standard Recording Code (ISRC)",
+                "description": "An ISRC that has been identified as being erroneously applied to a recording or is otherwise invalid."
+            }
+        }
+    },
+    "017": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "7": [
+                    "Source specified in subfield $6",
+                    "Source specified in subfield $2",
+                    "Source specified in subfield $3",
+                    "Source specified in subfield $4",
+                    "Source specified in subfield $5"
+                ],
+                "8": "Unspecified type of standard number"
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "No information provided",
+                "1": "No difference",
+                "2": "Difference"
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "Source of code in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "description": "Type of code."
+            },
+            "a": {
+                "label": "Standard number in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "description": "A correctly formatted standard number or code."
+            },
+            "b": {
+                "label": "Qualification in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "description": "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Erroneous number or code in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "description": "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    },
+    "020": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country code in National bibliography number",
+                "description": "An identification of the country of the national bibliography."
+            },
+            "b": {
+                "label": "Number in National bibliography number",
+                "description": "The number as assigned by the agency."
+            },
+            "z": {
+                "label": "Erroneous number in National bibliography number",
+                "description": "A number erroneously assigned."
+            }
+        }
+    },
+    "021": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country code in Legal deposit number",
+                "description": "An identification of the country of the legal deposit agency assigning the number."
+            },
+            "b": {
+                "label": "Number in Legal deposit number",
+                "description": "Number as assigned by the agency."
+            },
+            "z": {
+                "label": "Erroneous number in Legal deposit number",
+                "description": "A number erroneously assigned to an item."
+            }
+        }
+    },
+    "022": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country code in Government publication number",
+                "description": "An identification of the country in which the item is published."
+            },
+            "b": {
+                "label": "Number in Government publication number",
+                "description": "The number as assigned by the government body."
+            },
+            "z": {
+                "label": "Erroneous number in Government publication number",
+                "description": "A number erroneously assigned to a government publication."
+            }
+        }
+    },
+    "033": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Persistent record identifier in Other system persistent record identifier",
+                "description": ""
+            },
+            "z": {
+                "label": "Cancelled or invalid persistent record identifier in Other system persistent record identifier",
+                "description": ""
+            }
+        }
+    },
+    "035": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "System control number in Other system control numbers",
+                "description": "The organisation in parentheses followed by the system control number for the record in that organisation\u00e2\u20ac\u2122s database."
+            },
+            "z": {
+                "label": "Cancelled or invalid control number in Other system control numbers",
+                "description": ""
+            }
+        }
+    },
+    "036": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "System code for musical notation in Music incipit",
+                "description": "A code that specifies the system used to code the musical notation."
+            },
+            "a": {
+                "label": "Number of work in Music incipit",
+                "description": "A code indicating the work to which the incipit refers, if a set of compositions (e.g. six sonatas) is entirely described in a single record, without the use of piece-analytic level records."
+            },
+            "b": {
+                "label": "Number of movement in Music incipit",
+                "description": "A code indicating the movement within a work to which the incipit refers."
+            },
+            "c": {
+                "label": "Number of incipit in Music incipit",
+                "description": "A code distinguishing different incipits referring to the same movement."
+            },
+            "d": {
+                "label": "Voice/instrument in Music incipit",
+                "description": "The voice or instrument."
+            },
+            "e": {
+                "label": "Role in Music incipit",
+                "description": "The name of the character singing the incipit."
+            },
+            "f": {
+                "label": "Movement caption/heading in Music incipit",
+                "description": "Caption or heading of the movement, as it appears on the source."
+            },
+            "g": {
+                "label": "Key or mode in Music incipit",
+                "description": "The key or mode of the movement."
+            },
+            "m": {
+                "label": "Clef in Music incipit",
+                "description": "A code indicating the clef."
+            },
+            "n": {
+                "label": "Key signature in Music incipit",
+                "description": ""
+            },
+            "o": {
+                "label": "Time signature in Music incipit",
+                "description": "The time value or mensuration sign reported on the staff."
+            },
+            "p": {
+                "label": "Musical notation in Music incipit",
+                "description": ""
+            },
+            "q": {
+                "label": "Comments (free text) in Music incipit",
+                "description": "Free-text note."
+            },
+            "r": {
+                "label": "Codified note in Music incipit",
+                "description": "A code indicating a comment note."
+            },
+            "t": {
+                "label": "Text incipit in Music incipit",
+                "description": "The literary text (if present) as it appears on the source."
+            },
+            "u": {
+                "label": "Uniform Resource Identifier in Music incipit",
+                "description": "The Uniform Resource Identifier (URI) which provides electronic access data to an incipit in digital format."
+            },
+            "z": {
+                "label": "Language of text in Music incipit",
+                "description": "Coded identification of the language of the incipit."
+            }
+        }
+    },
+    "040": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "CODEN in CODEN (serials)",
+                "description": "The six character code of which the last character is an alphanumeric digit."
+            },
+            "z": {
+                "label": "Erroneous CODEN in CODEN (serials)",
+                "description": "A CODEN that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    },
+    "071": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Sound recording: issue number",
+                "1": "Sound recording: matrix number",
+                "2": "Printed music: plate number",
+                "3": "Printed music: other publisher's number",
+                "4": "Video recording number",
+                "5": "Other type of publisher's number",
+                "6": "Electronic resource number"
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Publisher's number in Publisher's number (Electronic resource number) (Make a note)",
+                "description": "The number as assigned by the agency."
+            },
+            "b": {
+                "label": "Source in Publisher's number (Electronic resource number) (Make a note)",
+                "description": "The agency which assigned the number."
+            },
+            "c": {
+                "label": "Qualification in Publisher's number (Electronic resource number) (Make a note)",
+                "description": "Information to distinguish between numbers if a record contains more than one publisher number."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in Publisher's number (Electronic resource number) (Make a note)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Erroneous publisher's number in Publisher's number (Electronic resource number) (Make a note)",
+                "description": "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
+            }
+        }
+    },
+    "072": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "No information provided",
+                "1": "No difference",
+                "2": "Difference"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Standard number in Universal product code (UPC) (Difference)",
+                "description": "A correctly formatted standard number or code."
+            },
+            "b": {
+                "label": "Qualification in Universal product code (UPC) (Difference)",
+                "description": "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+            },
+            "c": {
+                "label": "Additional codes following standard number or codes in Universal product code (UPC) (Difference)",
+                "description": "Any coded suffix to the identifier."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in Universal product code (UPC) (Difference)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Erroneous number or code in Universal product code (UPC) (Difference)",
+                "description": "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    },
+    "073": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "No information provided",
+                "1": "No difference",
+                "2": "Difference"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Standard number in International article number (EAN) (Difference)",
+                "description": "A correctly formatted standard number or code."
+            },
+            "b": {
+                "label": "Qualification in International article number (EAN) (Difference)",
+                "description": "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
+            },
+            "c": {
+                "label": "Additional codes following standard number or codes in International article number (EAN) (Difference)",
+                "description": "Any coded suffix to the identifier."
+            },
+            "d": {
+                "label": "Terms of availability and/or price in International article number (EAN) (Difference)",
+                "description": "The price of the item and any comment on its availability."
+            },
+            "z": {
+                "label": "Erroneous number or code in International article number (EAN) (Difference)",
+                "description": "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
+            }
+        }
+    }
+}
