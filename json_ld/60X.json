@@ -1,0 +1,438 @@
+{
+    "600": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Name entered under forename or in direct order",
+                "1": "Name entered under surname (family name, patronymic etc.)"
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "has System code in Personal name used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Personal name used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Personal name used as subject",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Part of name other than entry element in Personal name used as subject",
+                "description": "The remainder of the name, used when the entry element is a surname or family name."
+            },
+            "c": {
+                "label": "has Additions to name other than dates in Personal name used as subject",
+                "description": "Any additions to names (other than dates) which do not form an integral part of the name itself."
+            },
+            "d": {
+                "label": "has Roman numerals in Personal name used as subject",
+                "description": "Roman numerals associated with names of certain popes, royalty and ecclesiastics."
+            },
+            "f": {
+                "label": "has Dates in Personal name used as subject",
+                "description": "The dates attached to personal names together with abbreviations or other indications of the nature of the dates."
+            },
+            "g": {
+                "label": "has Expansion of initials of forename in Personal name used as subject",
+                "description": "The full form of forenames when initials are recorded in Part of Name Other than Entry Element."
+            },
+            "j": {
+                "label": "has Form subdivision in Personal name used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "p": {
+                "label": "has Affiliation/address in Personal name used as subject",
+                "description": "The institutional affiliation of the individual at the time the work was prepared."
+            },
+            "t": {
+                "label": "has Title in Personal name used as subject",
+                "description": ""
+            },
+            "x": {
+                "label": "has Topical subdivision in Personal name used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Personal name used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Personal name used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "601": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Name in inverted order",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ],
+                "1": [
+                    "Name in inverted order",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Corporate name",
+                    "Meeting"
+                ],
+                "1": [
+                    "Corporate name",
+                    "Meeting"
+                ],
+                "2": [
+                    "Corporate name",
+                    "Meeting"
+                ]
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "has System code in Corporate body name used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has System code in Corporate body name used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Corporate body name used as subject",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Subdivision (or name if entered under place) in Corporate body name used as subject",
+                "description": "The name of a lower level in a hierarchy when the name includes a hierarchy; or the name of the corporate body when it is entered under place."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Corporate body name used as subject",
+                "description": "Any addition to the name of the corporate body added by the cataloguer."
+            },
+            "d": {
+                "label": "has Number of meeting and/or number of part of a meeting in Corporate body name used as subject",
+                "description": "The number of a meeting when the meeting belongs to a numbered series."
+            },
+            "e": {
+                "label": "has Location of meeting in Corporate body name used as subject",
+                "description": "The place where a meeting was held."
+            },
+            "f": {
+                "label": "has Date of meeting in Corporate body name used as subject",
+                "description": "The date of a meeting."
+            },
+            "g": {
+                "label": "has Inverted element in Corporate body name used as subject",
+                "description": "Any part of the name of the corporate body which is removed from the beginning of the name."
+            },
+            "h": {
+                "label": "has Part of name other than entry element and inverted element in Corporate body name used as subject",
+                "description": "The part of the name following the inversion."
+            },
+            "j": {
+                "label": "has Form subdivision in Corporate body name used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "t": {
+                "label": "has Title in Corporate body name used as subject",
+                "description": ""
+            },
+            "x": {
+                "label": "has Topical subdivision in Corporate body name used as subject",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Corporate body name used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Corporate body name used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "602": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Family name used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Family name used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Family name used as subject",
+                "description": "The name of the family in access point form."
+            },
+            "f": {
+                "label": "has Dates in Family name used as subject",
+                "description": "The dates of a family."
+            },
+            "j": {
+                "label": "has Form subdivision in Family name used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "t": {
+                "label": "has Title in Family name used as subject",
+                "description": ""
+            },
+            "x": {
+                "label": "has Topical subdivision in Family name used as subject",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Family name used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Family name used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "604": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "1": {
+                "label": "has Linking data in Name and title used as subject",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Name and title used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "a": {
+                "label": "has Entry element name in Name and title used as subject",
+                "description": "The name of the person, corporate body or family with primary responsibility for the item."
+            },
+            "j": {
+                "label": "has Form subdivision in Name and title used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "t": {
+                "label": "has Title in Name and title used as subject",
+                "description": "The title by which the work is known."
+            },
+            "x": {
+                "label": "has Topical subdivision in Name and title used as subject",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Name and title used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Name and title used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "605": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Title used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Title used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Title used as subject",
+                "description": "The short title or title proper."
+            },
+            "h": {
+                "label": "has Number of section or part in Title used as subject",
+                "description": "The number of a part when the item to which the title or uniform title refers is only a part of the work."
+            },
+            "i": {
+                "label": "has Name of section or part in Title used as subject",
+                "description": "The name of a part when the item to which the title or uniform title refers is only a part of the work."
+            },
+            "j": {
+                "label": "has Form subdivision in Title used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "k": {
+                "label": "has Date of publication in Title used as subject",
+                "description": "The date of publication of the item as subject when it is necessary to add it to the uniform title to distinguish the item."
+            },
+            "l": {
+                "label": "has Form subheading in Title used as subject",
+                "description": "A standard phrase added to a heading to further specify the uniform title."
+            },
+            "m": {
+                "label": "has Language (when part of heading) in Title used as subject",
+                "description": "The language of the item when required as part of the heading because it differs from that usually associated with the work named in the heading or when the work does not have a main language."
+            },
+            "n": {
+                "label": "has Miscellaneous information in Title used as subject",
+                "description": "Any information."
+            },
+            "q": {
+                "label": "has Version (or date of version) in Title used as subject",
+                "description": "An identification of the version of the work represented by the item."
+            },
+            "r": {
+                "label": "has Medium of performance (for music) in Title used as subject",
+                "description": "The instrumentation, etc., of the item."
+            },
+            "s": {
+                "label": "has Numeric designation (for music) in Title used as subject",
+                "description": "A number assigned by the composer or others to distinguish works."
+            },
+            "u": {
+                "label": "has Key (for music) in Title used as subject",
+                "description": "The musical key used as part of the preferred access point."
+            },
+            "w": {
+                "label": "has Arranged statement (for music) in Title used as subject",
+                "description": "The statement that a musical work is an arrangement."
+            },
+            "x": {
+                "label": "has Topical subdivision in Title used as subject",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Title used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Title used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "606": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": "No information available",
+                "0": "No level specified",
+                "1": "Primary term",
+                "2": "Secondary term"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Topical name used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Topical name used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Topical name used as subject",
+                "description": "The term in the form prescribed by the system of subject headings used."
+            },
+            "j": {
+                "label": "has Form subdivision in Topical name used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "x": {
+                "label": "has Topical subdivision in Topical name used as subject",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Topical name used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Topical name used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "607": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Geographical name used as subject",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Geographical name used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Geographical name used as subject",
+                "description": "The geographical name in the form prescribed by the system of authority headings used."
+            },
+            "j": {
+                "label": "has Form subdivision in Geographical name used as subject",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "x": {
+                "label": "has Topical subdivision in Geographical name used as subject",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Geographical name used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Geographical name used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    },
+    "608": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Form, genre or physical characteristics heading",
+                "description": "The system or thesaurus from which the subject heading is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Form, genre or physical characteristics heading",
+                "description": "The control number."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Form, genre or physical characteristics heading",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "has Entry element in Form, genre or physical characteristics heading",
+                "description": "The term in the form prescribed by the system of form headings used."
+            },
+            "j": {
+                "label": "has Form subdivision in Form, genre or physical characteristics heading",
+                "description": "A term added to the subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "x": {
+                "label": "has Topical subdivision in Form, genre or physical characteristics heading",
+                "description": "A term added to a subject heading to further specify the topic the subject heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Form, genre or physical characteristics heading",
+                "description": "A term added to a subject heading to specify a place in relation to a person which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Form, genre or physical characteristics heading",
+                "description": "A term added to a subject heading to specify the period in time in relation to a person whom the subject heading represents."
+            }
+        }
+    }
+}

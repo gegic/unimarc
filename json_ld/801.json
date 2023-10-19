@@ -1,0 +1,40 @@
+{
+    "801": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Original cataloguing agency",
+                "1": "Transcribing agency",
+                "2": "Modifying agency",
+                "3": "Issuing agency"
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "has System code in Originating source",
+                "description": "The name of the format used for the machine-readable record."
+            },
+            "a": {
+                "label": "has Country in Originating source",
+                "description": "The country of the issuing agency."
+            },
+            "b": {
+                "label": "has Agency in Originating source",
+                "description": ""
+            },
+            "c": {
+                "label": "has Date of transaction in Originating source",
+                "description": "Indication when a modification was made or a record was issued."
+            },
+            "g": {
+                "label": "has Cataloguing rules (descriptive conventions) in Originating source",
+                "description": "The cataloguing code used for bibliographic description and access."
+            },
+            "h": {
+                "label": "has Original control number in Originating source",
+                "description": "The original control number when a record\u2019s Record Identifier has been overwritten."
+            }
+        }
+    }
+}

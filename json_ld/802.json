@@ -1,0 +1,12 @@
+{
+    "802": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Issn centre code in Issn centre",
+                "description": "A code assigned by the ISSN International Centre."
+            }
+        }
+    }
+}

@@ -1,0 +1,630 @@
+{
+    "001": {
+        "label": "RECORD IDENTIFIER",
+        "optional": false,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {}
+    },
+    "003": {
+        "label": "PERSISTENT RECORD IDENTIFIER",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {}
+    },
+    "005": {
+        "label": "VERSION IDENTIFIER",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {}
+    },
+    "010": {
+        "label": "INTERNATIONAL STANDARD BOOK NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISBN)",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous ISBN",
+                "repeatable": true,
+                "positions": []
+            },
+            "6": {
+                "label": "Interfield Linking Data",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "011": {
+        "label": "INTERNATIONAL STANDARD SERIAL NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Level of Interest Indicator",
+            "codes": {
+                "#": "Level not specified / Not applicable",
+                "0": "Continuing resource of international or national interest",
+                "1": "Continuing resource of local interest"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISSN)",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "ISSN-L or linking ISSN",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Cancelled ISSN-L",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Cancelled ISSN",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous ISSN or ISSN-L",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "012": {
+        "label": "FINGERPRINT IDENTIFIER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Fingerprint",
+                "repeatable": false,
+                "positions": []
+            },
+            "2": {
+                "label": "Fingerprint System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and copy to which Field Applies (Mandatory if field is \npresent, Not repeatable)",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "013": {
+        "label": "INTERNATIONAL STANDARD MUSIC NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISMN)",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous ISMN",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "014": {
+        "label": "ARTICLE IDENTIFIER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Article Identifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous Article Identifier",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "015": {
+        "label": "INTERNATIONAL STANDARD TECHNICAL REPORT NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISRN)",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Cancelled/Invalid/Erroneous ISRN",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "016": {
+        "label": "INTERNATIONAL STANDARD RECORDING CODE (ISRC)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number (ISRC)",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price  [Obsolete]",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous ISRC",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "017": {
+        "label": "OTHER STANDARD IDENTIFIER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Type of standard number or code",
+            "codes": {
+                "7": "Source Specified in Subfield $2",
+                "8": "Unspecified type of standard number"
+            }
+        },
+        "indicator2": {
+            "label": "Difference indicator",
+            "codes": {
+                "0": "No information provided",
+                "1": "No difference",
+                "2": "Difference"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Standard Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous Number or Code",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "Source of code",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "020": {
+        "label": "NATIONAL BIBLIOGRAPHY NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "021": {
+        "label": "LEGAL DEPOSIT NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "022": {
+        "label": "GOVERNMENT PUBLICATION NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "035": {
+        "label": "OTHER SYSTEM CONTROL NUMBERS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "System Control Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Cancelled or Invalid Control Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "036": {
+        "label": "MUSIC INCIPIT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number of work",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Number of movement",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Number of incipit",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Voice/instrument (Mandatory if 036",
+                "repeatable": null,
+                "positions": []
+            },
+            "e": {
+                "label": "Role",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Movement caption/heading",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Key or mode",
+                "repeatable": false,
+                "positions": []
+            },
+            "m": {
+                "label": "Clef (3 characters. Mandatory if 036",
+                "repeatable": null,
+                "positions": []
+            },
+            "n": {
+                "label": "Key signature",
+                "repeatable": false,
+                "positions": []
+            },
+            "o": {
+                "label": "Time signature",
+                "repeatable": false,
+                "positions": []
+            },
+            "p": {
+                "label": "Musical notation",
+                "repeatable": false,
+                "positions": []
+            },
+            "q": {
+                "label": "Comments (free text)",
+                "repeatable": true,
+                "positions": []
+            },
+            "r": {
+                "label": "Codified note",
+                "repeatable": false,
+                "positions": []
+            },
+            "t": {
+                "label": "Text incipit",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of text",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System code for musical notation (2 characters. Mandatory if 036",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "040": {
+        "label": "CODEN (SERIALS)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "CODEN",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous CODEN",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "071": {
+        "label": "PUBLISHER'S NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Type of Publisher's Number",
+            "codes": {
+                "0": "Sound Recording: Issue Number",
+                "1": "Sound Recording: Matrix Number",
+                "2": "Printed Music: Plate Number",
+                "3": "Printed Music: Other publisher's Number",
+                "4": "Video recording number",
+                "5": "Other type of publisher\u2019s number",
+                "6": "Electronic resource number (e.g. CD-ROM)"
+            }
+        },
+        "indicator2": {
+            "label": "Note Indicator",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Publisher's Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Source",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of availability and/or price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous publisher's number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "072": {
+        "label": "UNIVERSAL PRODUCT CODE (UPC)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Difference indicator",
+            "codes": {
+                "0": "No information provided",
+                "1": "No difference",
+                "2": "Difference"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Standard Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Additional codes following standard number or code (Not \nRepeatable).",
+                "repeatable": null,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous Number or Code",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "073": {
+        "label": "INTERNATIONAL ARTICLE NUMBER (EAN)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Difference indicator",
+            "codes": {
+                "0": "No information provided",
+                "1": "No difference",
+                "2": "Difference"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Standard Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualification",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Additional codes following standard number or code (Not \nrepeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability and/or Price",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Erroneous Number or Code",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    }
+}

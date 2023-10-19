@@ -1,0 +1,198 @@
+{
+    "856": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ],
+                "0": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ],
+                "1": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ],
+                "2": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ],
+                "3": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ],
+                "4": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ],
+                "7": [
+                    "No information provided",
+                    "The field provides details to access the described resource",
+                    "The field provides details to access a thumbnail of the described resource",
+                    "The field provides details to access the title page, table of contents, and/or other front matter of the described resource"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "_": [
+                    null,
+                    "Email",
+                    "FTP",
+                    "Remote login (Telnet)",
+                    "Dial-up",
+                    "HTTP",
+                    "method specified in subfield $y"
+                ],
+                "0": [
+                    "No information provided",
+                    "Email",
+                    "FTP",
+                    "Remote login (Telnet)",
+                    "Dial-up",
+                    "HTTP",
+                    "method specified in subfield $y"
+                ],
+                "1": [
+                    "No information provided",
+                    "Email",
+                    "FTP",
+                    "Remote login (Telnet)",
+                    "Dial-up",
+                    "HTTP",
+                    "method specified in subfield $y"
+                ],
+                "2": [
+                    "No information provided",
+                    "Email",
+                    "FTP",
+                    "Remote login (Telnet)",
+                    "Dial-up",
+                    "HTTP",
+                    "method specified in subfield $y"
+                ]
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "has Link text in Electronic location and access",
+                "description": "Used for display in place of the URL."
+            },
+            "a": {
+                "label": "has Host name in Electronic location and access",
+                "description": ""
+            },
+            "b": {
+                "label": "has Access number in Electronic location and access",
+                "description": "The access number associated with a host."
+            },
+            "c": {
+                "label": "has Compression information in Electronic location and access",
+                "description": ""
+            },
+            "d": {
+                "label": "has Path in Electronic location and access",
+                "description": ""
+            },
+            "e": {
+                "label": "has Date and hour of consultation and access in Electronic location and access",
+                "description": "The time, in the form YYYYMMDDHHMM, at which the electronic item was last accessed."
+            },
+            "f": {
+                "label": "has Electronic name in Electronic location and access",
+                "description": "The electronic name of a file as it exists in the directory/subdirectory."
+            },
+            "h": {
+                "label": "has Processor of request in Electronic location and access",
+                "description": "The username, or processor of the request."
+            },
+            "i": {
+                "label": "has Instruction in Electronic location and access",
+                "description": "An instruction or command needed for the remote host to process a request."
+            },
+            "j": {
+                "label": "has Bits per second in Electronic location and access",
+                "description": "The lowest and highest number of bits (binary units) of data that can be transmitted per second when connected to a host."
+            },
+            "k": {
+                "label": "has Password in Electronic location and access",
+                "description": "Used to record general-use passwords, and should not contain passwords requiring security."
+            },
+            "l": {
+                "label": "has Logon/login in Electronic location and access",
+                "description": "General-use logon/login strings which do not require special security."
+            },
+            "m": {
+                "label": "has Contact for access assistance in Electronic location and access",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of location of host in subfield $a in Electronic location and access",
+                "description": ""
+            },
+            "o": {
+                "label": "has Operating system in Electronic location and access",
+                "description": "The operating system used by the host."
+            },
+            "p": {
+                "label": "has Port in Electronic location and access",
+                "description": "The portion of the address that identifies a process or service in the host."
+            },
+            "q": {
+                "label": "has Electronic format type in Electronic location and access",
+                "description": "An identification of the electronic format type, which determines how data are transferred through a network."
+            },
+            "r": {
+                "label": "has Settings in Electronic location and access",
+                "description": "The settings used for transferring data."
+            },
+            "s": {
+                "label": "has File size in Electronic location and access",
+                "description": "The size of the file as stored under the filename."
+            },
+            "t": {
+                "label": "has Terminal emulation in Electronic location and access",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Electronic location and access",
+                "description": "The URI, which provides standard syntax for locating an object using existing Internet protocols."
+            },
+            "v": {
+                "label": "has Hours access method available in Electronic location and access",
+                "description": "The hours that access to an electronic resource is available at the location."
+            },
+            "w": {
+                "label": "has Record control number in Electronic location and access",
+                "description": ""
+            },
+            "x": {
+                "label": "has Non-public note in Electronic location and access",
+                "description": ""
+            },
+            "y": {
+                "label": "has Access method in Electronic location and access",
+                "description": "The access method."
+            },
+            "z": {
+                "label": "has Public note in Electronic location and access",
+                "description": ""
+            }
+        }
+    }
+}

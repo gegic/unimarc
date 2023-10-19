@@ -1,0 +1,380 @@
+{
+    "801": {
+        "label": "ORIGINATING SOURCE",
+        "optional": false,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Function Indicator",
+            "codes": {
+                "0": "Original Cataloguing Agency",
+                "1": "Transcribing Agency",
+                "2": "Modifying Agency",
+                "3": "Issuing Agency"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Country",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Agency",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Date of Transaction",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Cataloguing Rules (Descriptive Conventions)",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Original Control Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "802": {
+        "label": "NATIONAL ISSN CENTRE",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "ISSN Centre Code",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "830": {
+        "label": "GENERAL CATALOGUER'S NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "850": {
+        "label": "HOLDING INSTITUTION",
+        "optional": false,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Code of Institution",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "852": {
+        "label": "LOCATION AND CALL NUMBER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Shelving scheme",
+            "codes": {
+                "#": "No information available",
+                "0": "Classification scheme (specified in subfield $2)",
+                "1": "Fixed location",
+                "2": "Sequential number",
+                "3": "Author, Title or Author/title",
+                "4": "Parts shelved separately",
+                "5": "Other"
+            }
+        },
+        "indicator2": {
+            "label": "Shelving order",
+            "codes": {
+                "#": "No information available",
+                "0": "No enumeration",
+                "1": "Primary enumeration",
+                "2": "Alternative enumeration"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Institution Identifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Sub-Location Identifier",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Address",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Coded Location Qualifier (2 or 3 characters)  \nQualifier type",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Non-coded Location Qualifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Call Number Prefix",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Call Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "k": {
+                "label": "Shelving Form of Title, Author, Author/Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "l": {
+                "label": "Call Number Suffix",
+                "repeatable": false,
+                "positions": []
+            },
+            "m": {
+                "label": "Item Identifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "n": {
+                "label": "Copy Identifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "p": {
+                "label": "Country",
+                "repeatable": false,
+                "positions": []
+            },
+            "t": {
+                "label": "Copy Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "Non-public Note.",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Public Note",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "856": {
+        "label": "ELECTRONIC LOCATION AND ACCESS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Access Method",
+            "codes": {
+                "#": "No information provided",
+                "0": "Email",
+                "1": "FTP",
+                "2": "Remote login (Telnet)",
+                "3": "Dial-up",
+                "4": "HTTP",
+                "7": "Method specified in subfield $y"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Host name",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "Access number",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Compression information",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Path",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Date and Hour of Consultation and Access",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Electronic name",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Processor of request",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Instruction",
+                "repeatable": true,
+                "positions": []
+            },
+            "j": {
+                "label": "Bits per second",
+                "repeatable": false,
+                "positions": []
+            },
+            "k": {
+                "label": "Password",
+                "repeatable": false,
+                "positions": []
+            },
+            "l": {
+                "label": "Logon/login",
+                "repeatable": false,
+                "positions": []
+            },
+            "m": {
+                "label": "Contact for access assistance",
+                "repeatable": true,
+                "positions": []
+            },
+            "n": {
+                "label": "Name of location of host in subfield",
+                "repeatable": null,
+                "positions": []
+            },
+            "o": {
+                "label": "Operating system",
+                "repeatable": false,
+                "positions": []
+            },
+            "p": {
+                "label": "Port",
+                "repeatable": false,
+                "positions": []
+            },
+            "q": {
+                "label": "Electronic Format Type",
+                "repeatable": false,
+                "positions": []
+            },
+            "r": {
+                "label": "Settings",
+                "repeatable": false,
+                "positions": []
+            },
+            "s": {
+                "label": "File size",
+                "repeatable": true,
+                "positions": []
+            },
+            "t": {
+                "label": "Terminal emulation",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "v": {
+                "label": "Hours access method available",
+                "repeatable": true,
+                "positions": []
+            },
+            "w": {
+                "label": "Record control number",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Nonpublic note",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Access method",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Public note",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "Link text",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "886": {
+        "label": "DATA NOT CONVERTED FROM SOURCE FORMAT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Type of field",
+            "codes": {
+                "0": "Record Label",
+                "1": "Variable control field (0-- fields without indicators or subfields)",
+                "2": "Variable data field (010-999 fields)"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Tag of the Source Format Field",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "Indicators and Subfields of the Source Format Field",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    }
+}

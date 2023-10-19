@@ -1,0 +1,785 @@
+{
+    "300": {
+        "label": "GENERAL NOTES",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "301": {
+        "label": "NOTES PERTAINING TO IDENTIFICATION NUMBERS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "302": {
+        "label": "NOTES PERTAINING TO CODED INFORMATION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "303": {
+        "label": "GENERAL NOTES PERTAINING TO DESCRIPTIVE INFORMATION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "304": {
+        "label": "NOTES PERTAINING TO TITLE AND STATEMENT OF RESPONSIBILITY",
+        "optional": false,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "305": {
+        "label": "NOTES PERTAINING TO EDITION AND BIBLIOGRAPHIC HISTORY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "306": {
+        "label": "NOTES PERTAINING TO PUBLICATION, DISTRIBUTION, ETC.",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "307": {
+        "label": "NOTES PERTAINING TO PHYSICAL DESCRIPTION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "308": {
+        "label": "NOTES PERTAINING TO SERIES",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "310": {
+        "label": "NOTES PERTAINING TO BINDING AND AVAILABILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "311": {
+        "label": "NOTES PERTAINING TO LINKING FIELDS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "312": {
+        "label": "NOTES PERTAINING TO RELATED TITLES",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "313": {
+        "label": "NOTES PERTAINING TO SUBJECT ACCESS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "314": {
+        "label": "NOTES PERTAINING TO RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "315": {
+        "label": "NOTES PERTAINING TO MATERIAL (OR TYPE OF PUBLICATION) SPECIFIC INFORMATION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "316": {
+        "label": "NOTE RELATING TO THE COPY IN HAND",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier.",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies (Mandatory if field is \npresent. Not repeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "6": {
+                "label": "Interfield Linking Data",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "317": {
+        "label": "PROVENANCE NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier.",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies (Mandatory. Not \nrepeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "6": {
+                "label": "Interfield Linking Data",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "318": {
+        "label": "ACTION NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Action",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Action Identification",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Time of Action",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Action Interval",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Contingency for Action",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Authorisation",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Jurisdiction",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Method of Action.",
+                "repeatable": true,
+                "positions": []
+            },
+            "j": {
+                "label": "Site of Action",
+                "repeatable": true,
+                "positions": []
+            },
+            "k": {
+                "label": "Action Agent",
+                "repeatable": true,
+                "positions": []
+            },
+            "l": {
+                "label": "Status",
+                "repeatable": true,
+                "positions": []
+            },
+            "n": {
+                "label": "Extent",
+                "repeatable": true,
+                "positions": []
+            },
+            "o": {
+                "label": "Type of Unit",
+                "repeatable": true,
+                "positions": []
+            },
+            "p": {
+                "label": "Non-public Note",
+                "repeatable": true,
+                "positions": []
+            },
+            "r": {
+                "label": "Public Note",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier.",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies (Mandatory. Not \nrepeatable)",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "320": {
+        "label": "INTERNAL BIBLIOGRAPHIES/INDEXES NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "321": {
+        "label": "EXTERNAL INDEXES/ABSTRACTS/REFERENCES NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Name of source",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Dates of Coverage",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Location within source",
+                "repeatable": false,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier (URI)",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "International Standard Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies",
+                "repeatable": false,
+                "positions": []
+            },
+            "6": {
+                "label": "Interfield Linking Data",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "322": {
+        "label": "CREDITS NOTE (PROJECTED AND VIDEO MATERIAL AND SOUND RECORDINGS)",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "323": {
+        "label": "CAST NOTE (PROJECTED AND VIDEO MATERIAL AND SOUND RECORDINGS)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "324": {
+        "label": "ORIGINAL VERSION NOTE",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "325": {
+        "label": "REPRODUCTION NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Original / Reproduction indicator",
+            "codes": {
+                "#": "The item in hand is a reproduction; the note describes that \nreproduction",
+                "1": "The item in hand is an original; the note describes an available \nreproduction"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "326": {
+        "label": "FREQUENCY STATEMENT NOTE (CONTINUING RESOURCES)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Frequency",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Dates of Frequency",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "327": {
+        "label": "CONTENTS NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Completeness indicator",
+            "codes": {
+                "#": "Undetermined",
+                "0": "Contents note is not complete",
+                "1": "Contents note is complete",
+                "2": "Contents note is parcial"
+            }
+        },
+        "indicator2": {
+            "label": "Structure indicator",
+            "codes": {
+                "#": "Unstructured note",
+                "1": "Structured note"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "Title of level 1 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Title of level 2 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Title of level 3 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Title of level 4 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Title of level 5 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Title of level 6 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Title of level 7 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Title of level 8 subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "p": {
+                "label": "Sequence of pages or first page of a subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier (URI)",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Other information concerning a subdivision",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "328": {
+        "label": "DISSERTATION (THESIS) NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Structure indicator",
+            "codes": {
+                "#": "No information available",
+                "0": "Structured",
+                "1": "Not structured"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Dissertation or thesis details and type of degree",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Discipline of degree",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Date of degree",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Body granting the degree",
+                "repeatable": false,
+                "positions": []
+            },
+            "t": {
+                "label": "Title of other edition of dissertation or thesis",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Text preceding or following the note",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "330": {
+        "label": "SUMMARY OR ABSTRACT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "332": {
+        "label": "PREFERRED CITATION OF DESCRIBED MATERIALS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Preferred Citation",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "333": {
+        "label": "USERS/INTENDED AUDIENCE NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "334": {
+        "label": "AWARDS NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of awards note",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Name of award",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Year of award",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Country of award",
+                "repeatable": false,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier (URI)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "336": {
+        "label": "TYPE OF ELECTRONIC RESOURCE NOTE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "337": {
+        "label": "SYSTEM REQUIREMENTS NOTE (ELECTRONIC RESOURCES)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Text of Note",
+                "repeatable": false,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier (URI)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "345": {
+        "label": "ACQUISITION INFORMATION NOTE",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Source for Acquisition/Subscription Address",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "Stock Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Medium",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Terms of Availability",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Uniform Resource Identifier (URI)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    }
+}

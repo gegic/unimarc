@@ -1,0 +1,358 @@
+{
+    "200": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Title is not significant",
+                "1": [
+                    "Title is significant",
+                    "Title is not significant"
+                ]
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "5": {
+                "label": "has Institution to which field applies in Title and statement of responsibility",
+                "description": "Applicable institution."
+            },
+            "a": {
+                "label": "has Title proper in Title and statement of responsibility",
+                "description": "The chief title of the item."
+            },
+            "b": {
+                "label": "has General material designation in Title and statement of responsibility",
+                "description": "Text of general material designation."
+            },
+            "c": {
+                "label": "has Title proper by another author in Title and statement of responsibility",
+                "description": "The chief title of a work by an author other than the one responsible for the first title when they are both contained in the same item and when there is no collective title."
+            },
+            "d": {
+                "label": "has Parallel title proper in Title and statement of responsibility",
+                "description": "The title proper in another language and/or script."
+            },
+            "e": {
+                "label": "has Other title information in Title and statement of responsibility",
+                "description": "Subtitles and other title information that appear subordinate to the title proper on an item."
+            },
+            "f": {
+                "label": "has First statement of responsibility in Title and statement of responsibility",
+                "description": "The first statement of responsibility for a title, or for a numbered or named part of a work."
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Title and statement of responsibility",
+                "description": "A statement of responsibility after the first statement of responsibility and relating to the same title."
+            },
+            "h": {
+                "label": "has Number of a part in Title and statement of responsibility",
+                "description": "The section or part numbering for items that are identified by a common name and a subsection name."
+            },
+            "i": {
+                "label": "has Name of a part in Title and statement of responsibility",
+                "description": "The section or part name for items which are identified by a common name and a subsection name."
+            },
+            "j": {
+                "label": "has Inclusive dates in Title and statement of responsibility",
+                "description": "The time period, that relates to the creation, assembly, accumulation, and/or maintenance and use of the materials in the unit."
+            },
+            "k": {
+                "label": "has Bulk dates in Title and statement of responsibility",
+                "description": "Dates pertaining to the majority of the materials in the unit."
+            },
+            "r": {
+                "label": "has Title page information following the title proper (for older monographic publications) in Title and statement of responsibility",
+                "description": "The remaining information present on the title page or its substitute."
+            },
+            "v": {
+                "label": "has Volume designation in Title and statement of responsibility",
+                "description": "A particular part of an item that is related to another item."
+            },
+            "z": {
+                "label": "has Language of parallel title proper in Title and statement of responsibility",
+                "description": "Language of a parallel title."
+            }
+        }
+    },
+    "205": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Edition statement in Edition statement",
+                "description": "A word, phrase or group of characters in a formal statement, identifying an item as a member of an edition."
+            },
+            "b": {
+                "label": "has Issue statement in Edition statement",
+                "description": "An edition statement relating to an issue or an additional edition statement which is formally identified as constituting an edition within an edition, or has significant differences in content from other issues of the larger edition to which it belongs, or is an alternative designation for the edition."
+            },
+            "d": {
+                "label": "has Parallel edition statement in Edition statement",
+                "description": "The statement of an edition in a language and/or script other than the edition statement."
+            },
+            "f": {
+                "label": "has Statement of responsibility relating to edition in Edition statement",
+                "description": "The first of any statements of responsibility relating to the edition."
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Edition statement",
+                "description": "Any subsequent statement of responsibility relating to the edition."
+            }
+        }
+    },
+    "206": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": "Unstructured",
+                "0": "Structured"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Mathematical data statement in Material specific area: cartographic resources - mathematical data",
+                "description": "The text of the statements of scale, projection, coordinates, equinoxes and epochs including ISBD punctuation."
+            },
+            "b": {
+                "label": "has Statement of scale in Material specific area: cartographic resources - mathematical data",
+                "description": ""
+            },
+            "c": {
+                "label": "has Statement of projection in Material specific area: cartographic resources - mathematical data",
+                "description": ""
+            },
+            "d": {
+                "label": "has Statement of coordinates in Material specific area: cartographic resources - mathematical data",
+                "description": ""
+            },
+            "e": {
+                "label": "has Right ascension and declination in Material specific area: cartographic resources - mathematical data",
+                "description": ""
+            },
+            "f": {
+                "label": "has Statement of equinox in Material specific area: cartographic resources - mathematical data",
+                "description": ""
+            }
+        }
+    },
+    "207": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Formatted",
+                "1": "Not formatted"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "has Numbering: dates and volume designations in Material specific area: numbering of continuing resources",
+                "description": "The numbering and/or dates of coverage."
+            },
+            "z": {
+                "label": "has Source of numbering information in Material specific area: numbering of continuing resources",
+                "description": "A note on the source of numbering information when it is not taken from the item itself."
+            }
+        }
+    },
+    "208": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Printed music specific statement in Material specific area: printed music specific statement",
+                "description": "The statement related to the particular format of the item in hand."
+            },
+            "d": {
+                "label": "has Parallel printed music specific statement(s) in Material specific area: printed music specific statement",
+                "description": "Any additional statements in a different language and/or script."
+            }
+        }
+    },
+    "210": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Produced in multiple copies, usually published or publically distributed",
+                    "Not published or publically distributed"
+                ],
+                "0": [
+                    "Produced in multiple copies, usually published or publically distributed",
+                    "Not published or publically distributed"
+                ],
+                "1": [
+                    "Produced in multiple copies, usually published or publically distributed",
+                    "Not published or publically distributed"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Not applicable / earliest available publisher",
+                    "Intervening publisher",
+                    "Current or latest publisher"
+                ],
+                "1": [
+                    "Not applicable / earliest available publisher",
+                    "Intervening publisher",
+                    "Current or latest publisher"
+                ]
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "has Place of publication, distribution, etc. in Publication, distribution, etc.",
+                "description": "transcribed in the form and order as they appear in the colophon."
+            },
+            "b": {
+                "label": "has Address of publisher, distributor, etc. in Publication, distribution, etc.",
+                "description": "The full postal address of a publisher, scriptorium or distributor."
+            },
+            "c": {
+                "label": "has Name of publisher, distributor, etc. in Publication, distribution, etc.",
+                "description": "The name of the publisher or distributor."
+            },
+            "d": {
+                "label": "has Date of publication, distribution, etc. in Publication, distribution, etc.",
+                "description": "The date or approximate date of publication, the writing of a manuscript, production of an art work, etc., or a copyright date or date of manufacture, or the time period that specifies the part of the bibliographic item to which it applies."
+            },
+            "e": {
+                "label": "has Place of manufacture in Publication, distribution, etc.",
+                "description": "The place of printing of a book or the place where a composite manuscript has been collected or bound together."
+            },
+            "f": {
+                "label": "has Address of manufacturer in Publication, distribution, etc.",
+                "description": "The full postal address of the manufacturer."
+            },
+            "g": {
+                "label": "has Name of manufacturer in Publication, distribution, etc.",
+                "description": "The name of the manufacturer (e.g. printer) or the person or institution collecting different units to produce a composite manuscript."
+            },
+            "h": {
+                "label": "has Date of manufacture in Publication, distribution, etc.",
+                "description": "The date of manufacture of an item or assembling of a manuscript."
+            },
+            "r": {
+                "label": "has Printing and/or publishing information transcribed as found in the main source of information in Publication, distribution, etc.",
+                "description": "The place and/or date of publishing and/or printing, and/or the name of publisher and/printer, and other information relating to publication and/or printing, transcribed in the form and order as they appear on the title page or its substitute."
+            },
+            "s": {
+                "label": "has Printing and/or publishing information transcribed as found in the colophon in Publication, distribution, etc.",
+                "description": "The place and/or date of the printing and/or publishing, and/or the name of the printer and/or publisher of an older monographic publication, transcribed in the form and order as they appear in the colophon."
+            }
+        }
+    },
+    "211": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Date in Projected publication date",
+                "description": ""
+            }
+        }
+    },
+    "215": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Specific material designation and extent of item in Physical description",
+                "description": "The name of the specific type of material to which the item belongs and/or an indication of the number of pieces or constituent parts."
+            },
+            "c": {
+                "label": "has Other physical details in Physical description",
+                "description": "Physical data about an item."
+            },
+            "d": {
+                "label": "has Dimensions in Physical description",
+                "description": "The linear measurements of an item and/or (in the case of an item which requires equipment for its use) dimensions relevant to the use of the item, and/or the bibliographic format of older printed books."
+            },
+            "e": {
+                "label": "has Accompanying material in Physical description",
+                "description": "A brief description of any material accompanying the item being described, which is intended to be used with the item."
+            }
+        }
+    },
+    "225": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Not the same as the established form",
+                "1": "No established form",
+                "2": "Same as the established form"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Series title in Series",
+                "description": "The title of the series in the form in which it appears on the item being recorded."
+            },
+            "d": {
+                "label": "has Parallel series title in Series",
+                "description": "The title of the series in another language and/or script."
+            },
+            "e": {
+                "label": "has Other title information in Series",
+                "description": "Subtitles and other title information that appear on the item subordinate to the series title or parallel series title or to the name of a part."
+            },
+            "f": {
+                "label": "has Statement of responsibility in Series",
+                "description": "The statement of responsibility for a series title or paralle series title or for a numbered or named part within the series."
+            },
+            "h": {
+                "label": "has Number of a part in Series",
+                "description": "The section or part number of the series."
+            },
+            "i": {
+                "label": "has Name of a part in Series",
+                "description": "The section or part name of the subseries."
+            },
+            "v": {
+                "label": "has Volume designation in Series",
+                "description": "The number of the item being recorded within the series."
+            },
+            "x": {
+                "label": "has ISSN of series in Series",
+                "description": "The ISSN of the series."
+            },
+            "z": {
+                "label": "has Language of parallel title in Series",
+                "description": "Coded identification of the language of a parallel title."
+            }
+        }
+    },
+    "230": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Designation and extent of file in Material specific area: electronic resource characteristics",
+                "description": "Designation and extent of file"
+            }
+        }
+    },
+    "251": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Organization in Organization and arrangement of materials",
+                "description": "Manner in which the materials being described have been subdivided into smaller units."
+            },
+            "b": {
+                "label": "has Arrangement in Organization and arrangement of materials",
+                "description": "Terms used to describe the pattern of arrangement of materials within a unit."
+            },
+            "c": {
+                "label": "has Level in Organization and arrangement of materials",
+                "description": "Term used to identify hierarchical position of the described materials in the whole hierarchy of description."
+            }
+        }
+    }
+}

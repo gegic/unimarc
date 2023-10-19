@@ -1,0 +1,790 @@
+{
+    "500": {
+        "label": "UNIFORM TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Uniform title is not significant",
+                "1": "Uniform title is significant"
+            }
+        },
+        "indicator2": {
+            "label": "Primary Entry Indicator",
+            "codes": {
+                "0": "Title is not used as a heading",
+                "1": "Title is primary entry"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Uniform Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "General Material Designation",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of Section or Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of Section or Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "k": {
+                "label": "Date of Publication",
+                "repeatable": false,
+                "positions": []
+            },
+            "l": {
+                "label": "Form Subheading",
+                "repeatable": true,
+                "positions": []
+            },
+            "m": {
+                "label": "Language (when part of a heading)",
+                "repeatable": false,
+                "positions": []
+            },
+            "n": {
+                "label": "Miscellaneous Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "q": {
+                "label": "Version (or Date of Version)",
+                "repeatable": false,
+                "positions": []
+            },
+            "r": {
+                "label": "Medium of Performance (for Music)",
+                "repeatable": true,
+                "positions": []
+            },
+            "s": {
+                "label": "Numeric Designation (for Music)",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Key (for Music)",
+                "repeatable": false,
+                "positions": []
+            },
+            "v": {
+                "label": "Volume Designation",
+                "repeatable": false,
+                "positions": []
+            },
+            "w": {
+                "label": "Additional Elements (for Music)",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "501": {
+        "label": "COLLECTIVE UNIFORM TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Type of Collective Title Indicator",
+            "codes": {
+                "0": "Complete collected works",
+                "1": "Selected works, i.e. a collection of individual items by an author, but \nnot the entirety of his work.",
+                "2": "Selections, i.e. parts of the works of an author, including extracts \nfrom works."
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Collective Uniform Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "General Material Designation",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Collective Uniform Subtitle",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "k": {
+                "label": "Date of Publication, etc.",
+                "repeatable": false,
+                "positions": []
+            },
+            "m": {
+                "label": "Language (when part of heading)",
+                "repeatable": false,
+                "positions": []
+            },
+            "r": {
+                "label": "Medium of performance (for music)",
+                "repeatable": true,
+                "positions": []
+            },
+            "s": {
+                "label": "Numeric designation (for music)",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Key (for music)",
+                "repeatable": false,
+                "positions": []
+            },
+            "w": {
+                "label": "Arranged statement (for music)",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "503": {
+        "label": "UNIFORM CONVENTIONAL HEADING",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Form Heading Proper",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Form Subheading",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Month and Day",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Personal Name \u2013 Entry Element of Person",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Personal Name \u2013 Part of Name Other than Entry Element - \nForename",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Personal Name \u2013 Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Personal Name Qualifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Title of Part",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Year",
+                "repeatable": true,
+                "positions": []
+            },
+            "k": {
+                "label": "Numeration (Arabic)",
+                "repeatable": false,
+                "positions": []
+            },
+            "l": {
+                "label": "Numeration (Roman)",
+                "repeatable": false,
+                "positions": []
+            },
+            "m": {
+                "label": "Locality",
+                "repeatable": false,
+                "positions": []
+            },
+            "n": {
+                "label": "Institution in Locality",
+                "repeatable": false,
+                "positions": []
+            },
+            "o": {
+                "label": "Place in Locality",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "510": {
+        "label": "PARALLEL TITLE PROPER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator.",
+            "codes": {
+                "0": "Parallel title is not significant",
+                "1": "Parallel title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Parallel Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "j": {
+                "label": "Volume or Dates associated with Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "n": {
+                "label": "Miscellaneous Information",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of Title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "511": {
+        "label": "HALF TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Significance of Title",
+            "codes": {
+                "0": "Title is not significant",
+                "1": "Title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Half title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "512": {
+        "label": "COVER TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Cover title is not significant",
+                "1": "Cover title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Cover Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "513": {
+        "label": "ADDED TITLE-PAGE TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Added title-page title is not significant",
+                "1": "Added title-page is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Added Title-page Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of Part",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "514": {
+        "label": "CAPTION TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Caption title is not significant",
+                "1": "Caption title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Caption Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "515": {
+        "label": "RUNNING TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Running title is not significant",
+                "1": "Running title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Running Title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "516": {
+        "label": "SPINE TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Spine title is not significant",
+                "1": "Spine title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Spine Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "517": {
+        "label": "OTHER VARIANT TITLES",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Variant title is not significant",
+                "1": "Variant title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Variant Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "518": {
+        "label": "TITLE IN STANDARD MODERN SPELLING",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "520": {
+        "label": "FORMER TITLE (CONTINUING RESOURCES)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Former title is not significant",
+                "1": "Former title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Former Title Proper",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of Part",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of Part",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Volumes or Dates of Former Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "n": {
+                "label": "Miscellaneous Information",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "ISSN of Former Title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "530": {
+        "label": "KEY TITLE (CONTINUING RESOURCES)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Proper Indicator",
+            "codes": {
+                "0": "Key title is the same as the title proper",
+                "1": "Key title differs from the title proper"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Key Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Volume or Dates Associated with Key Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "v": {
+                "label": "Volume Designation",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "531": {
+        "label": "ABBREVIATED TITLE (CONTINUING RESOURCES)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Abbreviated Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Qualifier",
+                "repeatable": false,
+                "positions": []
+            },
+            "v": {
+                "label": "Volume Designation",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "532": {
+        "label": "EXPANDED TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Expanded title is not significant",
+                "1": "Expanded title is significant"
+            }
+        },
+        "indicator2": {
+            "label": "Type of expansion indicator",
+            "codes": {
+                "0": "Initialism",
+                "1": "Numeral",
+                "2": "Abbreviation",
+                "3": "Other, non-roman symbol, etc"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Expanded Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of Title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "540": {
+        "label": "ADDITIONAL TITLE SUPPLIED BY CATALOGUER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title significance indicator",
+            "codes": {
+                "0": "Additional title is not significant",
+                "1": "Additional title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Additional Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other title information",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of part",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of part",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "541": {
+        "label": "TRANSLATED TITLE SUPPLIED BY CATALOGUER",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Translated title is not significant",
+                "1": "Translated title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Translated Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of a Part",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of Part",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of Translated Title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "545": {
+        "label": "SECTION TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Section title is not significant",
+                "1": "Section title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Section Title",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "560": {
+        "label": "ARTIFICAL TITLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Significance of title",
+            "codes": {}
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Artificial title",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to which the Field Applies (Mandatory if field \nis present. Not repeatable.)",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    }
+}

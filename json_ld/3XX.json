@@ -1,0 +1,604 @@
+{
+    "300": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in General notes",
+                "description": ""
+            }
+        }
+    },
+    "301": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to identification numbers",
+                "description": ""
+            }
+        }
+    },
+    "302": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to coded information",
+                "description": ""
+            }
+        }
+    },
+    "303": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in General notes pertaining to descriptive information",
+                "description": ""
+            }
+        }
+    },
+    "304": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to title and statement of responsibility",
+                "description": ""
+            }
+        }
+    },
+    "305": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to edition and bibliographic history",
+                "description": ""
+            }
+        }
+    },
+    "306": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to publication, distribution, etc.",
+                "description": ""
+            }
+        }
+    },
+    "307": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to physical description",
+                "description": ""
+            }
+        }
+    },
+    "308": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to series",
+                "description": ""
+            }
+        }
+    },
+    "310": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to binding and availability",
+                "description": ""
+            }
+        }
+    },
+    "311": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to linking fields",
+                "description": ""
+            }
+        }
+    },
+    "312": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to related titles",
+                "description": ""
+            }
+        }
+    },
+    "313": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to subject access",
+                "description": ""
+            }
+        }
+    },
+    "314": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to responsibility",
+                "description": ""
+            }
+        }
+    },
+    "315": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Notes pertaining to material (or type of publication) specific information",
+                "description": ""
+            }
+        }
+    },
+    "316": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "5": {
+                "label": "has Institution to which the field applies in Note relating to the copy in hand",
+                "description": ""
+            },
+            "6": {
+                "label": "has Interfield linking data in Note relating to the copy in hand",
+                "description": ""
+            },
+            "a": {
+                "label": "has Text of note in Note relating to the copy in hand",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier (URI) in Note relating to the copy in hand",
+                "description": ""
+            }
+        }
+    },
+    "317": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "5": {
+                "label": "has Institution to which the field applies in Provenance note",
+                "description": ""
+            },
+            "6": {
+                "label": "has Interfield linking data in Provenance note",
+                "description": ""
+            },
+            "a": {
+                "label": "has Text of note in Provenance note",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier (URI) in Provenance note",
+                "description": ""
+            }
+        }
+    },
+    "318": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "5": {
+                "label": "has Institution and copy to which the field applies in Action note",
+                "description": ""
+            },
+            "a": {
+                "label": "has Action. in Action note",
+                "description": ""
+            },
+            "b": {
+                "label": "has Action identification in Action note",
+                "description": ""
+            },
+            "c": {
+                "label": "has Time of action in Action note",
+                "description": ""
+            },
+            "d": {
+                "label": "has Action interval in Action note",
+                "description": ""
+            },
+            "e": {
+                "label": "has Contingency for action in Action note",
+                "description": ""
+            },
+            "f": {
+                "label": "has Authorisation in Action note",
+                "description": ""
+            },
+            "h": {
+                "label": "has Jurisdiction in Action note",
+                "description": ""
+            },
+            "i": {
+                "label": "has Method of action in Action note",
+                "description": ""
+            },
+            "j": {
+                "label": "has Site of action in Action note",
+                "description": ""
+            },
+            "k": {
+                "label": "has Action agent in Action note",
+                "description": ""
+            },
+            "l": {
+                "label": "has Status in Action note",
+                "description": ""
+            },
+            "n": {
+                "label": "has Extent in Action note",
+                "description": ""
+            },
+            "o": {
+                "label": "has Type of unit in Action note",
+                "description": ""
+            },
+            "p": {
+                "label": "has Non-public note in Action note",
+                "description": ""
+            },
+            "r": {
+                "label": "has Public note in Action note",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier (URI) in Action note",
+                "description": ""
+            }
+        }
+    },
+    "320": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Internal bibliographies/indexes note",
+                "description": ""
+            }
+        }
+    },
+    "321": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "#": "No information provided",
+                "0": "Indexing, abstracting coverage",
+                "1": "Bibliography, catalogue citation"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "5": {
+                "label": "has Institution to which field applies in External indexes/abstracts/references note",
+                "description": ""
+            },
+            "6": {
+                "label": "has Interfield linking data in External indexes/abstracts/references note",
+                "description": ""
+            },
+            "a": {
+                "label": "has Name of source in External indexes/abstracts/references note",
+                "description": ""
+            },
+            "b": {
+                "label": "has Dates of coverage in External indexes/abstracts/references note",
+                "description": ""
+            },
+            "c": {
+                "label": "has Location within source in External indexes/abstracts/references note",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier (URI) in External indexes/abstracts/references note",
+                "description": ""
+            },
+            "x": {
+                "label": "has International standard number in External indexes/abstracts/references note",
+                "description": ""
+            }
+        }
+    },
+    "322": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Credits note (projected and video material and sound recordings)",
+                "description": ""
+            }
+        }
+    },
+    "323": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Cast note (projected and video material and sound recordings)",
+                "description": ""
+            }
+        }
+    },
+    "324": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Original version note",
+                "description": ""
+            }
+        }
+    },
+    "325": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "#": "The item in hand is a reproduction; the note describes that reproduction",
+                "1": "The item in hand is an original; the note describes an available reproduction"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Reproduction note",
+                "description": ""
+            }
+        }
+    },
+    "326": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Frequency in Frequency statement note (continuing resources)",
+                "description": ""
+            },
+            "b": {
+                "label": "has Dates of frequency in Frequency statement note (continuing resources)",
+                "description": ""
+            }
+        }
+    },
+    "327": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "#": [
+                    "Unstructured note",
+                    "Structured note"
+                ],
+                "0": [
+                    "Unstructured note",
+                    "Structured note"
+                ],
+                "1": [
+                    "Unstructured note",
+                    "Structured note"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "#": [
+                    "Undetermined",
+                    "Contents note is not complete",
+                    "Contents note is complete"
+                ],
+                "1": [
+                    "Undetermined",
+                    "Contents note is not complete",
+                    "Contents note is complete"
+                ]
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Contents note",
+                "description": ""
+            },
+            "b": {
+                "label": "has Title of level 1 subdivision in Contents note",
+                "description": ""
+            },
+            "c": {
+                "label": "has Title of level 2 subdivision in Contents note",
+                "description": ""
+            },
+            "d": {
+                "label": "has Title of level 3 subdivision in Contents note",
+                "description": ""
+            },
+            "e": {
+                "label": "has Title of level 4 subdivision in Contents note",
+                "description": ""
+            },
+            "f": {
+                "label": "has Title of level 5 subdivision in Contents note",
+                "description": ""
+            },
+            "g": {
+                "label": "has Title of level 6 subdivision in Contents note",
+                "description": ""
+            },
+            "h": {
+                "label": "has Title of level 7 subdivision in Contents note",
+                "description": ""
+            },
+            "i": {
+                "label": "has Title of level 8 subdivision in Contents note",
+                "description": ""
+            },
+            "p": {
+                "label": "has Sequence of pages or first pages of a subdivision in Contents note",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier (URI). in Contents note",
+                "description": ""
+            },
+            "z": {
+                "label": "has Other information concerning a subdivision in Contents note",
+                "description": ""
+            }
+        }
+    },
+    "328": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "#": "No information available",
+                "0": "Structured",
+                "1": "Not structured"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Dissertation (thesis) note",
+                "description": ""
+            },
+            "b": {
+                "label": "has Dissertation or thesis details and type of degree in Dissertation (thesis) note",
+                "description": ""
+            },
+            "c": {
+                "label": "has Discipline of degree in Dissertation (thesis) note",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of degree in Dissertation (thesis) note",
+                "description": ""
+            },
+            "e": {
+                "label": "has Body granting the degree in Dissertation (thesis) note",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title of other edition of dissertation or thesis in Dissertation (thesis) note",
+                "description": ""
+            },
+            "z": {
+                "label": "has Text preceding or following the note in Dissertation (thesis) note",
+                "description": ""
+            }
+        }
+    },
+    "330": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Summary or abstract",
+                "description": ""
+            }
+        }
+    },
+    "332": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Preferred citation in Preferred citation of described materials",
+                "description": ""
+            }
+        }
+    },
+    "333": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Users/intended audience note",
+                "description": ""
+            }
+        }
+    },
+    "334": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of awards note in Awards note",
+                "description": ""
+            },
+            "b": {
+                "label": "has Name of award in Awards note",
+                "description": ""
+            },
+            "c": {
+                "label": "has Year of award in Awards note",
+                "description": ""
+            },
+            "d": {
+                "label": "has Country of award in Awards note",
+                "description": ""
+            }
+        }
+    },
+    "336": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in Type of electronic resource note",
+                "description": ""
+            }
+        }
+    },
+    "337": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Text of note in System requirements note (electronic resources)",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier (URI) in System requirements note (electronic resources)",
+                "description": ""
+            }
+        }
+    },
+    "345": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Source for acquisition/subscription address in Acquisition information note",
+                "description": ""
+            },
+            "b": {
+                "label": "has Stock number in Acquisition information note",
+                "description": ""
+            },
+            "c": {
+                "label": "has Medium in Acquisition information note",
+                "description": ""
+            },
+            "d": {
+                "label": "has Terms of availability in Acquisition information note",
+                "description": ""
+            }
+        }
+    }
+}

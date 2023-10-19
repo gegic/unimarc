@@ -1,0 +1,157 @@
+{
+    "610": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "No level specified",
+                "1": "Primary term",
+                "2": "Secondary term"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Subject term in Uncontrolled subject terms",
+                "description": ""
+            }
+        }
+    },
+    "615": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Subject category (provisional)",
+                "description": "An identification in coded form of the system from which the subject category is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Subject category (provisional)",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Subject category entry element text in Subject category (provisional)",
+                "description": "The term in the form prescribed by the system of subject categories used."
+            },
+            "m": {
+                "label": "has Subject category subdivision code in Subject category (provisional)",
+                "description": "A coded representation of a subject category subdivision."
+            },
+            "n": {
+                "label": "has Subject category code in Subject category (provisional)",
+                "description": "A coded representation of a subject category."
+            },
+            "x": {
+                "label": "has Subject category subdivision text in Subject category (provisional)",
+                "description": "The term added to the subject category to specify a particular aspect of the subject category."
+            }
+        }
+    },
+    "616": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Trademark used as subject",
+                "description": "An identification in coded form of the system from which the subject category is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Trademark used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Trademark used as subject",
+                "description": "The trademark name in access point form."
+            },
+            "c": {
+                "label": "has Qualification in Trademark used as subject",
+                "description": "Any addition to the name of the trademark added by the cataloguer."
+            },
+            "f": {
+                "label": "has Dates in Trademark used as subject",
+                "description": "The dates between which a particular trademark was in use."
+            },
+            "j": {
+                "label": "has Form subdivision in Trademark used as subject",
+                "description": "A term added to a subject heading to further specify the kind(s) or genre(s) of material."
+            },
+            "x": {
+                "label": "has Topical subdivision in Trademark used as subject",
+                "description": "A term added to a subject heading to further specify the topic the heading represents."
+            },
+            "y": {
+                "label": "has Geographical subdivision in Trademark used as subject",
+                "description": "A term added to a subject heading to specify a place in relation to a trademark which the subject heading represents."
+            },
+            "z": {
+                "label": "has Chronological subdivision in Trademark used as subject",
+                "description": "A term added to a subject heading to specify the period in time in relation to a trademark which the subject heading represents."
+            }
+        }
+    },
+    "617": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Hierarchical geographical name used as subject",
+                "description": "An identification in coded form of the system from which the subject category is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Hierarchical geographical name used as subject",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Country (nation state) in Hierarchical geographical name used as subject",
+                "description": "Country."
+            },
+            "b": {
+                "label": "has State or province, etc. in Hierarchical geographical name used as subject",
+                "description": "First-order political jurisdiction below a country."
+            },
+            "c": {
+                "label": "has Intermediate political jurisdiction. in Hierarchical geographical name used as subject",
+                "description": "Second-order or lower political jurisdiction, but not including cities, etc."
+            },
+            "d": {
+                "label": "has City, etc. in Hierarchical geographical name used as subject",
+                "description": "The name of a city, town, commune, village or other distinct populated area not defined as a subsection of a larger one."
+            },
+            "e": {
+                "label": "has Venue in Hierarchical geographical name used as subject",
+                "description": "Named buildings, urban spaces, vehicles, etc."
+            },
+            "f": {
+                "label": "has Date in Hierarchical geographical name used as subject",
+                "description": ""
+            },
+            "g": {
+                "label": "has Season in Hierarchical geographical name used as subject",
+                "description": ""
+            },
+            "h": {
+                "label": "has Occasion in Hierarchical geographical name used as subject",
+                "description": ""
+            },
+            "i": {
+                "label": "has Final date in Hierarchical geographical name used as subject",
+                "description": ""
+            },
+            "k": {
+                "label": "has Subsection of city, etc. in Hierarchical geographical name used as subject",
+                "description": "Smaller unit within a populated place."
+            },
+            "m": {
+                "label": "has Other geographical regions or features in Hierarchical geographical name used as subject",
+                "description": "Terrestrial non-jurisdictional geographic entities."
+            },
+            "n": {
+                "label": "has Extraterrestrial areas in Hierarchical geographical name used as subject",
+                "description": "Any extraterrestrial entity or space, and the geographic features of such entities."
+            },
+            "o": {
+                "label": "has Geographical areas such as world, hemisphere, continent: larger area than country in Hierarchical geographical name used as subject",
+                "description": "Geographical areas."
+            }
+        }
+    }
+}

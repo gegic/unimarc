@@ -1,0 +1,1032 @@
+{
+    "600": {
+        "label": "PERSONAL NAME USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Form of Name Indicator",
+            "codes": {
+                "0": "Name entered under forename or in direct order",
+                "1": "Name entered under surname (family name, patronymic etc.)"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Part of Name Other than Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Additions to Name Other than Dates",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Roman Numerals",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Expansion of Initials of Forename",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "p": {
+                "label": "Affiliation/address",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to which the Field Applies",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "601": {
+        "label": "CORPORATE BODY NAME USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Meeting Indicator",
+            "codes": {
+                "0": "Corporate name",
+                "1": "Meeting"
+            }
+        },
+        "indicator2": {
+            "label": "Form of Name Indicator",
+            "codes": {
+                "0": "Name in inverted order",
+                "1": "Name entered under place or jurisdiction",
+                "2": "Name entered under name in direct order"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Subdivision (or name if entered under place)",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Addition to Name or Qualifier",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Number of Meeting and/or Number of Part of a Meeting (Not \nrepeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "e": {
+                "label": "Location of Meeting",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Date of Meeting",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Inverted Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Part of Name other than Entry Element and Inverted Element (Not \nrepeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to which the Field Applies",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "602": {
+        "label": "FAMILY NAME USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to which the Field Applies",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "604": {
+        "label": "NAME AND TITLE USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "1": {
+                "label": "(one) Linking data (Repeatable) (for Embedded Fields) \nOR",
+                "repeatable": true,
+                "positions": []
+            },
+            "a": {
+                "label": "Entry Element Name",
+                "repeatable": false,
+                "positions": []
+            },
+            "t": {
+                "label": "Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority record number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "605": {
+        "label": "TITLE USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of Section or Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of Section or Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "k": {
+                "label": "Date of Publication",
+                "repeatable": false,
+                "positions": []
+            },
+            "l": {
+                "label": "Form Subheading",
+                "repeatable": false,
+                "positions": []
+            },
+            "m": {
+                "label": "Language (when part of heading)",
+                "repeatable": false,
+                "positions": []
+            },
+            "n": {
+                "label": "Miscellaneous Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "q": {
+                "label": "Version (or Date of Version)",
+                "repeatable": false,
+                "positions": []
+            },
+            "r": {
+                "label": "Medium of Performance (for Music)",
+                "repeatable": true,
+                "positions": []
+            },
+            "s": {
+                "label": "Numeric Designation (for Music)",
+                "repeatable": true,
+                "positions": []
+            },
+            "u": {
+                "label": "Key (for Music)",
+                "repeatable": false,
+                "positions": []
+            },
+            "w": {
+                "label": "Arranged Statement (for Music)",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "606": {
+        "label": "TOPICAL NAME USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "607": {
+        "label": "GEOGRAPHICAL NAME USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "608": {
+        "label": "FORM, GENRE OR PHYSICAL CHARACTERISTICS HEADING ",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "j": {
+                "label": "Form Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to which the Field Applies",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "610": {
+        "label": "UNCONTROLLED SUBJECT TERMS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Level of the Subject Term",
+            "codes": {
+                "0": "No level specified",
+                "1": "Primary term",
+                "2": "Secondary term"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Subject Term",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to which the Field Applies",
+                "repeatable": null,
+                "positions": []
+            }
+        }
+    },
+    "615": {
+        "label": "SUBJECT CATEGORY (Provisional)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Subject Category Entry Element Text",
+                "repeatable": false,
+                "positions": []
+            },
+            "x": {
+                "label": "Subject Category Subdivision Text",
+                "repeatable": true,
+                "positions": []
+            },
+            "n": {
+                "label": "Subject Category Code",
+                "repeatable": true,
+                "positions": []
+            },
+            "m": {
+                "label": "Subject Category Subdivision Code",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "616": {
+        "label": "TRADEMARK USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry element",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Qualification",
+                "repeatable": true,
+                "positions": []
+            },
+            "j": {
+                "label": "Form subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "Topical subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "y": {
+                "label": "Geographical subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Chronological subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "617": {
+        "label": "HIERARCHICAL GEOGRAPHICAL NAME USED AS SUBJECT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Country (Nation State)",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "State or Province, etc.",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Intermediate Political Jurisdiction",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "City, etc.",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Venue",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Date",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Season",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Occasion",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Final date",
+                "repeatable": false,
+                "positions": []
+            },
+            "k": {
+                "label": "Subsection of City, etc.",
+                "repeatable": true,
+                "positions": []
+            },
+            "m": {
+                "label": "Other Geographical Regions or Features",
+                "repeatable": true,
+                "positions": []
+            },
+            "n": {
+                "label": "Extraterrestrial Areas",
+                "repeatable": true,
+                "positions": []
+            },
+            "o": {
+                "label": "Geographical areas such as world, hemisphere, continent: larger \narea than country",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "620": {
+        "label": "PLACE AND DATE OF PUBLICATION, PERFORMANCE, ETC.",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Type of data",
+            "codes": {
+                "#": "Publication or production",
+                "1": "Performance",
+                "2": "First performance",
+                "3": "Recording",
+                "4": "Live recording",
+                "5": "Remastering",
+                "0": "Not specified"
+            }
+        },
+        "indicator2": {
+            "label": "Presence of data on source",
+            "codes": {
+                "#": "Not applicable / unknown",
+                "0": "Data not present on source",
+                "1": "Data present on source"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Country (Nation State)",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "State or Province etc.",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Intermediate Political Jurisdiction",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "City, etc.",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Venue",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Date",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Season",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Occasion",
+                "repeatable": false,
+                "positions": []
+            },
+            "i": {
+                "label": "Final date",
+                "repeatable": false,
+                "positions": []
+            },
+            "k": {
+                "label": "Subsection of City, etc.",
+                "repeatable": true,
+                "positions": []
+            },
+            "m": {
+                "label": "Other Geographical Regions or Features",
+                "repeatable": true,
+                "positions": []
+            },
+            "n": {
+                "label": "Extraterrestrial Areas",
+                "repeatable": true,
+                "positions": []
+            },
+            "o": {
+                "label": "Geographical areas such as world, hemisphere, continent: larger \narea than country",
+                "repeatable": true,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code (Mandatory if applicable. Not repeatable.",
+                "repeatable": null,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "621": {
+        "label": "PLACE AND DATE OF PROVENANCE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "626": {
+        "label": "TECHNICAL DETAILS ACCESS (ELECTRONIC RESOURCES)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Make and Model of Machines",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Programming Languages",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Operating System",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "660": {
+        "label": "GEOGRAPHIC AREA CODE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "661": {
+        "label": "TIME PERIOD CODE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Time Period Code  \nFor codes see Appendix E.",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "670": {
+        "label": "PRECIS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "b": {
+                "label": "Subject Indicator Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "String",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Reference Indicator Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of Terms",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "675": {
+        "label": "UNIVERSAL DECIMAL CLASSIFICATION (UDC)",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "v": {
+                "label": "Edition",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of edition",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Classification Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "676": {
+        "label": "DEWEY DECIMAL CLASSIFICATION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "v": {
+                "label": "Edition",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of edition",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Classification Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "680": {
+        "label": "LIBRARY OF CONGRESS CLASSIFICATION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Class number",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Book number",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Classification Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "686": {
+        "label": "OTHER CLASS NUMBERS",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Class number",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "Book Number",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Classification Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "v": {
+                "label": "Edition",
+                "repeatable": false,
+                "positions": []
+            },
+            "2": {
+                "label": "System Code",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Classification Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    }
+}

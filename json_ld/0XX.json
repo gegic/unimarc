@@ -37,31 +37,31 @@
         "indicator2": null,
         "subfields": {
             "a": {
-                "label": "Number (ISSN) in ISSN (Continuing resource of local interest)",
+                "label": "Number (ISSN) in ISSN",
                 "description": "A correctly applied ISSN."
             },
             "b": {
-                "label": "Qualification in ISSN (Continuing resource of local interest)",
+                "label": "Qualification in ISSN",
                 "description": "Information to distinguish between ISSNs."
             },
             "d": {
-                "label": "Terms of availability and/or price in ISSN (Continuing resource of local interest)",
+                "label": "Terms of availability and/or price in ISSN",
                 "description": "The price of the item and any comment on its availability."
             },
             "f": {
-                "label": "ISSN-l or linking ISSN in ISSN (Continuing resource of local interest)",
+                "label": "ISSN-l or linking ISSN in ISSN",
                 "description": "An ISSN designated by the ISSN network to link together various medium versions of a continuing resource."
             },
             "g": {
-                "label": "Cancelled ISSN-l in ISSN (Continuing resource of local interest)",
+                "label": "Cancelled ISSN-l in ISSN",
                 "description": "An ISSN-L incorrectly designated to a continuing resource."
             },
             "y": {
-                "label": "Cancelled ISSN in ISSN (Continuing resource of local interest)",
+                "label": "Cancelled ISSN in ISSN",
                 "description": "Any ISSN that was formerly valid but which has been cancelled by an ISSN centre."
             },
             "z": {
-                "label": "Erroneous ISSN or ISSN-l in ISSN (Continuing resource of local interest)",
+                "label": "Erroneous ISSN or ISSN-l in ISSN",
                 "description": "Any incorrect ISSN or ISSN-L."
             }
         }
@@ -177,42 +177,65 @@
             "label": "",
             "codes": {
                 "7": [
-                    "Source specified in subfield $6",
-                    "Source specified in subfield $2",
-                    "Source specified in subfield $3",
-                    "Source specified in subfield $4",
-                    "Source specified in subfield $5"
+                    "No information provided",
+                    "No difference",
+                    "Difference"
                 ],
-                "8": "Unspecified type of standard number"
+                "8": [
+                    "No information provided",
+                    "No difference",
+                    "Difference"
+                ]
             }
         },
         "indicator2": {
             "label": "",
             "codes": {
-                "0": "No information provided",
-                "1": "No difference",
-                "2": "Difference"
+                "0": [
+                    "Source specified in subfield $6",
+                    "Unspecified type of standard number",
+                    "Source specified in subfield $2",
+                    "Source specified in subfield $3",
+                    "Source specified in subfield $4",
+                    "Source specified in subfield $5"
+                ],
+                "1": [
+                    "Source specified in subfield $6",
+                    "Unspecified type of standard number",
+                    "Source specified in subfield $2",
+                    "Source specified in subfield $3",
+                    "Source specified in subfield $4",
+                    "Source specified in subfield $5"
+                ],
+                "2": [
+                    "Source specified in subfield $6",
+                    "Unspecified type of standard number",
+                    "Source specified in subfield $2",
+                    "Source specified in subfield $3",
+                    "Source specified in subfield $4",
+                    "Source specified in subfield $5"
+                ]
             }
         },
         "subfields": {
             "2": {
-                "label": "Source of code in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "label": "Source of code in Other standard identifier",
                 "description": "Type of code."
             },
             "a": {
-                "label": "Standard number in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "label": "Standard number in Other standard identifier",
                 "description": "A correctly formatted standard number or code."
             },
             "b": {
-                "label": "Qualification in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "label": "Qualification in Other standard identifier",
                 "description": "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
             },
             "d": {
-                "label": "Terms of availability and/or price in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "label": "Terms of availability and/or price in Other standard identifier",
                 "description": "The price of the item and any comment on its availability."
             },
             "z": {
-                "label": "Erroneous number or code in Other standard identifier (Unspecified type of standard number) (Difference)",
+                "label": "Erroneous number or code in Other standard identifier",
                 "description": "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
             }
         }
@@ -391,41 +414,78 @@
         "indicator1": {
             "label": "",
             "codes": {
-                "0": "Sound recording: issue number",
-                "1": "Sound recording: matrix number",
-                "2": "Printed music: plate number",
-                "3": "Printed music: other publisher's number",
-                "4": "Video recording number",
-                "5": "Other type of publisher's number",
-                "6": "Electronic resource number"
+                "0": [
+                    "Do not make a note",
+                    "Make a note"
+                ],
+                "1": [
+                    "Do not make a note",
+                    "Make a note"
+                ],
+                "2": [
+                    "Do not make a note",
+                    "Make a note"
+                ],
+                "3": [
+                    "Do not make a note",
+                    "Make a note"
+                ],
+                "4": [
+                    "Do not make a note",
+                    "Make a note"
+                ],
+                "5": [
+                    "Do not make a note",
+                    "Make a note"
+                ],
+                "6": [
+                    "Do not make a note",
+                    "Make a note"
+                ]
             }
         },
         "indicator2": {
             "label": "",
             "codes": {
-                "0": "Do not make a note",
-                "1": "Make a note"
+                "0": [
+                    "Sound recording: issue number",
+                    "Sound recording: matrix number",
+                    "Printed music: plate number",
+                    "Printed music: other publisher's number",
+                    "Video recording number",
+                    "Other type of publisher's number",
+                    "Electronic resource number"
+                ],
+                "1": [
+                    "Sound recording: issue number",
+                    "Sound recording: matrix number",
+                    "Printed music: plate number",
+                    "Printed music: other publisher's number",
+                    "Video recording number",
+                    "Other type of publisher's number",
+                    "Electronic resource number"
+                ]
             }
         },
         "subfields": {
             "a": {
-                "label": "Publisher's number in Publisher's number (Electronic resource number) (Make a note)",
+                "label": "Publisher's number in Publisher's number",
                 "description": "The number as assigned by the agency."
             },
             "b": {
-                "label": "Source in Publisher's number (Electronic resource number) (Make a note)",
+                "label": "Source in Publisher's number",
                 "description": "The agency which assigned the number."
             },
             "c": {
-                "label": "Qualification in Publisher's number (Electronic resource number) (Make a note)",
+                "label": "Qualification in Publisher's number",
                 "description": "Information to distinguish between numbers if a record contains more than one publisher number."
             },
             "d": {
-                "label": "Terms of availability and/or price in Publisher's number (Electronic resource number) (Make a note)",
+                "label": "Terms of availability and/or price in Publisher's number",
                 "description": "The price of the item and any comment on its availability."
             },
             "z": {
-                "label": "Erroneous publisher's number in Publisher's number (Electronic resource number) (Make a note)",
+                "label": "Erroneous publisher's number in Publisher's number",
                 "description": "A publisher's number that has been identified as being erroneously applied to an item or otherwise invalid."
             }
         }
@@ -442,23 +502,23 @@
         },
         "subfields": {
             "a": {
-                "label": "Standard number in Universal product code (UPC) (Difference)",
+                "label": "Standard number in Universal product code (UPC)",
                 "description": "A correctly formatted standard number or code."
             },
             "b": {
-                "label": "Qualification in Universal product code (UPC) (Difference)",
+                "label": "Qualification in Universal product code (UPC)",
                 "description": "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
             },
             "c": {
-                "label": "Additional codes following standard number or codes in Universal product code (UPC) (Difference)",
+                "label": "Additional codes following standard number or codes in Universal product code (UPC)",
                 "description": "Any coded suffix to the identifier."
             },
             "d": {
-                "label": "Terms of availability and/or price in Universal product code (UPC) (Difference)",
+                "label": "Terms of availability and/or price in Universal product code (UPC)",
                 "description": "The price of the item and any comment on its availability."
             },
             "z": {
-                "label": "Erroneous number or code in Universal product code (UPC) (Difference)",
+                "label": "Erroneous number or code in Universal product code (UPC)",
                 "description": "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
             }
         }
@@ -475,23 +535,23 @@
         },
         "subfields": {
             "a": {
-                "label": "Standard number in International article number (EAN) (Difference)",
+                "label": "Standard number in International article number (EAN)",
                 "description": "A correctly formatted standard number or code."
             },
             "b": {
-                "label": "Qualification in International article number (EAN) (Difference)",
+                "label": "Qualification in International article number (EAN)",
                 "description": "An indication of the scope of the number or code, usually the name of a publisher, an indication of the binding of the item, or an indication of the relationship of a number or code to a set or to a particular volume."
             },
             "c": {
-                "label": "Additional codes following standard number or codes in International article number (EAN) (Difference)",
+                "label": "Additional codes following standard number or codes in International article number (EAN)",
                 "description": "Any coded suffix to the identifier."
             },
             "d": {
-                "label": "Terms of availability and/or price in International article number (EAN) (Difference)",
+                "label": "Terms of availability and/or price in International article number (EAN)",
                 "description": "The price of the item and any comment on its availability."
             },
             "z": {
-                "label": "Erroneous number or code in International article number (EAN) (Difference)",
+                "label": "Erroneous number or code in International article number (EAN)",
                 "description": "A number or code that has been identified as being erroneously applied to an item or is otherwise invalid."
             }
         }

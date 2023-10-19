@@ -15,9 +15,7 @@ class UnimarcField:
 
     def to_json(self):
         return {
-            'tag': self.name[:3],
             'label': self.name[4:],
-            'definition': self.definition,
             'optional': self.optional,
             'repeatable': self.repeatable,
             'indicator1': self.indicators[0].to_json() if self.indicators is not None
@@ -28,6 +26,10 @@ class UnimarcField:
                 s.id: s.to_json() for s in filter(lambda x: x is not None, self.subfields)
             } if self.subfields is not None else None
         }
+
+    @property
+    def tag(self):
+        return self.name[:3]
 
 
 class Indicator:
@@ -41,15 +43,14 @@ class Indicator:
         self.codes = None
 
     def __str__(self):
-        return f'{self.label}: {self.description}'
+        return f'{self.label}'
 
     def __repr__(self):
-        return f'\n{self.label}: {self.description}\n{self.codes}'
+        return f'{self.label}: {self.codes}'
 
     def to_json(self):
         return {
             'label': self.label,
-            'description': self.description,
             'codes': {c.id: c.label for c in self.codes}
         }
 
@@ -65,12 +66,17 @@ class Code:
     def __repr__(self):
         return f'{self.id} - {self.label}'
 
+    def to_json(self):
+        return
+
 
 class Position:
     def __init__(self):
         self.start = None
         self.end = None
         self.codes = None
+        self.search_start = None
+        self.search_end = None
 
     def __str__(self):
         return f'{self.start} - {self.end}'
@@ -82,7 +88,7 @@ class Position:
         return {
             'start': self.start,
             'end': self.end,
-            'codes': [c.to_json() for c in self.codes]
+            'codes': {c.id: c.label for c in self.codes}
         }
 
 
@@ -92,7 +98,9 @@ class Subfield:
         self.label = None
         self.description = None
         self.repeatable = None
-        self.positions = None
+        self.positions = []
+        self.search_start = None
+        self.search_end = None
 
     def __str__(self):
         return f'{self.id} - {self.label}'
@@ -103,7 +111,6 @@ class Subfield:
     def to_json(self):
         return {
             'label': self.label,
-            'description': self.description,
             'repeatable': self.repeatable,
             'positions': [p.to_json() for p in self.positions] if self.positions is not None else None
         }

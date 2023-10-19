@@ -1,0 +1,450 @@
+{
+    "410": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Series",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Series",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Series",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Series",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Series",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Series",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Series",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Series",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Series",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Series",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Series",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Series",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Series",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Series",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Series",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Series",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Series",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Series",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Series",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Series",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Series",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Series",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Series",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Series",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Series",
+                "description": ""
+            }
+        }
+    },
+    "411": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Subseries",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Subseries",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Subseries",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Subseries",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Subseries",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Subseries",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Subseries",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Subseries",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Subseries",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Subseries",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Subseries",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Subseries",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Subseries",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Subseries",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Subseries",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Subseries",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Subseries",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Subseries",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Subseries",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Subseries",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Subseries",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Subseries",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Subseries",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Subseries",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Subseries",
+                "description": ""
+            }
+        }
+    },
+    "412": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Source of excerpt or offprint",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Source of excerpt or offprint",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Source of excerpt or offprint",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Source of excerpt or offprint",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Source of excerpt or offprint",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Source of excerpt or offprint",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Source of excerpt or offprint",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Source of excerpt or offprint",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Source of excerpt or offprint",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Source of excerpt or offprint",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Source of excerpt or offprint",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Source of excerpt or offprint",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Source of excerpt or offprint",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Source of excerpt or offprint",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Source of excerpt or offprint",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Source of excerpt or offprint",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Source of excerpt or offprint",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Source of excerpt or offprint",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Source of excerpt or offprint",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Source of excerpt or offprint",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Source of excerpt or offprint",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Source of excerpt or offprint",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Source of excerpt or offprint",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Source of excerpt or offprint",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Source of excerpt or offprint",
+                "description": ""
+            }
+        }
+    },
+    "413": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Excerpt or offprint",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Excerpt or offprint",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Excerpt or offprint",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Excerpt or offprint",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Excerpt or offprint",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Excerpt or offprint",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Excerpt or offprint",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Excerpt or offprint",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Excerpt or offprint",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Excerpt or offprint",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Excerpt or offprint",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Excerpt or offprint",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Excerpt or offprint",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Excerpt or offprint",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Excerpt or offprint",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Excerpt or offprint",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Excerpt or offprint",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Excerpt or offprint",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Excerpt or offprint",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Excerpt or offprint",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Excerpt or offprint",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Excerpt or offprint",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Excerpt or offprint",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Excerpt or offprint",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Excerpt or offprint",
+                "description": ""
+            }
+        }
+    }
+}

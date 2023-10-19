@@ -1,6 +1,8 @@
 import json
 import re
 
+import requests as requests
+
 
 def load_json_file(file_name):
     with open(file_name) as json_file:
@@ -24,6 +26,18 @@ def extract_field_data(item):
     :return: A quadruple containing the tag, indicator1, indicator2 and subfield.
     """
     curie = item['@id'].split('/')[-1]
+
+    if len(curie) > 7:
+        # still not handling positions
+        return None
+
+    if len(curie) == 5:
+        tag = curie[1:4]
+        indicator1 = None
+        indicator2 = None
+        subfield = curie[4]
+        return tag, indicator1, indicator2, subfield
+
     tag = curie[1:4]
     indicator1 = curie[4]
     indicator2 = curie[5]
@@ -32,51 +46,57 @@ def extract_field_data(item):
     return tag, indicator1, indicator2, subfield
 
 
-def process_indicator(indicator_data, indicator, indicator_index, current_subfield_label, pattern):
+def extract_content_within_parentheses(s, pos):
+    if pos < 0:
+        pos += len(s)
+
+    stack = []
+    for i, c in enumerate(s[:pos+1]):
+        if c == '(':
+            stack.append(i)
+        elif c == ')':
+            if i != pos:  # Skip popping for the closing parenthesis at the given position
+                stack.pop()
+
+    if not stack:
+        return None
+
+    opening_pos = stack[-1]
+
+    # Extract the content within the parentheses, accounting for the end character
+    content = s[opening_pos+1:pos]
+    return content
+
+
+def process_indicator(indicator_data, indicator, indicator_index) -> str:
     """
-    Extracts the indicator label from the common label associated with indicator_codes.
+    Extracts the content from within the last parenthesis set.
     :param indicator_data: A dictionary where indicator codes map to common labels.
         Meaning *0_* can map to 'Some subfield label (indicator1 label)'.
     :param indicator: Current indicator which the label and the code is being assigned to.
-    :param indicator_index: The index of the indicator. 0 for indicator1 and 1 for indicator2.
-    :param current_subfield_label: The subfield label extracted from the common label. Used to check if
-        the subfield label is the same for all indicators.
-    :param pattern: The pattern used to extract the indicator labels as well as the subfield label
-        from the common label.
-    :return:
+    :param indicator_index: The index of the indicator. Used to get the indicator label from the match result.
+    :return: The subfield label without this indicator's label.
     """
+
     for indicator_codes in indicator_data.keys():
-        subfield_pattern = re.compile(pattern)
         common_label = indicator_data[indicator_codes]
-        match_result = subfield_pattern.match(common_label)
-        if match_result is not None:
-            indicator_code = indicator_codes[indicator_index]
-            result_indicator_label = match_result.group(f'indicator{indicator_index + 1}')
-            # Originally the idea was to raise an exception if the indicator label is not the same for all
-            # subfields. However, it turns out that there are some cases where the indicator label is not the same
-            # probably due to errors in the data.
 
-            # current_indicator_label = indicator['codes'][indicator_code]
-            # if current_indicator_label is not None and current_indicator_label != result_indicator_label:
-            # So, instead of raising an exception, we add this element to the set
+        result_indicator_label = extract_content_within_parentheses(common_label, -1)
+        indicator_code = indicator_codes[indicator_index]
 
-            if indicator['codes'].get(indicator_code) is None:
-                indicator['codes'][indicator_code] = list()
+        if indicator['codes'].get(indicator_code) is None:
+            indicator['codes'][indicator_code] = list()
 
-            if result_indicator_label not in indicator['codes'][indicator_code]:
-                indicator['codes'][indicator_code].append(result_indicator_label)
+        if result_indicator_label not in indicator['codes'][indicator_code]:
+            indicator['codes'][indicator_code].append(result_indicator_label)
 
-            result_subfield_label = match_result.group('subfield_label').strip()
-            if current_subfield_label is not None and current_subfield_label != result_subfield_label:
-                raise Exception(f'Subfield label mismatch: {current_subfield_label} != {result_subfield_label}')
-            else:
-                current_subfield_label = result_subfield_label
+        indicator_data[indicator_codes] = common_label.replace(f'({result_indicator_label})', '').strip()
 
 
-def extract_indicator_labels(subfield, indicator1, indicator2):
+def extract_indicator_codes(subfield, indicator1, indicator2):
     """
-    Extracts all indicator labels given one subfield. It would be sufficient to extract the indicator labels
-    from only one subfield, but this method is used to check if the indicator labels are the same for all subfields and
+    Extracts all indicator codes given one subfield. It would be sufficient to extract the indicator codes
+    from only one subfield, but this method is used to check if the indicator codes are the same for all subfields and
     if the subfield label is the same for all indicators. If the subfield label is not the same for all indicators,
     an exception is raised.
     :param subfield:
@@ -90,17 +110,19 @@ def extract_indicator_labels(subfield, indicator1, indicator2):
     indicator_data: dict = subfield['indicator_data']
     subfield_label = None
     if indicator1 is not None and indicator2 is not None:
-        pattern = r'^(?P<subfield_label>[\s\S]+)\((?P<indicator1>.*?)\)\s+\((?P<indicator2>.*?)\)$'
-        process_indicator(indicator_data, indicator1, 0, subfield_label, pattern)
-        process_indicator(indicator_data, indicator2, 1, subfield_label, pattern)
-
+        process_indicator(indicator_data, indicator1, 0)
+        process_indicator(indicator_data, indicator2, 1)
     elif indicator1 is not None:
-        pattern = r'^(?P<subfield_label>[\s\S]+)\((?P<indicator1>.*?)\)$'
-        process_indicator(indicator_data, indicator1, 0, subfield_label, pattern)
-
+        process_indicator(indicator_data, indicator1, 0)
     elif indicator2 is not None:
-        pattern = r'^(?P<subfield_label>[\s\S]+)\((?P<indicator2>.*?)\)$'
-        process_indicator(indicator_data, indicator2, 1, subfield_label, pattern)
+        process_indicator(indicator_data, indicator2, 1)
+
+    # make sure that all the values from indicator_data are identical
+    for common_label in indicator_data.values():
+        if subfield_label is None:
+            subfield_label = common_label
+        elif subfield_label != common_label:
+            raise Exception(f'Subfield {subfield} has different labels for indicators')
 
     subfield['label'] = subfield_label if subfield_label is not None else subfield['label']
 
@@ -175,7 +197,7 @@ def clean_fields(fields):
             field['indicator2'] = None
 
         for subfield, subfield_data in field['subfields'].items():
-            extract_indicator_labels(subfield_data, field['indicator1'], field['indicator2'])
+            extract_indicator_codes(subfield_data, field['indicator1'], field['indicator2'])
             del subfield_data['indicator_data']
 
         # iterate through all iterator codes, and if length of their labels is 1, then remove the list and
@@ -195,7 +217,10 @@ def extract_fields(data):
 
     fields = {}
     for item in graph[1:]:
-        tag, indicator1, indicator2, subfield = extract_field_data(item)
+        field_data = extract_field_data(item)
+        if field_data is None:
+            continue
+        tag, indicator1, indicator2, subfield = field_data
         field = get_field(fields, tag)
 
         set_indicators(field, indicator1, indicator2)
@@ -207,7 +232,39 @@ def extract_fields(data):
 
 
 if __name__ == "__main__":
-    file_name = 'json_ld/jsonld.json'
-    data = load_json_file(file_name)
-    fields = extract_fields(data)
-    save_to_json_file('json_ld/fields.json', fields)
+
+    sets = [
+        '0XX',
+        '1XX',
+        '2XX',
+        '3XX',
+        '41X',
+        '42X',
+        '43X',
+        '44X',
+        '45X',
+        '46X',
+        '47X',
+        '48X',
+        # '5XX', absolutely useless for now due to low quality of data
+        '60X',
+        '61X',
+        '62X',
+        '66X',
+        '67X',
+        '68X',
+        '7XX',
+        '801',
+        '802',
+        '830',
+        '850',
+        '856',
+        '886'
+    ]
+
+    for element_set in sets:
+        print(f'Processing {element_set}')
+        url = f'http://iflastandards.info/ns/unimarc/unimarcb/elements/{element_set}.jsonld'
+        data = requests.get(url).json()
+        fields = extract_fields(data)
+        save_to_json_file(f'{element_set}.json', fields)

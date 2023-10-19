@@ -1,0 +1,316 @@
+{
+    "620": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ],
+                "0": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ],
+                "1": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ],
+                "2": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ],
+                "3": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ],
+                "4": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ],
+                "5": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source",
+                    "Data present on source but false or fictitious"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ],
+                "0": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ],
+                "1": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ],
+                "2": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ]
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "has System code in Place and date of publication, performance, etc.",
+                "description": "An identification in coded form of the system from which the subject category is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Place and date of publication, performance, etc.",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Country (nation state) in Place and date of publication, performance, etc.",
+                "description": "Country."
+            },
+            "b": {
+                "label": "has State or province, etc. in Place and date of publication, performance, etc.",
+                "description": "First-order political jurisdiction below a country."
+            },
+            "c": {
+                "label": "has Intermediate political jurisdiction in Place and date of publication, performance, etc.",
+                "description": "Second-order or lower political jurisdiction, but not including cities, etc."
+            },
+            "d": {
+                "label": "has City, etc. in Place and date of publication, performance, etc.",
+                "description": "The name of a city, town, commune, village or other distinct populated area not defined as a subsection of a larger one."
+            },
+            "e": {
+                "label": "has Venue in Place and date of publication, performance, etc.",
+                "description": "Named buildings, urban spaces, vehicles, etc."
+            },
+            "f": {
+                "label": "has Date in Place and date of publication, performance, etc.",
+                "description": ""
+            },
+            "g": {
+                "label": "has Season in Place and date of publication, performance, etc.",
+                "description": ""
+            },
+            "h": {
+                "label": "has Occasion in Place and date of publication, performance, etc.",
+                "description": ""
+            },
+            "i": {
+                "label": "has Final date in Place and date of publication, performance, etc.",
+                "description": ""
+            },
+            "k": {
+                "label": "has Subsection of city, etc. in Place and date of publication, performance, etc.",
+                "description": "Smaller unit within a populated place."
+            },
+            "m": {
+                "label": "has Other geographical regions or features in Place and date of publication, performance, etc.",
+                "description": "Terrestrial non-jurisdictional geographic entities."
+            },
+            "n": {
+                "label": "has Extraterrestrial areas in Place and date of publication, performance, etc.",
+                "description": "Any extraterrestrial entity or space, and the geographic features of such entities."
+            },
+            "o": {
+                "label": "has Geographical areas such as world, hemisphere, continent: larger area than country in Place and date of publication, performance, etc.",
+                "description": "Geographical areas."
+            }
+        }
+    },
+    "621": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ],
+                "0": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ],
+                "1": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ],
+                "2": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ],
+                "3": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ],
+                "4": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ],
+                "5": [
+                    "Not applicable / unknown",
+                    "Data not present on source",
+                    "Data present on source"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ],
+                "0": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ],
+                "1": [
+                    "Publication or production",
+                    "Not specified",
+                    "Performance",
+                    "First performance",
+                    "Recording",
+                    "Live recording",
+                    "Remastering"
+                ]
+            }
+        },
+        "subfields": {
+            "2": {
+                "label": "has System code in Place and date of provenance",
+                "description": "An identification in coded form of the system from which the subject category is derived."
+            },
+            "3": {
+                "label": "has Authority record number in Place and date of provenance",
+                "description": "The control number."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Place and date of provenance",
+                "description": "Name of institution."
+            },
+            "6": {
+                "label": "has Interfield linking data in Place and date of provenance",
+                "description": ""
+            },
+            "a": {
+                "label": "has Country (nation state) or larger entity in Place and date of provenance",
+                "description": "Country."
+            },
+            "b": {
+                "label": "has State or province, etc. in Place and date of provenance",
+                "description": "First-order political jurisdiction below a country."
+            },
+            "c": {
+                "label": "has Intermediate political jurisdiction in Place and date of provenance",
+                "description": "Second-order or lower political jurisdiction, but not including cities, etc."
+            },
+            "d": {
+                "label": "has City, etc. in Place and date of provenance",
+                "description": "The name of a city, town, commune, village or other distinct populated area not defined as a subsection of a larger one."
+            },
+            "e": {
+                "label": "has Building, vehicle, etc. in Place and date of provenance",
+                "description": "Specific locations: named houses, ships, urban spaces, etc."
+            },
+            "f": {
+                "label": "has Date 1 in Place and date of provenance",
+                "description": "Provenance date given either in association with a place or separately."
+            },
+            "g": {
+                "label": "has Season in Place and date of provenance",
+                "description": "Natural seasons (Spring, summer... Monsoon... etc.) also broad cultural seasons (Harvest, etc)."
+            },
+            "h": {
+                "label": "has Occasion in Place and date of provenance",
+                "description": "An occasion associated with religious festivals and rites and other humqan activities."
+            },
+            "i": {
+                "label": "has Date 2 in Place and date of provenance",
+                "description": "The closing date of a span."
+            },
+            "k": {
+                "label": "has Subsection of city, etc. in Place and date of provenance",
+                "description": "Smaller unit within a populated place."
+            },
+            "m": {
+                "label": "has Other geographic regions or features in Place and date of provenance",
+                "description": "Terrestrial non-jurisdictional geographic entities."
+            },
+            "n": {
+                "label": "has Extraterrestrial area in Place and date of provenance",
+                "description": "Any extraterrestrial entity or space, and the geographic features of such entities."
+            },
+            "o": {
+                "label": "has Geographical areas such as world, hemisphere, continent: larger area than country in Place and date of provenance",
+                "description": "Geographical areas."
+            }
+        }
+    },
+    "626": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Make and model of machines in Technical details access (electronic resources) (obsolete)",
+                "description": "The type of machines on which the program will run."
+            },
+            "b": {
+                "label": "has Programming languages in Technical details access (electronic resources) (obsolete)",
+                "description": "The programming languages in which the software is written."
+            },
+            "c": {
+                "label": "has Operating system in Technical details access (electronic resources) (obsolete)",
+                "description": "The name and version of the operating system needed to use the program."
+            }
+        }
+    }
+}

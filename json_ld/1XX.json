@@ -1,0 +1,381 @@
+{
+    "101": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Item is in the original language(s) of the work",
+                "1": "Item is a translation of the original work or an intermediate work",
+                "2": "Item contains translations other than translated summaries",
+                "8": "Expression data are coded in a separate linked authority record"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Language of text, soundtrack etc. in Language of the resource",
+                "description": "The language of the text, soundtrack etc."
+            },
+            "b": {
+                "label": "has Language of intermediate text when item is not translated from original in Language of the resource",
+                "description": "The language of any intermediate translation."
+            },
+            "c": {
+                "label": "has Language of original work in Language of the resource",
+                "description": "The language of the original work when the item being recorded is a translation."
+            },
+            "d": {
+                "label": "has Language of summary in Language of the resource",
+                "description": "The language of any summaries or abstracts of the item or of works, articles, etc. contained within it."
+            },
+            "e": {
+                "label": "has Language of contents page in Language of the resource",
+                "description": "The language of the table of contents when this differs from the language of the text."
+            },
+            "f": {
+                "label": "has Language of preferred source of information for the title page in Language of the resource",
+                "description": "The language of the preferred source of information for the title pagewhen it differs from the language or languages of the text."
+            },
+            "g": {
+                "label": "has Language of title proper if not first language of text, soundtrack, etc in Language of the resource",
+                "description": "The language of the title proper when it differs from that in the first or only occurrence of the language of the text, soundtrack etc."
+            },
+            "h": {
+                "label": "has Language of libretto, etc. in Language of the resource",
+                "description": "The language or languages of the text when the item being catalogued includes the vocal/textual content of the work(s) printed as text, whether as accompanying material or printed with the item."
+            },
+            "i": {
+                "label": "has Language of accompanying material (other than summaries, abstracts or librettos) in Language of the resource",
+                "description": "The language or languages of accompanying material, such as programme notes, prefaces, commentaries, instructions etc."
+            },
+            "j": {
+                "label": "has Language of subtitles in Language of the resource",
+                "description": "The language(s) of subtitles (overprinted titles) of moving pictures when different from the language of the soundtrack."
+            }
+        }
+    },
+    "102": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has Source of non-ISO code in Country of publication or production",
+                "description": "The source of the code."
+            },
+            "a": {
+                "label": "has Country of publication in Country of publication or production",
+                "description": "The country in which the item was published or produced."
+            },
+            "b": {
+                "label": "has Locality (non-ISO) in Country of publication or production",
+                "description": "The locality."
+            },
+            "c": {
+                "label": "has Locality (ISO) in Country of publication or production",
+                "description": "The locality."
+            }
+        }
+    },
+    "106": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Form of item: coded data: medium designator in Coded data field: textual resource - form",
+                "description": "The physical medium of the item."
+            }
+        }
+    },
+    "123": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Scale indeterminable",
+                "1": "Single scale",
+                "2": "Multiple scales",
+                "3": "Range of scales",
+                "4": "Approximate scale"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Type of scale in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "The type of scale."
+            },
+            "b": {
+                "label": "has Constant ratio linear horizontal scale in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "The horizontal scale in the form of the denominator of a representative fraction."
+            },
+            "c": {
+                "label": "has Constant ratio linear vertical scale in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "The vertical scale in the form of the denominator of a representative fraction."
+            },
+            "d": {
+                "label": "has Co-ordinates \u2011 westernmost longitude in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": ""
+            },
+            "e": {
+                "label": "has Co-ordinates \u2011 easternmost longitude in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": ""
+            },
+            "f": {
+                "label": "has Co-ordinates \u2011 northernmost longitude in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": ""
+            },
+            "g": {
+                "label": "has Co-ordinates \u2011 southernmost latitude in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "Co-ordinates for planetary or terrestrial items."
+            },
+            "h": {
+                "label": "has Angular scale in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "The angular scale of celestial maps in the form of a 4 character number right justified and filled with zeros, giving the scale in terms of millimetres to a degree."
+            },
+            "i": {
+                "label": "has Declination \u2011 northern limit in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": ""
+            },
+            "j": {
+                "label": "has Declination \u2011 southern limit in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": ""
+            },
+            "k": {
+                "label": "has Right ascension \u2011 eastern limits in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": ""
+            },
+            "m": {
+                "label": "has Right ascension \u2011 western limits in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "Co-ordinates for celestial cartographic items."
+            },
+            "n": {
+                "label": "has Equinox in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "The equinox for celestial cartographic items."
+            },
+            "o": {
+                "label": "has Epoch in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "The epoch for celestial cartographic items."
+            },
+            "p": {
+                "label": "has Planet to which the field applies in Coded data field: cartographic resources \u2011 scale and co-ordinates",
+                "description": "Indicates whether the co-ordinates apply to the Earth or to another planet, or to a satellite of these bodies."
+            }
+        }
+    },
+    "124": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Character of image in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            },
+            "b": {
+                "label": "has Form of cartographic item in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            },
+            "c": {
+                "label": "has Presentation technique for photographic or non-photographic image in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            },
+            "d": {
+                "label": "has Position of platform for photographic or remote sensing image in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            },
+            "e": {
+                "label": "has Category of satellite for remote sensing image in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            },
+            "f": {
+                "label": "has Name of satellite for remote sensing image in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            },
+            "g": {
+                "label": "has Recording technique for remote sensing image in Coded data field: cartographic resources-specific material designation analysis",
+                "description": ""
+            }
+        }
+    },
+    "125": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "b": {
+                "label": "has Literary text indicator (non-music performance) in Coded data field: sound recordings and music",
+                "description": ""
+            },
+            "c": {
+                "label": "has Multiple musical formats in Coded data field: sound recordings and music",
+                "description": ""
+            }
+        }
+    },
+    "127": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Duration in Coded data field: duration of sound recordings and notated music",
+                "description": "The duration of a manifestation consisting in or containing sound recordings or a section of a sound recording, or the estimated duration of any musical composition contained in the manifestation."
+            }
+        }
+    },
+    "128": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Form of musical work in Coded data field: form of musical work and key or mode",
+                "description": "The form of a musical work."
+            },
+            "b": {
+                "label": "",
+                "description": ""
+            },
+            "c": {
+                "label": "",
+                "description": ""
+            },
+            "d": {
+                "label": "has Key or mode of musical work in Coded data field: form of musical work and key or mode",
+                "description": "The key or church mode of the musical work."
+            }
+        }
+    },
+    "131": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "has Spheroid in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The spheroid used to construct the map."
+            },
+            "b": {
+                "label": "has Horizontal datum in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The horizontal datum(s) named on the cartographic material."
+            },
+            "c": {
+                "label": "has Grid and referencing system in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The main grid or referencing system."
+            },
+            "d": {
+                "label": "has Overlapping and referencing system in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "A subsidiary grid or referencing system which extends across the face of the cartographic material."
+            },
+            "e": {
+                "label": "has Secondary grid and referencing system in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "A subsidiary grid or referencing system which appears in the form of marginal ticks."
+            },
+            "f": {
+                "label": "has Vertical datum in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The vertical datum(s) named on the cartographic material."
+            },
+            "g": {
+                "label": "has Unit of measurement of heighting in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The unit of measurement of heighting."
+            },
+            "h": {
+                "label": "has Contour interval in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The value of interval of the main contours (i.e. those contours which always appear when applicable) in the unit of measurement of heighting."
+            },
+            "i": {
+                "label": "has Supplementary contour interval in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The value of the interval of supplementary contours, i.e. contours used between main contours to increase the topographic expression of the area (e.g. in areas of low relief) or contours whose value is not repeated on the surface of the map."
+            },
+            "j": {
+                "label": "has Unit of measurement of bathymetry in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": ""
+            },
+            "k": {
+                "label": "has Bathymetric interval in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": ""
+            },
+            "l": {
+                "label": "has Supplementary bathymetric interval in Coded data field: cartographic resources: geodetic, grid and vertical measurement",
+                "description": "The oceanographic equivalent of Unit of Measurement of Heighting, Contour Interval and Supplementary Contour Interval."
+            }
+        }
+    },
+    "141": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "5": {
+                "label": "has Institution and copy to which the field applies in Coded data field - copy specific attributes",
+                "description": "Name of institution."
+            },
+            "c": {
+                "label": "has Age in Coded data field - copy specific attributes",
+                "description": "The century relating to the binding of the copy."
+            },
+            "d": {
+                "label": "has Binding state of preservation code \u2013 specific in Coded data field - copy specific attributes",
+                "description": "The binding material."
+            },
+            "f": {
+                "label": "has Body of the book state of preservation code - specific in Coded data field - copy specific attributes",
+                "description": "The types of body of the book conditions."
+            }
+        }
+    },
+    "145": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": null,
+                "1": null
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "_": null,
+                "1": null
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "",
+                "description": "The type of performance medium."
+            }
+        }
+    },
+    "146": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Not applicable",
+                    "Alternative medium of performance"
+                ],
+                "0": [
+                    "Not applicable",
+                    "Alternative medium of performance"
+                ],
+                "1": [
+                    "Not applicable",
+                    "Alternative medium of performance"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "_": [
+                    "Not specified",
+                    "Original",
+                    "Arrangement"
+                ],
+                "1": [
+                    "Not specified",
+                    "Original",
+                    "Arrangement"
+                ]
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "has Type of performance medium in Coded data field: medium of performance",
+                "description": "The genre of the work based on the type of performance medium."
+            }
+        }
+    }
+}

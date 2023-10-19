@@ -1,0 +1,394 @@
+{
+    "200": {
+        "label": "TITLE AND STATEMENT OF RESPONSIBILITY",
+        "optional": false,
+        "repeatable": false,
+        "indicator1": {
+            "label": "Title Significance Indicator",
+            "codes": {
+                "0": "Title is not significant",
+                "1": "Title is significant"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Title Proper",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "General Material Designation",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Title Proper by Another Author",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Parallel Title Proper",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "First Statement of Responsibility",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Subsequent Statement of Responsibility",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of a Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of a Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "v": {
+                "label": "Volume Designation",
+                "repeatable": false,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of Parallel Title Proper",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "204": {
+        "label": "GENERAL MATERIAL DESIGNATION [Obsolete]",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "GMD",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "205": {
+        "label": "EDITION STATEMENT",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Edition Statement",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Issue Statement",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Parallel Edition Statement",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Statement of Responsibility Relating to Edition",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Subsequent Statement of Responsibility",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "206": {
+        "label": "MATERIAL SPECIFIC AREA: CARTOGRAPHIC MATERIALS - MATHEMATICAL DATA",
+        "optional": false,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Formatting Indicator",
+            "codes": {
+                "#": "Unstructured",
+                "0": "Structured"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Mathematical Data Statement",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Statement of scale",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Statement of projection",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Statement of coordinates",
+                "repeatable": false,
+                "positions": []
+            },
+            "e": {
+                "label": "Statement of zone  Used for celestial charts.",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Statement of equinox",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "207": {
+        "label": "MATERIAL SPECIFIC AREA: NUMBERING OF CONTINUING RESOURCES",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Formatted Numbering Indicator",
+            "codes": {
+                "0": "Formatted",
+                "1": "Not formatted"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Numbering: Dates and Volume Designations",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Source of Numbering Information",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "208": {
+        "label": "MATERIAL SPECIFIC AREA: PRINTED MUSIC SPECIFIC STATEMENT",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Printed Music Specific Statement",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Parallel Printed Music Specific Statement(s)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "210": {
+        "label": "PUBLICATION, DISTRIBUTION, ETC.",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Sequence of publication data",
+            "codes": {
+                "#": "Not applicable / Earliest available publisher",
+                "0": "Intervening publisher",
+                "1": "Current or latest publisher"
+            }
+        },
+        "indicator2": {
+            "label": "Type of release",
+            "codes": {
+                "#": "Produced in multiple copies, usually published or publically \ndistributed",
+                "1": "Not published or publically distributed"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Place of Publication, Distribution, etc.",
+                "repeatable": true,
+                "positions": []
+            },
+            "b": {
+                "label": "Address of Publisher, Distributor, etc.",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Name of Publisher, Distributor, etc.",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Date of Publication, Distribution, etc.",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Place of Manufacture",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Address of Manufacturer",
+                "repeatable": true,
+                "positions": []
+            },
+            "g": {
+                "label": "Name of Manufacturer",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Date of Manufacture",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "211": {
+        "label": "PROJECTED PUBLICATION DATE",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Date",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "215": {
+        "label": "PHYSICAL DESCRIPTION",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Specific Material Designation and Extent of Item",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Other Physical Details",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Dimensions",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Accompanying Material",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "225": {
+        "label": "SERIES",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Form of Title Indicator",
+            "codes": {
+                "0": "Not the same as the established form",
+                "1": "No established form",
+                "2": "Same as the established form"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Series Title",
+                "repeatable": false,
+                "positions": []
+            },
+            "d": {
+                "label": "Parallel Series Title",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Other Title Information",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Statement of Responsibility",
+                "repeatable": true,
+                "positions": []
+            },
+            "h": {
+                "label": "Number of a Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of a Part",
+                "repeatable": true,
+                "positions": []
+            },
+            "v": {
+                "label": "Volume Designation",
+                "repeatable": true,
+                "positions": []
+            },
+            "x": {
+                "label": "ISSN of Series",
+                "repeatable": true,
+                "positions": []
+            },
+            "z": {
+                "label": "Language of Parallel Title",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "230": {
+        "label": "MATERIAL SPECIFIC AREA: ELECTRONIC RESOURCE CHARACTERISTICS",
+        "optional": false,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Designation and extent of file",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "850": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Has Code of Institution in Holding Institution",
+                "description": ""
+            }
+        }
+    }
+}

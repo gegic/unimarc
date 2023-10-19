@@ -1,0 +1,27 @@
+{
+    "886": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Record label",
+                "1": "Variable control field",
+                "2": "Variable data field"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Data not converted from source format",
+                "description": "The name of the format used for the machine-readable record."
+            },
+            "a": {
+                "label": "has Tag of the source format field in Data not converted from source format",
+                "description": ""
+            },
+            "b": {
+                "label": "has Indicators or subfields of the source format field in Data not converted from source format",
+                "description": ""
+            }
+        }
+    }
+}

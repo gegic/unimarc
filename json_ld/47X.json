@@ -1,0 +1,114 @@
+{
+    "470": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Item reviewed",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Item reviewed",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Item reviewed",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Item reviewed",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Item reviewed",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Item reviewed",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Item reviewed",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Item reviewed",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Item reviewed",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Item reviewed",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Item reviewed",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Item reviewed",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Item reviewed",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Item reviewed",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Item reviewed",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Item reviewed",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Item reviewed",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Item reviewed",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Item reviewed",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Item reviewed",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Item reviewed",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Item reviewed",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Item reviewed",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Item reviewed",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Item reviewed",
+                "description": ""
+            }
+        }
+    }
+}

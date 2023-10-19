@@ -1,0 +1,50 @@
+{
+    "680": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "3": {
+                "label": "has Classification record number in Library of Congress Classification",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Class number in Library of Congress Classification",
+                "description": "The class number taken from the Library of Congress classification schedules."
+            },
+            "b": {
+                "label": "has Book number in Library of Congress Classification",
+                "description": "The individual book number applied by the cataloguing agency."
+            }
+        }
+    },
+    "686": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "2": {
+                "label": "has System code in Other class numbers",
+                "description": "A code for the classification scheme used in formulating the number."
+            },
+            "3": {
+                "label": "has Classification record number in Other class numbers",
+                "description": "The control number"
+            },
+            "a": {
+                "label": "has Class number in Other class numbers",
+                "description": "The class number taken from the classification scheme."
+            },
+            "b": {
+                "label": "has Book number in Other class numbers",
+                "description": "The book number applied by the assigning agency."
+            },
+            "c": {
+                "label": "has Classification subdivision in Other class numbers",
+                "description": "A subdivision of the class number taken from the classification scheme."
+            },
+            "v": {
+                "label": "has Edition in Other class numbers",
+                "description": "The number of the scheme edition used."
+            }
+        }
+    }
+}

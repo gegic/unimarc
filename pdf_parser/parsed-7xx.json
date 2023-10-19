@@ -1,0 +1,367 @@
+{
+    "700": {
+        "label": "PERSONAL NAME - PRIMARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "701": {
+        "label": "PERSONAL NAME - ALTERNATIVE RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "702": {
+        "label": "PERSONAL NAME - SECONDARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Form of Name Indicator",
+            "codes": {
+                "0": "Name entered under forename or direct order",
+                "1": "Name entered under surname (family name, patronymic, etc.)"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Part of Name Other than Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Additions to Names Other than Dates",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Roman Numerals",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Expansion of Initials of Forename",
+                "repeatable": false,
+                "positions": []
+            },
+            "p": {
+                "label": "Affiliation/address",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "4": {
+                "label": "Relator Code",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies (Mandatory. Not \nrepeatable)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "710": {
+        "label": "CORPORATE BODY NAME - PRIMARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "711": {
+        "label": "CORPORATE BODY NAME - ALTERNATIVE RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "712": {
+        "label": "CORPORATE BODY NAME - SECONDARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Specifies the Kind of Name of a Body",
+            "codes": {
+                "0": "Corporate name",
+                "1": "Meeting name"
+            }
+        },
+        "indicator2": {
+            "label": "Form of Name Indicator",
+            "codes": {
+                "0": "Name in inverted form",
+                "1": "Name entered under place or jurisdiction",
+                "2": "Name entered under name in direct order"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Addition to Name or Qualifier",
+                "repeatable": true,
+                "positions": []
+            },
+            "d": {
+                "label": "Number of Meeting and/or Number of Part of Meeting (Not \nRepeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "e": {
+                "label": "Location of Meeting",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Date of Meeting",
+                "repeatable": false,
+                "positions": []
+            },
+            "g": {
+                "label": "Inverted Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "h": {
+                "label": "Part of Name Other than Entry Element and Inverted Element (Not \nRepeatable)",
+                "repeatable": null,
+                "positions": []
+            },
+            "p": {
+                "label": "Affiliation/address",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "4": {
+                "label": "Relator Code",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies (Mandatory. Not \nrepeatable)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "716": {
+        "label": "TRADEMARK",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Data Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "c": {
+                "label": "Qualifications",
+                "repeatable": true,
+                "positions": []
+            },
+            "f": {
+                "label": "Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    },
+    "720": {
+        "label": "FAMILY NAME - PRIMARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "721": {
+        "label": "FAMILY NAME - ALTERNATIVE RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "722": {
+        "label": "FAMILY NAME - SECONDARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Dates",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            },
+            "4": {
+                "label": "Relator Code",
+                "repeatable": true,
+                "positions": []
+            },
+            "5": {
+                "label": "Institution and Copy to Which Field Applies (Mandatory. Not \nRepeatable)",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "730": {
+        "label": "NAME - ENTITY RESPONSIBLE",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": {
+            "label": "Form of Name Indicator",
+            "codes": {
+                "0": "Type of name cannot be determined",
+                "1": "Personal name",
+                "2": "Not a personal name"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "4": {
+                "label": "Relator Code",
+                "repeatable": true,
+                "positions": []
+            }
+        }
+    },
+    "740": {
+        "label": "UNIFORM CONVENTIONAL HEADING FOR LEGAL AND RELIGIOUS TEXTS - PRIMARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": false,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "741": {
+        "label": "UNIFORM CONVENTIONAL HEADING FOR LEGAL AND RELIGIOUS TEXTS - ALTERNATIVE RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": null
+    },
+    "742": {
+        "label": "UNIFORM CONVENTIONAL HEADING FOR LEGAL AND RELIGIOUS TEXTS - SECONDARY RESPONSIBILITY",
+        "optional": true,
+        "repeatable": true,
+        "indicator1": null,
+        "indicator2": {
+            "label": "Form of Name Indicator",
+            "codes": {
+                "1": "Name entered under country or other geographical name.",
+                "2": "Name entered under other form"
+            }
+        },
+        "subfields": {
+            "a": {
+                "label": "Entry Element",
+                "repeatable": false,
+                "positions": []
+            },
+            "b": {
+                "label": "Subdivision",
+                "repeatable": true,
+                "positions": []
+            },
+            "c": {
+                "label": "Addition to Name or Qualifier",
+                "repeatable": true,
+                "positions": []
+            },
+            "e": {
+                "label": "Name of the other party",
+                "repeatable": false,
+                "positions": []
+            },
+            "f": {
+                "label": "Date of legal issue or version, or date of signing",
+                "repeatable": true,
+                "positions": []
+            },
+            "i": {
+                "label": "Name of section or part",
+                "repeatable": true,
+                "positions": []
+            },
+            "l": {
+                "label": "Form subheading",
+                "repeatable": true,
+                "positions": []
+            },
+            "n": {
+                "label": "Miscellaneous information",
+                "repeatable": true,
+                "positions": []
+            },
+            "t": {
+                "label": "Uniform title",
+                "repeatable": false,
+                "positions": []
+            },
+            "3": {
+                "label": "Authority Record Number",
+                "repeatable": false,
+                "positions": []
+            }
+        }
+    }
+}

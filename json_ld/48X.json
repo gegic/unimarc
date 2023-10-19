@@ -1,0 +1,338 @@
+{
+    "481": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Also bound in this volume",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Also bound in this volume",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Also bound in this volume",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Also bound in this volume",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Also bound in this volume",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Also bound in this volume",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Also bound in this volume",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Also bound in this volume",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Also bound in this volume",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Also bound in this volume",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Also bound in this volume",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Also bound in this volume",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Also bound in this volume",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Also bound in this volume",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Also bound in this volume",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Also bound in this volume",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Also bound in this volume",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Also bound in this volume",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Also bound in this volume",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Also bound in this volume",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Also bound in this volume",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Also bound in this volume",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Also bound in this volume",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Also bound in this volume",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Also bound in this volume",
+                "description": ""
+            }
+        }
+    },
+    "482": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Bound with",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Bound with",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Bound with",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Bound with",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Bound with",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Bound with",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Bound with",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Bound with",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Bound with",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Bound with",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Bound with",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Bound with",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Bound with",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Bound with",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Bound with",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Bound with",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Bound with",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Bound with",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Bound with",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Bound with",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Bound with",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Bound with",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Bound with",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Bound with",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Bound with",
+                "description": ""
+            }
+        }
+    },
+    "488": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Do not make a note",
+                "1": "Make a note"
+            }
+        },
+        "subfields": {
+            "0": {
+                "label": "has Bibliographic record identifier in Other related work",
+                "description": ""
+            },
+            "1": {
+                "label": "has Linking data in Other related work",
+                "description": ""
+            },
+            "3": {
+                "label": "has Authority record number in Other related work",
+                "description": ""
+            },
+            "5": {
+                "label": "has Institution to which field applies in Other related work",
+                "description": ""
+            },
+            "a": {
+                "label": "has Author in Other related work",
+                "description": ""
+            },
+            "b": {
+                "label": "has General material designation in Other related work",
+                "description": ""
+            },
+            "c": {
+                "label": "has Place of publication in Other related work",
+                "description": ""
+            },
+            "d": {
+                "label": "has Date of publication in Other related work",
+                "description": ""
+            },
+            "e": {
+                "label": "has Edition statement in Other related work",
+                "description": ""
+            },
+            "f": {
+                "label": "has First statement of responsibility in Other related work",
+                "description": ""
+            },
+            "g": {
+                "label": "has Subsequent statement of responsibility in Other related work",
+                "description": ""
+            },
+            "h": {
+                "label": "has Number of section or part in Other related work",
+                "description": ""
+            },
+            "i": {
+                "label": "has Name of section or part in Other related work",
+                "description": ""
+            },
+            "l": {
+                "label": "has Parallel title in Other related work",
+                "description": ""
+            },
+            "m": {
+                "label": "has International Standard Music Number in Other related work",
+                "description": ""
+            },
+            "n": {
+                "label": "has Name of publisher, distributor, etc. in Other related work",
+                "description": ""
+            },
+            "o": {
+                "label": "has Other title information in Other related work",
+                "description": ""
+            },
+            "p": {
+                "label": "has Physical description in Other related work",
+                "description": ""
+            },
+            "s": {
+                "label": "has Series statement in Other related work",
+                "description": ""
+            },
+            "t": {
+                "label": "has Title in Other related work",
+                "description": ""
+            },
+            "u": {
+                "label": "has Uniform Resource Identifier in Other related work",
+                "description": ""
+            },
+            "v": {
+                "label": "has Volume number in Other related work",
+                "description": ""
+            },
+            "x": {
+                "label": "has ISSN in Other related work",
+                "description": ""
+            },
+            "y": {
+                "label": "has International Standard Book Number in Other related work",
+                "description": ""
+            },
+            "z": {
+                "label": "has CODEN in Other related work",
+                "description": ""
+            }
+        }
+    }
+}

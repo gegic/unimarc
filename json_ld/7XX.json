@@ -1,0 +1,920 @@
+{
+    "700": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Name entered under forename or direct order",
+                "1": "Name entered under surname (family name, patronymic, etc.)"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Personal name \u2011 primary responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Personal name \u2011 primary responsibility",
+                "description": "A code used to designate the relationship between the person and the bibliographic item."
+            },
+            "a": {
+                "label": "has Entry element in Personal name \u2011 primary responsibility",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Part of name other than entry element in Personal name \u2011 primary responsibility",
+                "description": "The remainder of the name, used when the entry element is a surname or family name."
+            },
+            "c": {
+                "label": "has Additions to names other than dates in Personal name \u2011 primary responsibility",
+                "description": "Any additions to names (other than dates) which do not form an integral part of the name itself."
+            },
+            "d": {
+                "label": "has Roman numerals in Personal name \u2011 primary responsibility",
+                "description": "Roman numerals associated with names of certain popes, royalty and ecclesiastics."
+            },
+            "f": {
+                "label": "has Dates in Personal name \u2011 primary responsibility",
+                "description": "The dates attached to personal names together with abbreviations or other indications of the nature of the dates."
+            },
+            "g": {
+                "label": "has Expansion of initials of forename in Personal name \u2011 primary responsibility",
+                "description": "The full form of forenames when initials are recorded in Part of Name Other than Entry Element."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Personal name \u2011 primary responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Personal name \u2011 primary responsibility",
+                "description": "The institutional affiliation of the individual at the time the work was prepared."
+            }
+        }
+    },
+    "701": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Name entered under forename or direct order",
+                "1": "Name entered under surname (family name, patronymic, etc.)"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Personal name \u2011 alternative responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Personal name \u2011 alternative responsibility",
+                "description": "A code used to designate the relationship between the person and the bibliographic item."
+            },
+            "a": {
+                "label": "has Entry element in Personal name \u2011 alternative responsibility",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Part of name other than entry element in Personal name \u2011 alternative responsibility",
+                "description": "The remainder of the name, used when the entry element is a surname or family name."
+            },
+            "c": {
+                "label": "has Additions to names other than dates in Personal name \u2011 alternative responsibility",
+                "description": "Any additions to names (other than dates) which do not form an integral part of the name itself."
+            },
+            "d": {
+                "label": "has Roman numerals in Personal name \u2011 alternative responsibility",
+                "description": "Roman numerals associated with names of certain popes, royalty and ecclesiastics."
+            },
+            "f": {
+                "label": "has Dates in Personal name \u2011 alternative responsibility",
+                "description": "The dates attached to personal names together with abbreviations or other indications of the nature of the dates."
+            },
+            "g": {
+                "label": "has Expansion of initials of forename in Personal name \u2011 alternative responsibility",
+                "description": "The full form of forenames when initials are recorded in Part of Name Other than Entry Element."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Personal name \u2011 alternative responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Personal name \u2011 alternative responsibility",
+                "description": "The institutional affiliation of the individual at the time the work was prepared."
+            }
+        }
+    },
+    "702": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": "Name entered under forename or direct order",
+                "1": "Name entered under surname (family name, patronymic, etc.)"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Personal name - secondary responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Personal name - secondary responsibility",
+                "description": "A code used to designate the relationship between the person and the bibliographic item."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Personal name - secondary responsibility",
+                "description": "Name of institution"
+            },
+            "a": {
+                "label": "has Entry element in Personal name - secondary responsibility",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Part of name other than entry element in Personal name - secondary responsibility",
+                "description": "The remainder of the name, used when the entry element is a surname or family name."
+            },
+            "c": {
+                "label": "has Additions to names other than dates in Personal name - secondary responsibility",
+                "description": "Any additions to names (other than dates) which do not form an integral part of the name itself."
+            },
+            "d": {
+                "label": "has Roman numerals in Personal name - secondary responsibility",
+                "description": "Roman numerals associated with names of certain popes, royalty and ecclesiastics."
+            },
+            "f": {
+                "label": "has Dates in Personal name - secondary responsibility",
+                "description": "The dates attached to personal names together with abbreviations or other indications of the nature of the dates."
+            },
+            "g": {
+                "label": "has Expansion of initials of forename in Personal name - secondary responsibility",
+                "description": "The full form of forenames when initials are recorded in Part of Name Other than Entry Element."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Personal name - secondary responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Personal name - secondary responsibility",
+                "description": "The institutional affiliation of the individual at the time the work was prepared."
+            },
+            "r": {
+                "label": "has Part or role played in Personal name - secondary responsibility",
+                "description": "The name of a role interpreted, played or sung by theperson designed by the access point."
+            }
+        }
+    },
+    "703": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Name entered under forename or direct order",
+                    "Name entered under surname (family name, patronymic, etc.)"
+                ],
+                "1": "Name entered under surname (family name, patronymic, etc.)"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Personal name \u2013 provenance or ownership (new)",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Personal name \u2013 provenance or ownership (new)",
+                "description": "A code used to designate the relationship between the person and the bibliographic item."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Personal name \u2013 provenance or ownership (new)",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "has Entry element in Personal name \u2013 provenance or ownership (new)",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Part of name other than entry element in Personal name \u2013 provenance or ownership (new)",
+                "description": "The remainder of the name, used when the entry element is a surname or family name."
+            },
+            "c": {
+                "label": "has Additions to names other than dates in Personal name \u2013 provenance or ownership (new)",
+                "description": "Any additions to names (other than dates) which do not form an integral part of the name itself."
+            },
+            "d": {
+                "label": "has Roman numerals in Personal name \u2013 provenance or ownership (new)",
+                "description": "Roman numerals associated with names of certain popes, royalty and ecclesiastics."
+            },
+            "f": {
+                "label": "has Dates in Personal name \u2013 provenance or ownership (new)",
+                "description": "The dates attached to personal names together with abbreviations or other indications of the nature of the dates."
+            },
+            "g": {
+                "label": "has Expansion of initials of forename in Personal name \u2013 provenance or ownership (new)",
+                "description": "The full form of forenames when initials are recorded in Part of Name Other than Entry Element."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Personal name \u2013 provenance or ownership (new)",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Personal name \u2013 provenance or ownership (new)",
+                "description": "The institutional affiliation of the individual at the time the work was prepared."
+            }
+        }
+    },
+    "710": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ],
+                "1": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "1": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "2": [
+                    "Corporate name",
+                    "Meeting name"
+                ]
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Corporate body name \u2011 primary responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Corporate body name \u2011 primary responsibility",
+                "description": "The designation of relationship between the corporate body named in the field and the item."
+            },
+            "a": {
+                "label": "has Entry element in Corporate body name \u2011 primary responsibility",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Subdivision in Corporate body name \u2011 primary responsibility",
+                "description": "The name of a lower level in a hierarchy when the name includes a hierarchy; or the name of the corporate body when it is entered under place."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Corporate body name \u2011 primary responsibility",
+                "description": "Any addition to the name of the corporate body added by the cataloguer."
+            },
+            "d": {
+                "label": "has Number of meeting and/or number of part of meeting in Corporate body name \u2011 primary responsibility",
+                "description": "The number of a meeting when the meeting belongs to a numbered series."
+            },
+            "e": {
+                "label": "has Location of meeting in Corporate body name \u2011 primary responsibility",
+                "description": "The place where a meeting was held."
+            },
+            "f": {
+                "label": "has Date of meeting in Corporate body name \u2011 primary responsibility",
+                "description": "The date of a meeting."
+            },
+            "g": {
+                "label": "has Inverted element in Corporate body name \u2011 primary responsibility",
+                "description": "Any part of the name of the corporate body which is removed from the beginning of the name."
+            },
+            "h": {
+                "label": "has Part of name other than entry element and inverted element in Corporate body name \u2011 primary responsibility",
+                "description": "The part of the name following the inversion."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Corporate body name \u2011 primary responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Corporate body name \u2011 primary responsibility",
+                "description": "The address of the corporate body."
+            }
+        }
+    },
+    "711": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ],
+                "1": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "1": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "2": [
+                    "Corporate name",
+                    "Meeting name"
+                ]
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Corporate body name \u2011 alternative responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Corporate body name \u2011 alternative responsibility",
+                "description": "The designation of relationship between the corporate body named in the field and the item."
+            },
+            "a": {
+                "label": "has Entry element in Corporate body name \u2011 alternative responsibility",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Subdivision in Corporate body name \u2011 alternative responsibility",
+                "description": "The name of a lower level in a hierarchy when the name includes a hierarchy; or the name of the corporate body when it is entered under place."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Corporate body name \u2011 alternative responsibility",
+                "description": "Any addition to the name of the corporate body added by the cataloguer."
+            },
+            "d": {
+                "label": "has Number of meeting and/or number of part of meeting in Corporate body name \u2011 alternative responsibility",
+                "description": "The number of a meeting when the meeting belongs to a numbered series."
+            },
+            "e": {
+                "label": "has Location of meeting in Corporate body name \u2011 alternative responsibility",
+                "description": "The place where a meeting was held."
+            },
+            "f": {
+                "label": "has Date of meeting in Corporate body name \u2011 alternative responsibility",
+                "description": "The date of a meeting."
+            },
+            "g": {
+                "label": "has Inverted element in Corporate body name \u2011 alternative responsibility",
+                "description": "Any part of the name of the corporate body which is removed from the beginning of the name."
+            },
+            "h": {
+                "label": "has Part of name other than entry element and inverted element in Corporate body name \u2011 alternative responsibility",
+                "description": "The part of the name following the inversion."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Corporate body name \u2011 alternative responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Corporate body name \u2011 alternative responsibility",
+                "description": "The address of the corporate body."
+            }
+        }
+    },
+    "712": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ],
+                "1": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "1": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "2": [
+                    "Corporate name",
+                    "Meeting name"
+                ]
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Corporate body name \u2013 secondary responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Corporate body name \u2013 secondary responsibility",
+                "description": "The designation of relationship between the corporate body named in the field and the item."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Corporate body name \u2013 secondary responsibility",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "has Entry element in Corporate body name \u2013 secondary responsibility",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Subdivision in Corporate body name \u2013 secondary responsibility",
+                "description": "The name of a lower level in a hierarchy when the name includes a hierarchy; or the name of the corporate body when it is entered under place."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Corporate body name \u2013 secondary responsibility",
+                "description": "Any addition to the name of the corporate body added by the cataloguer."
+            },
+            "d": {
+                "label": "has Number of meeting and/or number of part of meeting in Corporate body name \u2013 secondary responsibility",
+                "description": "The number of a meeting when the meeting belongs to a numbered series."
+            },
+            "e": {
+                "label": "has Location of meeting in Corporate body name \u2013 secondary responsibility",
+                "description": "The place where a meeting was held."
+            },
+            "f": {
+                "label": "has Date of meeting in Corporate body name \u2013 secondary responsibility",
+                "description": "The date of a meeting."
+            },
+            "g": {
+                "label": "has Inverted element in Corporate body name \u2013 secondary responsibility",
+                "description": "Any part of the name of the corporate body which is removed from the beginning of the name."
+            },
+            "h": {
+                "label": "has Part of name other than entry element and inverted element in Corporate body name \u2013 secondary responsibility",
+                "description": "The part of the name following the inversion."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Corporate body name \u2013 secondary responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Corporate body name \u2013 secondary responsibility",
+                "description": "The address of the corporate body."
+            },
+            "r": {
+                "label": "has Part or role played in Corporate body name \u2013 secondary responsibility",
+                "description": "The name of a role interpreted, played or sung by the corporate body designed by the access point."
+            }
+        }
+    },
+    "713": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ],
+                "1": [
+                    "Name in inverted form",
+                    "Name entered under place or jurisdiction",
+                    "Name entered under name in direct order"
+                ]
+            }
+        },
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "0": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "1": [
+                    "Corporate name",
+                    "Meeting name"
+                ],
+                "2": [
+                    "Corporate name",
+                    "Meeting name"
+                ]
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The designation of relationship between the corporate body named in the field and the item."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "has Entry element in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The portion of the name used as the entry element in the heading."
+            },
+            "b": {
+                "label": "has Subdivision in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The name of a lower level in a hierarchy when the name includes a hierarchy; or the name of the corporate body when it is entered under place."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "Any addition to the name of the corporate body added by the cataloguer."
+            },
+            "d": {
+                "label": "has Number of meeting and/or number of part of meeting in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The number of a meeting when the meeting belongs to a numbered series."
+            },
+            "e": {
+                "label": "has Location of meeting in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The place where a meeting was held."
+            },
+            "f": {
+                "label": "has Date of meeting in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The date of a meeting."
+            },
+            "g": {
+                "label": "has Inverted element in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "Any part of the name of the corporate body which is removed from the beginning of the name."
+            },
+            "h": {
+                "label": "has Part of name other than entry element and inverted element in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The part of the name following the inversion."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "p": {
+                "label": "has Affiliation/address in Corporate body name \u2013 provenance or ownership (new)",
+                "description": "The address of the corporate body."
+            }
+        }
+    },
+    "716": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Trademark",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Data element in Trademark",
+                "description": "The trademark name access point form."
+            },
+            "c": {
+                "label": "has Qualification in Trademark",
+                "description": "Any addition to the name of the trademark added by the cataloguer."
+            },
+            "f": {
+                "label": "has Dates in Trademark",
+                "description": "The dates between which a particular trademark is in use."
+            }
+        }
+    },
+    "720": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Family name \u2011 primary responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Family name \u2011 primary responsibility",
+                "description": "The code used to designate the relationship between the family named in the field and the bibliographic item."
+            },
+            "a": {
+                "label": "has Entry element in Family name \u2011 primary responsibility",
+                "description": "The family name in access point form."
+            },
+            "c": {
+                "label": "has Type of family in Family name \u2011 primary responsibility",
+                "description": "A categorization or generic descriptor for the type of family."
+            },
+            "d": {
+                "label": "has Places associated with the family in Family name \u2011 primary responsibility",
+                "description": "Information pertaining to places where the family resides or resided or had some connection."
+            },
+            "f": {
+                "label": "has Dates in Family name \u2011 primary responsibility",
+                "description": "The dates of a family."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Family name \u2011 primary responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            }
+        }
+    },
+    "721": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Family name \u2011 alternative responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Family name \u2011 alternative responsibility",
+                "description": "The code used to designate the relationship between the family named in the field and the bibliographic item."
+            },
+            "a": {
+                "label": "has Entry element in Family name \u2011 alternative responsibility",
+                "description": "The family name in access point form."
+            },
+            "c": {
+                "label": "has Type of family in Family name \u2011 alternative responsibility",
+                "description": "A categorization or generic descriptor for the type of family."
+            },
+            "d": {
+                "label": "has Places associated with the family in Family name \u2011 alternative responsibility",
+                "description": "Information pertaining to places where the family resides or resided or had some connection."
+            },
+            "f": {
+                "label": "has Dates in Family name \u2011 alternative responsibility",
+                "description": "The dates of a family."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Family name \u2011 alternative responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            }
+        }
+    },
+    "722": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Family name \u2013 secondary responsibility",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Family name \u2013 secondary responsibility",
+                "description": "The code used to designate the relationship between the family named in the field and the bibliographic item."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Family name \u2013 secondary responsibility",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "has Entry element in Family name \u2013 secondary responsibility",
+                "description": "The family name in access point form."
+            },
+            "c": {
+                "label": "has Type of family in Family name \u2013 secondary responsibility",
+                "description": "A categorization or generic descriptor for the type of family."
+            },
+            "d": {
+                "label": "has Places associated with the family in Family name \u2013 secondary responsibility",
+                "description": "Information pertaining to places where the family resides or resided or had some connection."
+            },
+            "f": {
+                "label": "has Dates in Family name \u2013 secondary responsibility",
+                "description": "The dates of a family."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Family name \u2013 secondary responsibility",
+                "description": "The ISNI or other international identifier assigned to the name."
+            },
+            "r": {
+                "label": "has Part or role played in Family name \u2013 secondary responsibility",
+                "description": "The name of a role interpreted, played or sung by the corporate body designed by the access point."
+            }
+        }
+    },
+    "723": {
+        "indicator1": null,
+        "indicator2": null,
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Family name \u2013 provenance or ownership",
+                "description": "The control number."
+            },
+            "4": {
+                "label": "has Relator code in Family name \u2013 provenance or ownership",
+                "description": "The code used to designate the relationship between the family named in the field and the bibliographic item."
+            },
+            "5": {
+                "label": "has Institution to which the field applies in Family name \u2013 provenance or ownership",
+                "description": "Name of institution."
+            },
+            "a": {
+                "label": "has Entry element in Family name \u2013 provenance or ownership",
+                "description": "The family name in access point form."
+            },
+            "c": {
+                "label": "has Type of family in Family name \u2013 provenance or ownership",
+                "description": "A categorization or generic descriptor for the type of family."
+            },
+            "d": {
+                "label": "has Places associated with the family in Family name \u2013 provenance or ownership",
+                "description": "Information pertaining to places where the family resides or resided or had some connection."
+            },
+            "f": {
+                "label": "has Dates in Family name \u2013 provenance or ownership",
+                "description": "The dates of a family."
+            },
+            "o": {
+                "label": "has International standard identifier for the name in Family name \u2013 provenance or ownership",
+                "description": "The ISNI or other international identifier assigned to the name."
+            }
+        }
+    },
+    "730": {
+        "indicator1": {
+            "label": "",
+            "codes": {
+                "0": "Type of name cannot be determined",
+                "1": "Personal name",
+                "2": "Not a personal name"
+            }
+        },
+        "indicator2": null,
+        "subfields": {
+            "4": {
+                "label": "has Relator code in Name \u2013 entity responsible",
+                "description": "The code used to designate the relationship between the entity named in the field and the bibliographic item."
+            },
+            "a": {
+                "label": "has Entry element in Name \u2013 entity responsible",
+                "description": "The name used as the entry element in the heading."
+            }
+        }
+    },
+    "740": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "1": "Name entered under country or other geographical name",
+                "2": "Name entered under other form"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "The name of jurisdiction under which the laws and other legislation, or the treaty or other agreement, are issued."
+            },
+            "b": {
+                "label": "has Subdivision in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "The name of a lower level in the hierarchy of the jurisdiction under which the laws and other legislation, or the treaty or other agreement, are issued, when the name includes a hierarchy."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "Any addition to the name of the jurisdiction under which the laws and other legislation or the treaty or other agreement are issued, added by the cataloguer to distinguish from homonym jurisdictions."
+            },
+            "e": {
+                "label": "has Name of the other party in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "The name of jurisdiction of other party(ies) under which the treaty or other agreement between two or more parts is issued."
+            },
+            "f": {
+                "label": "has Date of legal issue or version, or date of signing in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "The date of legal issue or version when is added to the uniform conventional heading."
+            },
+            "i": {
+                "label": "has Name of section or part in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "The name of a part when the item to which the uniform conventional heading is being applied is only a part of the text named in the heading."
+            },
+            "l": {
+                "label": "has Form subheading in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "Standard phrase added to a headind to further specify the uniform conventional heading."
+            },
+            "n": {
+                "label": "has Miscellaneous information in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "Any information not provided for."
+            },
+            "t": {
+                "label": "has Uniform title in Uniform conventional heading for legal and religious texts \u2013 primary responsibility",
+                "description": "Uniform title for the text being catalogued."
+            }
+        }
+    },
+    "741": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "1": "Name entered under country or other geographical name",
+                "2": "Name entered under other form"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "The name of jurisdiction under which the laws and other legislation, or the treaty or other agreement, are issued."
+            },
+            "b": {
+                "label": "has Subdivision in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "The name of a lower level in the hierarchy of the jurisdiction under which the laws and other legislation, or the treaty or other agreement, are issued, when the name includes a hierarchy."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "Any addition to the name of the jurisdiction under which the laws and other legislation or the treaty or other agreement are issued, added by the cataloguer to distinguish from homonym jurisdictions."
+            },
+            "e": {
+                "label": "has Name of the other party in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "The name of jurisdiction of other party(ies) under which the treaty or other agreement between two or more parts is issued."
+            },
+            "f": {
+                "label": "has Date of legal issue or version, or date of signing in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "The date of legal issue or version when is added to the uniform conventional heading."
+            },
+            "i": {
+                "label": "has Name of section or part in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "The name of a part when the item to which the uniform conventional heading is being applied is only a part of the text named in the heading."
+            },
+            "l": {
+                "label": "has Form subheading in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "Standard phrase added to a headind to further specify the uniform conventional heading."
+            },
+            "n": {
+                "label": "has Miscellaneous information in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "Any information not provided for."
+            },
+            "t": {
+                "label": "has Uniform title in Uniform conventional heading for legal and religious texts \u2013 alternative responsibility",
+                "description": "Uniform title for the text being catalogued."
+            }
+        }
+    },
+    "742": {
+        "indicator1": null,
+        "indicator2": {
+            "label": "",
+            "codes": {
+                "1": "Name entered under country or other geographical name",
+                "2": "Name entered under other form"
+            }
+        },
+        "subfields": {
+            "3": {
+                "label": "has Authority record number in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "The control number."
+            },
+            "a": {
+                "label": "has Entry element in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "The name of jurisdiction under which the laws and other legislation, or the treaty or other agreement, are issued."
+            },
+            "b": {
+                "label": "has Subdivision in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "The name of a lower level in the hierarchy of the jurisdiction under which the laws and other legislation, or the treaty or other agreement, are issued, when the name includes a hierarchy."
+            },
+            "c": {
+                "label": "has Addition to name or qualifier in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "Any addition to the name of the jurisdiction under which the laws and other legislation or the treaty or other agreement are issued, added by the cataloguer to distinguish from homonym jurisdictions."
+            },
+            "e": {
+                "label": "has Name of the other party in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "The name of jurisdiction of other party(ies) under which the treaty or other agreement between two or more parts is issued."
+            },
+            "f": {
+                "label": "has Date of legal issue or version, or date of signing in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "The date of legal issue or version when is added to the uniform conventional heading."
+            },
+            "i": {
+                "label": "has Name of section or part in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "The name of a part when the item to which the uniform conventional heading is being applied is only a part of the text named in the heading."
+            },
+            "l": {
+                "label": "has Form subheading in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "Standard phrase added to a headind to further specify the uniform conventional heading."
+            },
+            "n": {
+                "label": "has Miscellaneous information in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "Any information not provided for."
+            },
+            "t": {
+                "label": "has Uniform title in Uniform conventional heading for legal and religious texts \u2013 secondary responsibility",
+                "description": "Uniform title for the text being catalogued."
+            }
+        }
+    }
+}
